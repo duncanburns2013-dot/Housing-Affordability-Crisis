@@ -254,14 +254,75 @@
 <section id="s3" class="story-section" data-section="3">
   <header class="section-header">
     <div class="section-num">03</div>
-    <h2 class="section-question">Is this just rates, COVID,<br/>or a national problem?</h2>
+    <h2 class="section-question">Is this just rates and COVID &mdash;<br/>or is something <em>local</em> doing it?</h2>
     <p class="section-lede">
-      If MA tracks the US, the explanation is national. If MA pulls away, the cause is local policy.
+      The Federal Reserve set the same rate everywhere. Every state got the same QE, the same ZIRP, the same
+      pandemic transfers. So if those national forces fully explain Massachusetts, our neighbor should look the same.
+      Let's compare to <b>New Hampshire</b> &mdash; same labor market, same migration patterns, same Boston gravitational
+      pull &mdash; and to the <b>US</b> as a whole.
     </p>
   </header>
-  <div class="placeholder-card">
-    <div class="placeholder-title">MA vs. NH vs. US &mdash; coming next turn</div>
-    <p>Will plot: MA / NH / US ZHVI growth and price-to-income, with COVID and rate eras shaded.</p>
+
+  <div class="scrolly">
+    <div class="scrolly-graphic">
+      <div class="chart-frame">
+        <div class="chart-eyebrow">Price-to-income ratio &mdash; Massachusetts vs. New Hampshire vs. US</div>
+        <div id="chart-s3-states" class="chart"></div>
+        <div class="chart-source">Sources: Zillow ZHVI (annual mean) &middot; FRED MEHOINUS{MA,NH,US}A646N median household income.</div>
+      </div>
+    </div>
+
+    <div class="scrolly-text">
+      <div class="step" data-step="1">
+        <p class="step-q">Three lines. One question.</p>
+        <p>
+          A healthy housing market historically clusters between <b class="hl">2.6&times;</b> and <b class="hl">3.0&times;</b>
+          income &mdash; the gold reference line on the chart. Watch where the three states sit at any moment.
+          Where they <i>move together</i> is the macro hand. Where they <i>differ</i> is policy.
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p class="step-q">In 2000, the gap was already <em>1.68&times;</em>.</p>
+        <p>
+          Massachusetts started this century at <b class="hl">4.42&times;</b> &mdash; well above the historical norm.
+          New Hampshire was at <b class="hl">2.74&times;</b>, sitting comfortably <i>inside</i> the affordable band.
+          The MA premium is not a recent thing. It is structural.
+        </p>
+      </div>
+      <div class="step" data-step="3">
+        <p class="step-q">Same Fed. Same shocks. Same <i>shape</i>.</p>
+        <p>
+          During the 2007 bubble, all three lines surged. After the crash, all three corrected. Through QE,
+          all three crept back up. After COVID, all three accelerated. <i>The shape is the macro hand</i> &mdash;
+          and it confirms QE, ZIRP, and pandemic stimulus are real forces.
+        </p>
+      </div>
+      <div class="step" data-step="4">
+        <p class="step-q">But MA never came down to NH.</p>
+        <p>
+          Through every cycle, the MA line stayed roughly <b class="hl">1.2&times;</b> to <b class="hl">2.3&times;</b>
+          points <i>higher</i> than New Hampshire. The premium narrows in slowdowns and widens in booms,
+          but it never closes. <i>Whatever lifts MA above its neighbor is doing so consistently &mdash; and locally.</i>
+        </p>
+      </div>
+      <div class="step" data-step="5">
+        <p class="step-q">In 2024, MA sits at <em>5.53&times;</em>.</p>
+        <p>
+          New Hampshire is at <b class="hl">4.28&times;</b>. The US average: <b class="hl">4.46&times;</b>.
+          A gap of <b class="hl">1.25&times;</b> over NH means a typical MA household pays roughly
+          <b class="hl">14 additional months of income</b> for the same kind of home, just for crossing
+          the state line. That premium is not a Fed policy. It is not COVID. It is Massachusetts.
+        </p>
+      </div>
+      <div class="step" data-step="6">
+        <p class="step-q">So what does Massachusetts do that New Hampshire doesn't?</p>
+        <p>
+          Both states felt the same monetary shocks. Both felt the same pandemic. Both have similar economies
+          and similar industries. The local-policy delta is what remains. Section 4 examines a specific channel:
+          public spending pumping demand into a constrained market.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -336,5 +397,6 @@
 <script src="js/sections/01-shortage.js"></script>
 <script src="js/sections/01b-map.js"></script>
 <script src="js/sections/02-divergence.js"></script>
+<script src="js/sections/03-macro.js"></script>
 </body>
 </html>

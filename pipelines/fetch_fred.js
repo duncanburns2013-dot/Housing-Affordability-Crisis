@@ -66,16 +66,33 @@ function annualMeanFromMonthly(monthlySeries) {
 (async () => {
   console.log('Fetching FRED income series...');
   const maInc = fetchSeries('MEHOINUSMAA646N');
+  const nhInc = fetchSeries('MEHOINUSNHA646N');
   const usInc = fetchSeries('MEHOINUSA646N');
   console.log(`  MA income: ${maInc.size} years`);
+  console.log(`  NH income: ${nhInc.size} years`);
   console.log(`  US income: ${usInc.size} years`);
 
   console.log('\nLoading + annualizing ZHVI...');
   const zhvi = JSON.parse(fs.readFileSync(path.join(OUT, 'ma-zhvi.json'), 'utf8'));
   const usZhvi = JSON.parse(fs.readFileSync(path.join(OUT, 'us-zhvi.json'), 'utf8'));
+  // pull NH ZHVI directly from the State_zhvi.csv we already cached
+  const stateCsv = fs.readFileSync(path.join(RAW, 'State_zhvi.csv'), 'utf8').split(/\r?\n/);
+  const header = stateCsv[0].split(',');
+  const dateCols = header.slice(5);
+  const nhRow = stateCsv.slice(1).find(l => {
+    const cells = l.split(',');
+    return cells[2] === 'New Hampshire';
+  });
+  const nhMonthly = nhRow ? dateCols.map((d, i) => ({
+    date: d,
+    value: Number(nhRow.split(',')[5 + i])
+  })).filter(p => !Number.isNaN(p.value)) : [];
+
   const maHome = annualMeanFromMonthly(zhvi.series);
   const usHome = annualMeanFromMonthly(usZhvi.series);
+  const nhHome = annualMeanFromMonthly(nhMonthly);
   console.log(`  MA ZHVI: ${maHome.size} years (${[...maHome.keys()][0]}–${[...maHome.keys()].pop()})`);
+  console.log(`  NH ZHVI: ${nhHome.size} years`);
 
   // align on 2000-2024
   const startYear = 2000;
@@ -90,6 +107,10 @@ function annualMeanFromMonthly(monthlySeries) {
     const v = map.get(year);
     return v == null ? null : (v / base) * 100;
   }
+  function ratio(homeMap, incMap, y) {
+    const h = homeMap.get(y), i = incMap.get(y);
+    return h && i ? +(h / i).toFixed(2) : null;
+  }
 
   const maHome0 = maHome.get(startYear);
   const maInc0 = maInc.get(startYear);
@@ -100,7 +121,10 @@ function annualMeanFromMonthly(monthlySeries) {
       generated: new Date().toISOString(),
       sources: {
         ma_home_price: 'Zillow ZHVI (annual mean of monthly), Massachusetts',
+        nh_home_price: 'Zillow ZHVI (annual mean of monthly), New Hampshire',
+        us_home_price: 'Zillow ZHVI (annual mean of monthly), US 50-state mean',
         ma_income: 'FRED MEHOINUSMAA646N — Massachusetts median household income, nominal',
+        nh_income: 'FRED MEHOINUSNHA646N — New Hampshire median household income, nominal',
         us_income: 'FRED MEHOINUSA646N — US median household income, nominal'
       },
       years: { first: startYear, last: endYear },
@@ -109,16 +133,23 @@ function annualMeanFromMonthly(monthlySeries) {
     },
     years,
     series: {
+      // raw ($)
       ma_home_price: years.map(y => maHome.get(y) ?? null),
+      nh_home_price: years.map(y => nhHome.get(y) ?? null),
+      us_home_price: years.map(y => usHome.get(y) ?? null),
       ma_income: years.map(y => maInc.get(y) ?? null),
+      nh_income: years.map(y => nhInc.get(y) ?? null),
       us_income: years.map(y => usInc.get(y) ?? null),
+      // indexed (2000 = 100) — used by Section 2
       ma_home_index: years.map(y => idx(maHome, y, maHome0)),
       ma_income_index: years.map(y => idx(maInc, y, maInc0)),
       us_income_index: years.map(y => idx(usInc, y, usInc0)),
-      price_to_income: years.map(y => {
-        const h = maHome.get(y), i = maInc.get(y);
-        return h && i ? +(h / i).toFixed(2) : null;
-      })
+      // ratios — used by Section 3
+      ma_price_to_income: years.map(y => ratio(maHome, maInc, y)),
+      nh_price_to_income: years.map(y => ratio(nhHome, nhInc, y)),
+      us_price_to_income: years.map(y => ratio(usHome, usInc, y)),
+      // Section 2 backwards-compat (used to be "price_to_income")
+      price_to_income: years.map(y => ratio(maHome, maInc, y))
     }
   };
 
@@ -126,9 +157,13 @@ function annualMeanFromMonthly(monthlySeries) {
   console.log(`\nWrote income-divergence.json (${years.length} years)`);
 
   // summary
-  console.log('\nKey values:');
+  console.log('\nKey ratios (price-to-income):');
+  console.log('  Year    MA       NH       US      MA-NH gap');
   for (const y of [2000, 2007, 2012, 2020, endYear]) {
-    const h = maHome.get(y), i = maInc.get(y);
-    if (h && i) console.log(`  ${y}: home $${(h/1000).toFixed(0)}K, income $${(i/1000).toFixed(0)}K, ratio ${(h/i).toFixed(2)}×`);
+    const ma = ratio(maHome, maInc, y);
+    const nh = ratio(nhHome, nhInc, y);
+    const us = ratio(usHome, usInc, y);
+    const gap = (ma != null && nh != null) ? (ma - nh).toFixed(2) : '—';
+    console.log(`  ${y}   ${(ma||'—').toFixed?.(2) ?? ma}×    ${(nh||'—').toFixed?.(2) ?? nh}×    ${(us||'—').toFixed?.(2) ?? us}×    ${gap}×`);
   }
 })().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
