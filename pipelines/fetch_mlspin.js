@@ -158,9 +158,18 @@ function aggregateByCity(records, fields) {
     'StandardStatus', 'ListingContractDate'
   ];
 
+  // PropertyType scope:
+  //   'Residential'        — SFR + condo (~55,600 closed/yr statewide)
+  //   'Residential Income' — 2/3-deckers + small multifamily (~5,400/yr)
+  //   We include both because multi-family is a real chunk of MA housing
+  //   stock, especially in mill cities and the Berkshires. Excludes:
+  //   Residential Lease (rental market), Land, Commercial Sale,
+  //   Business Opportunity.
+  const propertyTypeFilter = "(PropertyType eq 'Residential' or PropertyType eq 'Residential Income')";
+
   // 1) ACTIVE listings in MA
   console.log(`\n[1/2] Active MA listings — dataset=${dataset}`);
-  const activeFilter = "StandardStatus eq 'Active' and StateOrProvince eq 'MA' and PropertyType eq 'Residential'";
+  const activeFilter = `StandardStatus eq 'Active' and StateOrProvince eq 'MA' and ${propertyTypeFilter}`;
   const selectActive = commonFields.join(',');
   const active = await pageAll({
     token, dataset, filter: activeFilter, select: selectActive, label: 'active'
@@ -171,7 +180,7 @@ function aggregateByCity(records, fields) {
   // 2) CLOSED in last 365 days in MA
   console.log(`\n[2/2] Closed MA sales (last 365 days) — dataset=${dataset}`);
   const since = new Date(Date.now() - 365 * 86400e3).toISOString().slice(0, 10);
-  const closedFilter = `StandardStatus eq 'Closed' and StateOrProvince eq 'MA' and PropertyType eq 'Residential' and CloseDate ge ${since}`;
+  const closedFilter = `StandardStatus eq 'Closed' and StateOrProvince eq 'MA' and ${propertyTypeFilter} and CloseDate ge ${since}`;
   const selectClosed = commonFields.concat(['ClosePrice', 'CloseDate', 'MLSPIN_SOLD_PRICE_PER_SQFT']).join(',');
   const closed = await pageAll({
     token, dataset, filter: closedFilter, select: selectClosed, label: 'closed'
