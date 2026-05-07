@@ -51,45 +51,43 @@
   }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
   document.querySelectorAll('.step').forEach(s => stepObserver.observe(s));
 
-  /* -------- shared ECharts theme -------- */
+  /* -------- shared ECharts theme — MA palette, neon on dark -------- */
   if (window.echarts) {
     echarts.registerTheme('crisis', {
       backgroundColor: 'transparent',
       textStyle: {
-        color: '#eef1f8',
+        color: '#f6f9ff',
         fontFamily: 'Inter, system-ui, sans-serif'
       },
       title: {
-        textStyle: { color: '#eef1f8', fontWeight: 500 },
-        subtextStyle: { color: '#b9c1d6' }
+        textStyle: { color: '#f6f9ff', fontWeight: 500 },
+        subtextStyle: { color: '#d6deef' }
       },
       legend: {
-        textStyle: { color: '#b9c1d6' },
+        textStyle: { color: '#d6deef', fontSize: 12 },
         icon: 'roundRect'
       },
-      grid: {
-        borderColor: 'rgba(255,255,255,0.06)'
-      },
+      grid: { borderColor: 'rgba(255,255,255,0.10)' },
       categoryAxis: {
-        axisLine: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
-        axisTick: { lineStyle: { color: 'rgba(255,255,255,0.18)' } },
-        axisLabel: { color: '#7c849e' },
-        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.04)' } }
+        axisLine: { lineStyle: { color: 'rgba(255,255,255,0.22)' } },
+        axisTick: { lineStyle: { color: 'rgba(255,255,255,0.22)' } },
+        axisLabel: { color: '#c8d2e6' },
+        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
       },
       valueAxis: {
         axisLine: { show: false },
         axisTick: { show: false },
-        axisLabel: { color: '#7c849e', fontFamily: 'JetBrains Mono, monospace' },
-        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } }
+        axisLabel: { color: '#c8d2e6', fontFamily: 'JetBrains Mono, monospace' },
+        splitLine: { lineStyle: { color: 'rgba(255,255,255,0.10)' } }
       },
       tooltip: {
-        backgroundColor: 'rgba(15,23,48,0.95)',
-        borderColor: 'rgba(255,255,255,0.08)',
+        backgroundColor: 'rgba(8,14,28,0.95)',
+        borderColor: 'rgba(0,184,255,0.30)',
         borderWidth: 1,
-        textStyle: { color: '#eef1f8', fontSize: 13 },
-        extraCssText: 'backdrop-filter: blur(8px); border-radius: 8px; box-shadow: 0 12px 40px rgba(0,0,0,0.4); padding: 10px 14px;'
+        textStyle: { color: '#f6f9ff', fontSize: 13 },
+        extraCssText: 'backdrop-filter: blur(10px); border-radius: 10px; box-shadow: 0 12px 40px rgba(0,0,0,0.5); padding: 10px 14px;'
       },
-      color: ['#ff4d5a', '#5cc8ff', '#f3c14b', '#5fe3a1', '#b39ddb']
+      color: ['#ff1744', '#00b8ff', '#00e676', '#ffd600', '#b388ff']
     });
   }
 

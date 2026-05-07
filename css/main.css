@@ -7,18 +7,24 @@
   --bg-0: #060912;
   --bg-1: #0a1020;
   --bg-2: #0f1730;
-  --panel: rgba(20, 28, 50, 0.55);
-  --panel-stroke: rgba(255, 255, 255, 0.07);
-  --ink: #eef1f8;
-  --ink-soft: #b9c1d6;
-  --ink-mute: #7c849e;
-  --rule: rgba(255, 255, 255, 0.08);
+  --panel: rgba(20, 28, 50, 0.6);
+  --panel-stroke: rgba(255, 255, 255, 0.10);
+  --ink: #f6f9ff;
+  --ink-soft: #d6deef;
+  --ink-mute: #95a0bb;
+  --rule: rgba(255, 255, 255, 0.10);
 
-  --crisis: #ff4d5a;       /* primary alarm color */
-  --crisis-soft: #ff8b94;
-  --gold: #f3c14b;         /* takeaway / highlight */
-  --cool: #5cc8ff;         /* baseline / context */
-  --green: #5fe3a1;        /* affirmative / good */
+  /* Massachusetts palette — bold neon, never muted.
+     Cranberry / vivid blue / vivid green are the through-line. */
+  --crisis: #ff1744;        /* cranberry — alarm / unaffordable */
+  --crisis-glow: rgba(255, 23, 68, 0.55);
+  --crisis-soft: #ff5d7d;
+  --cool: #00b8ff;          /* vivid blue — baseline / context */
+  --cool-glow: rgba(0, 184, 255, 0.55);
+  --green: #00e676;         /* vivid green — affordable / healthy */
+  --green-glow: rgba(0, 230, 118, 0.55);
+  --gold: #ffd600;          /* highlight / takeaway */
+  --gold-glow: rgba(255, 214, 0, 0.55);
 
   --serif: 'Cormorant Garamond', 'Times New Roman', serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -49,8 +55,9 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 40% at 20% 10%, rgba(92, 200, 255, 0.06), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 90%, rgba(255, 77, 90, 0.06), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 10%, rgba(0, 184, 255, 0.08), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 90%, rgba(255, 23, 68, 0.09), transparent 60%),
+    radial-gradient(ellipse 40% 35% at 50% 50%, rgba(0, 230, 118, 0.04), transparent 60%),
     var(--bg-0);
   z-index: -2;
   pointer-events: none;
@@ -59,7 +66,7 @@ body::before {
 a { color: var(--cool); text-decoration: none; }
 a:hover { color: var(--ink); }
 
-em { font-style: italic; color: var(--gold); }
+em { font-style: italic; color: var(--gold); text-shadow: 0 0 18px var(--gold-glow); }
 b { font-weight: 600; }
 
 ::selection { background: var(--crisis); color: var(--bg-0); }
@@ -172,7 +179,8 @@ b { font-weight: 600; }
   font-size: 0.78rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--crisis-soft);
+  color: var(--crisis);
+  text-shadow: 0 0 16px var(--crisis-glow);
   margin-bottom: 2rem;
 }
 .hero-title {
@@ -202,6 +210,7 @@ b { font-weight: 600; }
   font-style: italic;
   color: var(--gold);
   font-weight: 600;
+  text-shadow: 0 0 32px var(--gold-glow);
 }
 .hero-sub {
   font-family: var(--serif);
@@ -250,6 +259,7 @@ b { font-weight: 600; }
   font-size: 0.78rem;
   letter-spacing: 0.3em;
   color: var(--crisis);
+  text-shadow: 0 0 14px var(--crisis-glow);
   margin-bottom: 1.2rem;
 }
 .section-question {
@@ -344,13 +354,15 @@ b { font-weight: 600; }
 /* ---------- highlight inline ---------- */
 .hl {
   color: var(--crisis);
-  font-weight: 600;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 10px var(--crisis-glow);
 }
 .footnote {
   font-size: 0.82rem;
-  color: var(--ink-mute);
+  color: var(--ink-soft);
   font-style: italic;
+  opacity: 0.78;
 }
 
 @media (max-width: 720px) {

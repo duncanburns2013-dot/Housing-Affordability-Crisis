@@ -1,4 +1,4 @@
-// probe_bridge.js — fast smoke test: confirm token + dataset slug work,
+// probe_mlspin.js — fast smoke test: confirm token + dataset slug work,
 // and report a few stats. Safe to commit (it reads token from .env, never prints it).
 
 const fs = require('fs');
@@ -57,7 +57,7 @@ function get(url) {
     console.log(`  ${slug.padEnd(10)}  HTTP ${r.status}  ${note}`);
   }
 
-  // also try datasets discovery endpoints (Bridge sometimes exposes /datasets)
+  // also try the gateway's datasets discovery endpoints
   const discovery = [
     `https://api.bridgedataoutput.com/api/v2/OData/datasets?access_token=${token}`,
     `https://api.bridgedataoutput.com/api/v2/datasets?access_token=${token}`

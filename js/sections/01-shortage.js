@@ -38,8 +38,8 @@
       grid: { left: 64, right: 28, top: 32, bottom: 48, containLabel: false },
       legend: {
         top: 4, right: 8,
-        textStyle: { color: '#b9c1d6', fontSize: 12 },
-        itemWidth: 14, itemHeight: 8,
+        textStyle: { color: '#f6f9ff', fontSize: 12, fontWeight: 500 },
+        itemWidth: 16, itemHeight: 8,
         data: ['Massachusetts', 'US state avg.']
       },
       tooltip: {
@@ -79,17 +79,17 @@
           data: maPts,
           smooth: 0.25,
           showSymbol: false,
-          lineStyle: { width: 2.6, color: '#ff4d5a', shadowBlur: 12, shadowColor: 'rgba(255,77,90,0.45)' },
+          lineStyle: { width: 3.2, color: '#ff1744', shadowBlur: 18, shadowColor: 'rgba(255,23,68,0.7)' },
           areaStyle: {
             color: {
               type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
               colorStops: [
-                { offset: 0, color: 'rgba(255,77,90,0.35)' },
-                { offset: 1, color: 'rgba(255,77,90,0)' }
+                { offset: 0, color: 'rgba(255,23,68,0.45)' },
+                { offset: 1, color: 'rgba(255,23,68,0)' }
               ]
             }
           },
-          emphasis: { focus: 'series' },
+          emphasis: { focus: 'series', lineStyle: { width: 4 } },
           z: 3
         },
         {
@@ -98,7 +98,7 @@
           data: usPts,
           smooth: 0.25,
           showSymbol: false,
-          lineStyle: { width: 1.6, color: '#5cc8ff', type: 'dashed', opacity: 0.85 },
+          lineStyle: { width: 2, color: '#00b8ff', type: 'dashed', opacity: 0.95, shadowBlur: 10, shadowColor: 'rgba(0,184,255,0.5)' },
           z: 2
         }
       ],
@@ -119,79 +119,100 @@
     const { peak, trough } = chart._callouts;
     const opt = { series: [{}, {}], graphic: { elements: [] } };
 
-    // mark points layered onto MA series
+    // Steps 1–4: build callouts on the chart.
+    // Steps 5 & 6: clear callouts and let typography carry the moment.
+    const showCallouts = n <= 4;
     const markPoints = [];
-    if (n >= 1) {
+
+    if (showCallouts && n >= 1) {
       markPoints.push({
-        coord: peak, value: HAC.fmt.short(peak[1]),
-        symbolSize: 10, itemStyle: { color: '#f3c14b' },
+        coord: peak,
+        symbolSize: 12, itemStyle: { color: '#ffd600', borderColor: '#fff', borderWidth: 2, shadowBlur: 16, shadowColor: 'rgba(255,214,0,0.7)' },
         label: {
-          formatter: `Peak: ${HAC.fmt.short(peak[1])}\n${HAC.fmt.monthLabel(peak[0])}`,
-          color: '#f3c14b', fontSize: 11, fontFamily: 'JetBrains Mono, monospace',
-          position: 'top', distance: 10, lineHeight: 14
+          formatter: `Peak ${HAC.fmt.short(peak[1])}  ·  ${HAC.fmt.monthLabel(peak[0])}`,
+          color: '#ffd600', fontSize: 11, fontFamily: 'JetBrains Mono, monospace', fontWeight: 600,
+          position: 'top', distance: 14,
+          textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 10,
+          backgroundColor: 'rgba(8,14,28,0.85)', padding: [4, 8], borderRadius: 4
         }
       });
     }
-    if (n >= 2) {
+    if (showCallouts && n >= 2) {
       markPoints.push({
-        coord: trough, value: HAC.fmt.short(trough[1]),
-        symbolSize: 10, itemStyle: { color: '#ff4d5a' },
+        coord: trough,
+        symbolSize: 12, itemStyle: { color: '#ff1744', borderColor: '#fff', borderWidth: 2, shadowBlur: 16, shadowColor: 'rgba(255,23,68,0.7)' },
         label: {
-          formatter: `Trough: ${HAC.fmt.short(trough[1])}\n${HAC.fmt.monthLabel(trough[0])}`,
-          color: '#ff8b94', fontSize: 11, fontFamily: 'JetBrains Mono, monospace',
-          position: 'bottom', distance: 14, lineHeight: 14
+          formatter: `Trough ${HAC.fmt.short(trough[1])}  ·  ${HAC.fmt.monthLabel(trough[0])}`,
+          color: '#ff5d7d', fontSize: 11, fontFamily: 'JetBrains Mono, monospace', fontWeight: 600,
+          position: 'bottom', distance: 16,
+          textShadowColor: 'rgba(255,23,68,0.6)', textShadowBlur: 10,
+          backgroundColor: 'rgba(8,14,28,0.85)', padding: [4, 8], borderRadius: 4
         }
       });
     }
 
-    opt.series[0] = {
-      markPoint: {
-        symbol: 'circle',
-        data: markPoints,
-        animation: true
-      }
-    };
+    opt.series[0] = { markPoint: { symbol: 'circle', data: markPoints, animation: true } };
 
-    // step 3: highlight rate-lock era (post-2022)
-    if (n >= 3) {
+    // Step 3-4: highlight rate-lock era (post-2022) — bright vivid blue, not muted
+    if (showCallouts && n >= 3) {
       opt.series[0].markArea = {
         silent: true,
-        itemStyle: { color: 'rgba(243,193,75,0.06)', borderColor: 'rgba(243,193,75,0.18)', borderWidth: 1 },
-        data: [[
-          { xAxis: '2022-04-01', name: 'Rate-lock era' },
-          { xAxis: chart._callouts.trough[0] > '2022-04-01' ? new Date().toISOString().slice(0,10) : '2026-03-31' }
-        ]],
+        itemStyle: { color: 'rgba(0,184,255,0.10)', borderColor: 'rgba(0,184,255,0.45)', borderWidth: 1 },
+        data: [[ { xAxis: '2022-04-01', name: 'Rate-lock era' }, { xAxis: '2026-03-31' } ]],
         label: {
-          color: '#f3c14b',
-          fontSize: 11,
-          fontFamily: 'JetBrains Mono, monospace',
-          position: 'insideTop',
-          distance: 8
+          color: '#00b8ff', fontSize: 11, fontFamily: 'JetBrains Mono, monospace', fontWeight: 600,
+          position: 'insideTop', distance: 8,
+          textShadowColor: 'rgba(0,184,255,0.6)', textShadowBlur: 10
         }
       };
     } else {
       opt.series[0].markArea = { data: [] };
     }
 
-    // step 5 final: punctuation banner across the whole chart
-    if (n >= 5) {
+    // Step 5: dim the data, foreground a giant typographic "22 days"
+    if (n === 5) {
+      opt.series[0].lineStyle = { width: 2.4, color: 'rgba(255,23,68,0.45)' };
+      opt.series[0].areaStyle = { color: 'rgba(255,23,68,0.08)' };
+      opt.series[1].lineStyle = { width: 1.6, color: 'rgba(0,184,255,0.35)', type: 'dashed' };
+      opt.graphic = {
+        elements: [
+          { type: 'text', left: 'center', top: '32%',
+            style: { text: '22', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
+                     fontSize: 140, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
+          { type: 'text', left: 'center', top: '60%',
+            style: { text: 'days', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
+                     fontSize: 32, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 14 } },
+          { type: 'text', left: 'center', top: '74%',
+            style: { text: 'median time, list to sale — Massachusetts, last 12 months',
+                     fontFamily: 'Inter, sans-serif', fontSize: 13, fill: '#d6deef', opacity: 0.92 } }
+        ]
+      };
+    } else if (n >= 6) {
+      // Step 6: data returns at full intensity; verdict displayed as glowing italic
+      opt.series[0].lineStyle = { width: 3.2, color: '#ff1744', shadowBlur: 18, shadowColor: 'rgba(255,23,68,0.7)' };
+      opt.series[0].areaStyle = {
+        color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+          colorStops: [{ offset: 0, color: 'rgba(255,23,68,0.45)' }, { offset: 1, color: 'rgba(255,23,68,0)' }] }
+      };
+      opt.series[1].lineStyle = { width: 2, color: '#00b8ff', type: 'dashed', opacity: 0.95, shadowBlur: 10, shadowColor: 'rgba(0,184,255,0.5)' };
       opt.graphic = {
         elements: [{
-          type: 'text',
-          left: 'center',
-          top: 18,
+          type: 'text', left: 'center', bottom: 12,
           style: {
-            text: 'Listings collapsed. Units did not. The bottleneck is price, not supply.',
-            fontFamily: 'Cormorant Garamond, serif',
-            fontStyle: 'italic',
-            fontSize: 16,
-            fill: '#f3c14b',
-            opacity: 0.95
+            text: 'Listings collapsed.   Units did not.   The bottleneck is price, not supply.',
+            fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 600,
+            fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 14
           }
         }]
       };
     } else {
-      opt.graphic = { elements: [] };
+      // restore full-intensity styling for steps 1-4
+      opt.series[0].lineStyle = { width: 3.2, color: '#ff1744', shadowBlur: 18, shadowColor: 'rgba(255,23,68,0.7)' };
+      opt.series[0].areaStyle = {
+        color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+          colorStops: [{ offset: 0, color: 'rgba(255,23,68,0.45)' }, { offset: 1, color: 'rgba(255,23,68,0)' }] }
+      };
+      opt.series[1].lineStyle = { width: 2, color: '#00b8ff', type: 'dashed', opacity: 0.95, shadowBlur: 10, shadowColor: 'rgba(0,184,255,0.5)' };
     }
 
     chart.setOption(opt);

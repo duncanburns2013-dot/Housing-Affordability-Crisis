@@ -1,6 +1,6 @@
 // fetch_towns.js — pull MA municipal boundaries (351 towns) as GeoJSON
 // from the MassDOT Boundaries/Towns ArcGIS REST endpoint, then merge with
-// the Bridge by-city aggregates and write a single map-ready JSON.
+// the MLSPIN by-city aggregates and write a single map-ready JSON.
 //
 // Output: data/processed/ma-towns.geojson  (with merged stats per feature)
 //
@@ -106,7 +106,7 @@ const norm = (s) => (s || '').toString().trim().toUpperCase()
     console.log(`Cached ${geojson.features.length} features to ${cachePath}`);
   }
 
-  // load Bridge aggregates
+  // load MLSPIN by-city aggregates
   const closed = JSON.parse(fs.readFileSync(path.join(OUT, 'ma-closed-by-city.json'), 'utf8'));
   const active = JSON.parse(fs.readFileSync(path.join(OUT, 'ma-active-by-city.json'), 'utf8'));
   const closedByName = new Map(closed.rows.map(r => [norm(r.City), r]));

@@ -1,16 +1,14 @@
-// fetch_bridge_ma.js
-// Pulls Massachusetts active listings + last-12-months sold from Bridge Data Output
-// (RESO Web API), aggregates by City (town), and writes JSON for the dashboard.
+// fetch_mlspin.js
+// Pulls Massachusetts active listings + last-12-months closed sales from MLSPIN
+// via the RESO Web API gateway. Aggregates by City (town) and writes JSON for
+// the dashboard.
 //
 // Usage:
 //   1. Save your token to .env (see .env.example)
-//   2. node pipelines/fetch_bridge_ma.js
+//   2. node pipelines/fetch_mlspin.js
 //
-// Bridge API docs: https://bridgedataoutput.com/docs/platform/
-// RESO endpoints: GET /v2/OData/{dataset}/Property?access_token=...&$filter=...&$select=...&$top=200&$skip=0
-//
-// We page through with $skip / $top up to a hard cap to avoid runaway pulls.
-// All raw responses are cached to data/raw/ for reproducibility.
+// Endpoint format: /v2/OData/{dataset}/Property?access_token=...&$filter=...&$select=...
+// Raw responses are cached to data/raw/ (gitignored) for reproducibility.
 
 const fs = require('fs');
 const path = require('path');
@@ -69,7 +67,7 @@ async function getWithRetry(url, attempts = 4) {
 }
 
 // --------- pager ---------
-// Bridge caps $skip at 10000, so we use keyset pagination on ListingKey.
+// The gateway caps $skip at 10000, so we use keyset pagination on ListingKey.
 // We pull pages sorted by ListingKey asc, advancing the filter past the
 // last key we saw on each page. This is O(N) requests with no cap.
 async function pageAll({ token, dataset, filter, select, top = 200, cap = 200000, label }) {
@@ -187,11 +185,11 @@ function aggregateByCity(records, fields) {
   const closedByCity = aggregateByCity(closed, ['ClosePrice', 'ListPrice', 'OriginalListPrice', 'LivingArea', 'MLSPIN_MARKET_TIME', 'MLSPIN_SOLD_PRICE_PER_SQFT', 'TaxAnnualAmount']);
 
   fs.writeFileSync(path.join(OUT, 'ma-active-by-city.json'), JSON.stringify({
-    meta: { generated: new Date().toISOString(), source: 'Bridge / ' + dataset, totalRecords: active.length, cities: activeByCity.length },
+    meta: { generated: new Date().toISOString(), source: 'MLSPIN', totalRecords: active.length, cities: activeByCity.length },
     rows: activeByCity
   }, null, 2));
   fs.writeFileSync(path.join(OUT, 'ma-closed-by-city.json'), JSON.stringify({
-    meta: { generated: new Date().toISOString(), source: 'Bridge / ' + dataset, totalRecords: closed.length, cities: closedByCity.length, since },
+    meta: { generated: new Date().toISOString(), source: 'MLSPIN', totalRecords: closed.length, cities: closedByCity.length, since },
     rows: closedByCity
   }, null, 2));
 
