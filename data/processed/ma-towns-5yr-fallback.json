@@ -1,0 +1,1257 @@
+{
+  "meta": {
+    "generated": "2026-05-07T19:38:01.416Z",
+    "source": "MLSPIN 5-year sub-reports (manually exported by Duncan Burns)",
+    "note": "For the 10 towns whose API pull returned 0 closed sales in trailing 12 months, this provides a 5-year MLSPIN total + unit-weighted averages across SF + Condo + Multi-Family.",
+    "towns": 10
+  },
+  "towns": [
+    {
+      "town": "Alford",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Egremont",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 3,
+      "fiveYearAvgSalePrice": 493000,
+      "fiveYearAvgDom": 44,
+      "byType": {
+        "Single Family": {
+          "count": 3,
+          "avgSalePrice": 493000,
+          "avgDom": 44
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 1,
+          "dom": 26,
+          "salePrice": 275000
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 2,
+          "dom": 53,
+          "salePrice": 602000
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Gosnold",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 1,
+      "fiveYearAvgSalePrice": 1260000,
+      "fiveYearAvgDom": 17,
+      "byType": {
+        "Single Family": {
+          "count": 1,
+          "avgSalePrice": 1260000,
+          "avgDom": 17
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 1,
+          "dom": 17,
+          "salePrice": 1260000
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Hancock",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 4,
+      "fiveYearAvgSalePrice": 251875,
+      "fiveYearAvgDom": 99,
+      "byType": {
+        "Single Family": {
+          "count": 2,
+          "avgSalePrice": 240000,
+          "avgDom": 117
+        },
+        "Condominium": {
+          "count": 2,
+          "avgSalePrice": 263750,
+          "avgDom": 80
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 2,
+          "dom": 117,
+          "salePrice": 240000
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 2,
+          "dom": 80,
+          "salePrice": 263750
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Monroe",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Monterey",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Mount Washington",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "New Ashford",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "Tyringham",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    },
+    {
+      "town": "West Stockbridge",
+      "fiveYearWindow": "2022 YTD – 2026 YTD (May 7)",
+      "fiveYearTotalCount": 0,
+      "fiveYearAvgSalePrice": null,
+      "fiveYearAvgDom": null,
+      "byType": {
+        "Single Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Condominium": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        },
+        "Multi Family": {
+          "count": 0,
+          "avgSalePrice": null,
+          "avgDom": null
+        }
+      },
+      "yearRecords": [
+        {
+          "section": "Single Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Single Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Condominium",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2022,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2023,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2024,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2025,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        },
+        {
+          "section": "Multi Family",
+          "year": 2026,
+          "count": 0,
+          "dom": 0,
+          "salePrice": 0
+        }
+      ]
+    }
+  ]
+}

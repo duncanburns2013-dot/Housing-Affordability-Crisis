@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated": "2026-05-07T19:15:03.033Z",
+    "generated": "2026-05-07T19:40:49.854Z",
     "towns": 351,
-    "matched": 341,
-    "missing": 10
+    "matched": 344,
+    "missing": 7
   },
   "rows": [
     {
@@ -19,7 +19,8 @@
       "median_household_income": 62567,
       "price_to_income": 7.19,
       "coastal": false,
-      "sq_mi": 21.89025079
+      "sq_mi": 21.89025079,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEWBURY",
@@ -34,7 +35,8 @@
       "median_household_income": 92454,
       "price_to_income": 10.06,
       "coastal": true,
-      "sq_mi": 24.2068658
+      "sq_mi": 24.2068658,
+      "is_5yr_fallback": false
     },
     {
       "town": "MALDEN",
@@ -49,7 +51,8 @@
       "median_household_income": 60085,
       "price_to_income": 11.98,
       "coastal": false,
-      "sq_mi": 5.06875565
+      "sq_mi": 5.06875565,
+      "is_5yr_fallback": false
     },
     {
       "town": "SAUGUS",
@@ -64,7 +67,8 @@
       "median_household_income": 78372,
       "price_to_income": 8.61,
       "coastal": true,
-      "sq_mi": 11.34033218
+      "sq_mi": 11.34033218,
+      "is_5yr_fallback": false
     },
     {
       "town": "GROTON",
@@ -79,7 +83,8 @@
       "median_household_income": 117500,
       "price_to_income": 6.72,
       "coastal": false,
-      "sq_mi": 33.77629491
+      "sq_mi": 33.77629491,
+      "is_5yr_fallback": false
     },
     {
       "town": "HANSON",
@@ -94,7 +99,8 @@
       "median_household_income": 93517,
       "price_to_income": 6.51,
       "coastal": true,
-      "sq_mi": 15.7330717
+      "sq_mi": 15.7330717,
+      "is_5yr_fallback": false
     },
     {
       "town": "CUMMINGTON",
@@ -109,7 +115,8 @@
       "median_household_income": 51731,
       "price_to_income": 8.11,
       "coastal": false,
-      "sq_mi": 23.06728903
+      "sq_mi": 23.06728903,
+      "is_5yr_fallback": false
     },
     {
       "town": "EAST BROOKFIELD",
@@ -124,7 +131,8 @@
       "median_household_income": 80714,
       "price_to_income": 5.35,
       "coastal": false,
-      "sq_mi": 10.4222709
+      "sq_mi": 10.4222709,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOUTHWICK",
@@ -139,7 +147,8 @@
       "median_household_income": 76576,
       "price_to_income": 6.04,
       "coastal": false,
-      "sq_mi": 31.64596676
+      "sq_mi": 31.64596676,
+      "is_5yr_fallback": false
     },
     {
       "town": "BLACKSTONE",
@@ -154,7 +163,8 @@
       "median_household_income": 75544,
       "price_to_income": 6.31,
       "coastal": false,
-      "sq_mi": 11.38042054
+      "sq_mi": 11.38042054,
+      "is_5yr_fallback": false
     },
     {
       "town": "UPTON",
@@ -169,7 +179,8 @@
       "median_household_income": 116250,
       "price_to_income": 6.76,
       "coastal": false,
-      "sq_mi": 21.83335441
+      "sq_mi": 21.83335441,
+      "is_5yr_fallback": false
     },
     {
       "town": "HAMILTON",
@@ -184,7 +195,8 @@
       "median_household_income": 114907,
       "price_to_income": 7.51,
       "coastal": true,
-      "sq_mi": 14.90066236
+      "sq_mi": 14.90066236,
+      "is_5yr_fallback": false
     },
     {
       "town": "MEDFORD",
@@ -199,7 +211,8 @@
       "median_household_income": 79607,
       "price_to_income": 11.05,
       "coastal": true,
-      "sq_mi": 8.41418077
+      "sq_mi": 8.41418077,
+      "is_5yr_fallback": false
     },
     {
       "town": "REVERE",
@@ -214,7 +227,8 @@
       "median_household_income": 51482,
       "price_to_income": 11.56,
       "coastal": true,
-      "sq_mi": 6.162842
+      "sq_mi": 6.162842,
+      "is_5yr_fallback": false
     },
     {
       "town": "GARDNER",
@@ -229,7 +243,8 @@
       "median_household_income": 46410,
       "price_to_income": 8.3,
       "coastal": false,
-      "sq_mi": 23.01312885
+      "sq_mi": 23.01312885,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEXINGTON",
@@ -244,7 +259,8 @@
       "median_household_income": 152872,
       "price_to_income": 11.97,
       "coastal": false,
-      "sq_mi": 16.63860742
+      "sq_mi": 16.63860742,
+      "is_5yr_fallback": false
     },
     {
       "town": "HINGHAM",
@@ -259,7 +275,8 @@
       "median_household_income": 118148,
       "price_to_income": 11.3,
       "coastal": true,
-      "sq_mi": 22.7464896
+      "sq_mi": 22.7464896,
+      "is_5yr_fallback": false
     },
     {
       "town": "BLANDFORD",
@@ -274,7 +291,8 @@
       "median_household_income": 67000,
       "price_to_income": 6.27,
       "coastal": false,
-      "sq_mi": 53.44070849
+      "sq_mi": 53.44070849,
+      "is_5yr_fallback": false
     },
     {
       "town": "CONCORD",
@@ -289,7 +307,8 @@
       "median_household_income": 138661,
       "price_to_income": 11.18,
       "coastal": false,
-      "sq_mi": 25.83219845
+      "sq_mi": 25.83219845,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROYALSTON",
@@ -304,7 +323,8 @@
       "median_household_income": 68068,
       "price_to_income": 6.02,
       "coastal": false,
-      "sq_mi": 42.54604128
+      "sq_mi": 42.54604128,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHREWSBURY",
@@ -319,7 +339,8 @@
       "median_household_income": 98790,
       "price_to_income": 6.58,
       "coastal": false,
-      "sq_mi": 21.75639304
+      "sq_mi": 21.75639304,
+      "is_5yr_fallback": false
     },
     {
       "town": "NAHANT",
@@ -334,7 +355,8 @@
       "median_household_income": 72625,
       "price_to_income": 11.7,
       "coastal": true,
-      "sq_mi": 1.2545767
+      "sq_mi": 1.2545767,
+      "is_5yr_fallback": false
     },
     {
       "town": "BARNSTABLE",
@@ -349,7 +371,8 @@
       "median_household_income": 63549,
       "price_to_income": 11.17,
       "coastal": true,
-      "sq_mi": 62.62209368
+      "sq_mi": 62.62209368,
+      "is_5yr_fallback": false
     },
     {
       "town": "WHATELY",
@@ -364,7 +387,8 @@
       "median_household_income": 71927,
       "price_to_income": 5.91,
       "coastal": false,
-      "sq_mi": 20.66582243
+      "sq_mi": 20.66582243,
+      "is_5yr_fallback": false
     },
     {
       "town": "METHUEN",
@@ -379,7 +403,8 @@
       "median_household_income": 72631,
       "price_to_income": 8.29,
       "coastal": true,
-      "sq_mi": 22.99557479
+      "sq_mi": 22.99557479,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST SPRINGFIELD",
@@ -394,7 +419,8 @@
       "median_household_income": 50649,
       "price_to_income": 6.91,
       "coastal": false,
-      "sq_mi": 17.53362391
+      "sq_mi": 17.53362391,
+      "is_5yr_fallback": false
     },
     {
       "town": "DEDHAM",
@@ -409,7 +435,8 @@
       "median_household_income": 87108,
       "price_to_income": 9.07,
       "coastal": false,
-      "sq_mi": 10.68350284
+      "sq_mi": 10.68350284,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEW BRAINTREE",
@@ -424,7 +451,8 @@
       "median_household_income": 81389,
       "price_to_income": 7.13,
       "coastal": false,
-      "sq_mi": 20.91763318
+      "sq_mi": 20.91763318,
+      "is_5yr_fallback": false
     },
     {
       "town": "FAIRHAVEN",
@@ -439,7 +467,8 @@
       "median_household_income": 60407,
       "price_to_income": 8.28,
       "coastal": true,
-      "sq_mi": 12.40887067
+      "sq_mi": 12.40887067,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOUTHBRIDGE",
@@ -454,7 +483,8 @@
       "median_household_income": 48762,
       "price_to_income": 8.2,
       "coastal": false,
-      "sq_mi": 20.85990573
+      "sq_mi": 20.85990573,
+      "is_5yr_fallback": false
     },
     {
       "town": "BRAINTREE",
@@ -469,7 +499,8 @@
       "median_household_income": 85863,
       "price_to_income": 8.05,
       "coastal": true,
-      "sq_mi": 14.42867697
+      "sq_mi": 14.42867697,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOLLAND",
@@ -484,7 +515,8 @@
       "median_household_income": 75658,
       "price_to_income": 5.34,
       "coastal": false,
-      "sq_mi": 13.05912558
+      "sq_mi": 13.05912558,
+      "is_5yr_fallback": false
     },
     {
       "town": "ADAMS",
@@ -499,7 +531,8 @@
       "median_household_income": 48422,
       "price_to_income": 4.89,
       "coastal": false,
-      "sq_mi": 22.96033164
+      "sq_mi": 22.96033164,
+      "is_5yr_fallback": false
     },
     {
       "town": "GREENFIELD",
@@ -514,7 +547,8 @@
       "median_household_income": 48724,
       "price_to_income": 6.74,
       "coastal": false,
-      "sq_mi": 21.87267447
+      "sq_mi": 21.87267447,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOLTON",
@@ -529,7 +563,8 @@
       "median_household_income": 151023,
       "price_to_income": 5.83,
       "coastal": false,
-      "sq_mi": 20.07901969
+      "sq_mi": 20.07901969,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTBOROUGH",
@@ -544,7 +579,8 @@
       "median_household_income": 106915,
       "price_to_income": 6.3,
       "coastal": false,
-      "sq_mi": 21.45274231
+      "sq_mi": 21.45274231,
+      "is_5yr_fallback": false
     },
     {
       "town": "SWAMPSCOTT",
@@ -559,7 +595,8 @@
       "median_household_income": 103244,
       "price_to_income": 7.75,
       "coastal": true,
-      "sq_mi": 3.10076819
+      "sq_mi": 3.10076819,
+      "is_5yr_fallback": false
     },
     {
       "town": "MATTAPOISETT",
@@ -574,7 +611,8 @@
       "median_household_income": 84489,
       "price_to_income": 9.59,
       "coastal": true,
-      "sq_mi": 17.49338974
+      "sq_mi": 17.49338974,
+      "is_5yr_fallback": false
     },
     {
       "town": "MELROSE",
@@ -589,7 +627,8 @@
       "median_household_income": 87712,
       "price_to_income": 10.26,
       "coastal": false,
-      "sq_mi": 4.7678579
+      "sq_mi": 4.7678579,
+      "is_5yr_fallback": false
     },
     {
       "town": "DALTON",
@@ -604,7 +643,8 @@
       "median_household_income": 55774,
       "price_to_income": 5.65,
       "coastal": false,
-      "sq_mi": 21.86916414
+      "sq_mi": 21.86916414,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTH ATTLEBOROUGH",
@@ -619,7 +659,8 @@
       "median_household_income": 83735,
       "price_to_income": 6.9,
       "coastal": false,
-      "sq_mi": 19.37917402
+      "sq_mi": 19.37917402,
+      "is_5yr_fallback": false
     },
     {
       "town": "CANTON",
@@ -634,7 +675,8 @@
       "median_household_income": 93672,
       "price_to_income": 8.01,
       "coastal": false,
-      "sq_mi": 19.51435848
+      "sq_mi": 19.51435848,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTHAMPTON",
@@ -649,7 +691,8 @@
       "median_household_income": 82788,
       "price_to_income": 6.56,
       "coastal": false,
-      "sq_mi": 27.35903814
+      "sq_mi": 27.35903814,
+      "is_5yr_fallback": false
     },
     {
       "town": "WAKEFIELD",
@@ -664,7 +707,8 @@
       "median_household_income": 90911,
       "price_to_income": 8.79,
       "coastal": false,
-      "sq_mi": 7.99416755
+      "sq_mi": 7.99416755,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEOMINSTER",
@@ -679,7 +723,8 @@
       "median_household_income": 56510,
       "price_to_income": 8.05,
       "coastal": false,
-      "sq_mi": 29.67847108
+      "sq_mi": 29.67847108,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEVERETT",
@@ -694,7 +739,8 @@
       "median_household_income": 86771,
       "price_to_income": 6.91,
       "coastal": false,
-      "sq_mi": 22.95794531
+      "sq_mi": 22.95794531,
+      "is_5yr_fallback": false
     },
     {
       "town": "CARLISLE",
@@ -709,7 +755,8 @@
       "median_household_income": 167400,
       "price_to_income": 8.51,
       "coastal": false,
-      "sq_mi": 15.52414462
+      "sq_mi": 15.52414462,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROCKLAND",
@@ -724,7 +771,8 @@
       "median_household_income": 70750,
       "price_to_income": 7.77,
       "coastal": false,
-      "sq_mi": 10.11953106
+      "sq_mi": 10.11953106,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOLLISTON",
@@ -739,7 +787,8 @@
       "median_household_income": 110295,
       "price_to_income": 6.57,
       "coastal": false,
-      "sq_mi": 19.05228205
+      "sq_mi": 19.05228205,
+      "is_5yr_fallback": false
     },
     {
       "town": "MASHPEE",
@@ -754,7 +803,8 @@
       "median_household_income": 70995,
       "price_to_income": 9.66,
       "coastal": true,
-      "sq_mi": 25.60167776
+      "sq_mi": 25.60167776,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEE",
@@ -769,7 +819,8 @@
       "median_household_income": 61507,
       "price_to_income": 7.4,
       "coastal": false,
-      "sq_mi": 27.01327014
+      "sq_mi": 27.01327014,
+      "is_5yr_fallback": false
     },
     {
       "town": "LANESBOROUGH",
@@ -784,7 +835,8 @@
       "median_household_income": 74519,
       "price_to_income": 4.7,
       "coastal": false,
-      "sq_mi": 29.58491817
+      "sq_mi": 29.58491817,
+      "is_5yr_fallback": false
     },
     {
       "town": "WOBURN",
@@ -799,7 +851,8 @@
       "median_household_income": 83872,
       "price_to_income": 8.94,
       "coastal": false,
-      "sq_mi": 12.94312925
+      "sq_mi": 12.94312925,
+      "is_5yr_fallback": false
     },
     {
       "town": "GOSNOLD",
@@ -807,9 +860,15 @@
         -70.80103527664103,
         41.467521222786075
       ],
+      "median_sold": 1260000,
+      "sold_count": 1,
+      "median_dom": 17,
+      "sold_psf": null,
       "median_household_income": 38750,
+      "price_to_income": 32.52,
       "coastal": true,
-      "sq_mi": 13.44385525
+      "sq_mi": 13.44385525,
+      "is_5yr_fallback": true
     },
     {
       "town": "ASHBY",
@@ -824,7 +883,8 @@
       "median_household_income": 89934,
       "price_to_income": 5.5,
       "coastal": false,
-      "sq_mi": 24.0732648
+      "sq_mi": 24.0732648,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST TISBURY",
@@ -839,7 +899,8 @@
       "median_household_income": 85469,
       "price_to_income": 21.65,
       "coastal": true,
-      "sq_mi": 26.28637966
+      "sq_mi": 26.28637966,
+      "is_5yr_fallback": false
     },
     {
       "town": "MEDWAY",
@@ -854,7 +915,8 @@
       "median_household_income": 109865,
       "price_to_income": 6.26,
       "coastal": false,
-      "sq_mi": 11.66678866
+      "sq_mi": 11.66678866,
+      "is_5yr_fallback": false
     },
     {
       "town": "ATTLEBORO",
@@ -869,7 +931,8 @@
       "median_household_income": 69732,
       "price_to_income": 7.17,
       "coastal": false,
-      "sq_mi": 27.77078865
+      "sq_mi": 27.77078865,
+      "is_5yr_fallback": false
     },
     {
       "town": "SUDBURY",
@@ -884,7 +947,8 @@
       "median_household_income": 164013,
       "price_to_income": 7.01,
       "coastal": false,
-      "sq_mi": 24.74631344
+      "sq_mi": 24.74631344,
+      "is_5yr_fallback": false
     },
     {
       "town": "BROOKLINE",
@@ -899,7 +963,8 @@
       "median_household_income": 102175,
       "price_to_income": 13.57,
       "coastal": false,
-      "sq_mi": 6.82181127
+      "sq_mi": 6.82181127,
+      "is_5yr_fallback": false
     },
     {
       "town": "GRANVILLE",
@@ -914,7 +979,8 @@
       "median_household_income": 78958,
       "price_to_income": 5.15,
       "coastal": false,
-      "sq_mi": 43.11401521
+      "sq_mi": 43.11401521,
+      "is_5yr_fallback": false
     },
     {
       "town": "SCITUATE",
@@ -929,7 +995,8 @@
       "median_household_income": 107807,
       "price_to_income": 9.41,
       "coastal": true,
-      "sq_mi": 17.32161897
+      "sq_mi": 17.32161897,
+      "is_5yr_fallback": false
     },
     {
       "town": "WILBRAHAM",
@@ -944,7 +1011,8 @@
       "median_household_income": 96076,
       "price_to_income": 5.1,
       "coastal": false,
-      "sq_mi": 22.33303138
+      "sq_mi": 22.33303138,
+      "is_5yr_fallback": false
     },
     {
       "town": "HANOVER",
@@ -959,7 +1027,8 @@
       "median_household_income": 105635,
       "price_to_income": 7.74,
       "coastal": true,
-      "sq_mi": 15.62880086
+      "sq_mi": 15.62880086,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHIRLEY",
@@ -974,7 +1043,8 @@
       "median_household_income": 68864,
       "price_to_income": 6.57,
       "coastal": false,
-      "sq_mi": 15.89899957
+      "sq_mi": 15.89899957,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROCHESTER",
@@ -989,7 +1059,8 @@
       "median_household_income": 103081,
       "price_to_income": 6.55,
       "coastal": true,
-      "sq_mi": 36.03413184
+      "sq_mi": 36.03413184,
+      "is_5yr_fallback": false
     },
     {
       "town": "ACUSHNET",
@@ -1004,7 +1075,8 @@
       "median_household_income": 70375,
       "price_to_income": 7.82,
       "coastal": true,
-      "sq_mi": 18.8779959
+      "sq_mi": 18.8779959,
+      "is_5yr_fallback": false
     },
     {
       "town": "GILL",
@@ -1019,7 +1091,8 @@
       "median_household_income": 74167,
       "price_to_income": 5.23,
       "coastal": false,
-      "sq_mi": 14.80334615
+      "sq_mi": 14.80334615,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST BOYLSTON",
@@ -1034,7 +1107,8 @@
       "median_household_income": 74005,
       "price_to_income": 6.96,
       "coastal": false,
-      "sq_mi": 13.86331689
+      "sq_mi": 13.86331689,
+      "is_5yr_fallback": false
     },
     {
       "town": "GLOUCESTER",
@@ -1049,7 +1123,8 @@
       "median_household_income": 63917,
       "price_to_income": 11.23,
       "coastal": true,
-      "sq_mi": 26.70110893
+      "sq_mi": 26.70110893,
+      "is_5yr_fallback": false
     },
     {
       "town": "CLARKSBURG",
@@ -1064,7 +1139,8 @@
       "median_household_income": 60404,
       "price_to_income": 5.27,
       "coastal": false,
-      "sq_mi": 12.79172738
+      "sq_mi": 12.79172738,
+      "is_5yr_fallback": false
     },
     {
       "town": "FREETOWN",
@@ -1079,7 +1155,8 @@
       "median_household_income": 91618,
       "price_to_income": 6.52,
       "coastal": true,
-      "sq_mi": 35.46744148
+      "sq_mi": 35.46744148,
+      "is_5yr_fallback": false
     },
     {
       "town": "SANDWICH",
@@ -1094,7 +1171,8 @@
       "median_household_income": 89461,
       "price_to_income": 7.91,
       "coastal": true,
-      "sq_mi": 43.92143529
+      "sq_mi": 43.92143529,
+      "is_5yr_fallback": false
     },
     {
       "town": "OAK BLUFFS",
@@ -1109,7 +1187,8 @@
       "median_household_income": 57773,
       "price_to_income": 28.27,
       "coastal": true,
-      "sq_mi": 7.40557828
+      "sq_mi": 7.40557828,
+      "is_5yr_fallback": false
     },
     {
       "town": "AMHERST",
@@ -1124,7 +1203,8 @@
       "median_household_income": 45999,
       "price_to_income": 10.78,
       "coastal": false,
-      "sq_mi": 27.75429947
+      "sq_mi": 27.75429947,
+      "is_5yr_fallback": false
     },
     {
       "town": "WILLIAMSBURG",
@@ -1139,7 +1219,8 @@
       "median_household_income": 71705,
       "price_to_income": 6,
       "coastal": false,
-      "sq_mi": 25.67230511
+      "sq_mi": 25.67230511,
+      "is_5yr_fallback": false
     },
     {
       "town": "EAST LONGMEADOW",
@@ -1154,7 +1235,8 @@
       "median_household_income": 83003,
       "price_to_income": 5.3,
       "coastal": false,
-      "sq_mi": 13.00747718
+      "sq_mi": 13.00747718,
+      "is_5yr_fallback": false
     },
     {
       "town": "PALMER",
@@ -1169,7 +1251,8 @@
       "median_household_income": 55343,
       "price_to_income": 5.96,
       "coastal": false,
-      "sq_mi": 32.00233116
+      "sq_mi": 32.00233116,
+      "is_5yr_fallback": false
     },
     {
       "town": "MIDDLEFIELD",
@@ -1184,7 +1267,8 @@
       "median_household_income": 78750,
       "price_to_income": 4.3,
       "coastal": false,
-      "sq_mi": 24.12540761
+      "sq_mi": 24.12540761,
+      "is_5yr_fallback": false
     },
     {
       "town": "SALISBURY",
@@ -1199,7 +1283,8 @@
       "median_household_income": 65347,
       "price_to_income": 9.59,
       "coastal": true,
-      "sq_mi": 15.80174769
+      "sq_mi": 15.80174769,
+      "is_5yr_fallback": false
     },
     {
       "town": "MARSHFIELD",
@@ -1214,7 +1299,8 @@
       "median_household_income": 85918,
       "price_to_income": 9.46,
       "coastal": true,
-      "sq_mi": 28.55491749
+      "sq_mi": 28.55491749,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEYDEN",
@@ -1229,7 +1315,8 @@
       "median_household_income": 73942,
       "price_to_income": 7.24,
       "coastal": false,
-      "sq_mi": 18.05654562
+      "sq_mi": 18.05654562,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTMINSTER",
@@ -1244,7 +1331,8 @@
       "median_household_income": 96953,
       "price_to_income": 6.16,
       "coastal": false,
-      "sq_mi": 37.25428732
+      "sq_mi": 37.25428732,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHELSEA",
@@ -1259,7 +1347,8 @@
       "median_household_income": 49614,
       "price_to_income": 10.25,
       "coastal": true,
-      "sq_mi": 2.2123957
+      "sq_mi": 2.2123957,
+      "is_5yr_fallback": false
     },
     {
       "town": "MAYNARD",
@@ -1274,7 +1363,8 @@
       "median_household_income": 90134,
       "price_to_income": 6.29,
       "coastal": false,
-      "sq_mi": 5.36817612
+      "sq_mi": 5.36817612,
+      "is_5yr_fallback": false
     },
     {
       "town": "HEATH",
@@ -1289,7 +1379,8 @@
       "median_household_income": 52875,
       "price_to_income": 6.52,
       "coastal": false,
-      "sq_mi": 24.91318385
+      "sq_mi": 24.91318385,
+      "is_5yr_fallback": false
     },
     {
       "town": "IPSWICH",
@@ -1304,7 +1395,8 @@
       "median_household_income": 77788,
       "price_to_income": 10.16,
       "coastal": true,
-      "sq_mi": 33.09168774
+      "sq_mi": 33.09168774,
+      "is_5yr_fallback": false
     },
     {
       "town": "LENOX",
@@ -1319,7 +1411,8 @@
       "median_household_income": 55777,
       "price_to_income": 4.75,
       "coastal": false,
-      "sq_mi": 21.66718226
+      "sq_mi": 21.66718226,
+      "is_5yr_fallback": false
     },
     {
       "town": "FALL RIVER",
@@ -1334,7 +1427,8 @@
       "median_household_income": 36798,
       "price_to_income": 13.72,
       "coastal": true,
-      "sq_mi": 38.54420515
+      "sq_mi": 38.54420515,
+      "is_5yr_fallback": false
     },
     {
       "town": "OAKHAM",
@@ -1349,7 +1443,8 @@
       "median_household_income": 85052,
       "price_to_income": 5.26,
       "coastal": false,
-      "sq_mi": 21.21798237
+      "sq_mi": 21.21798237,
+      "is_5yr_fallback": false
     },
     {
       "town": "CARVER",
@@ -1364,7 +1459,8 @@
       "median_household_income": 75260,
       "price_to_income": 6.86,
       "coastal": false,
-      "sq_mi": 39.72276945
+      "sq_mi": 39.72276945,
+      "is_5yr_fallback": false
     },
     {
       "town": "WILMINGTON",
@@ -1379,7 +1475,8 @@
       "median_household_income": 102301,
       "price_to_income": 7.18,
       "coastal": false,
-      "sq_mi": 17.1427537
+      "sq_mi": 17.1427537,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEW ASHFORD",
@@ -1389,7 +1486,8 @@
       ],
       "median_household_income": 82917,
       "coastal": false,
-      "sq_mi": 13.47514412
+      "sq_mi": 13.47514412,
+      "is_5yr_fallback": false
     },
     {
       "town": "MILLIS",
@@ -1404,7 +1502,8 @@
       "median_household_income": 97591,
       "price_to_income": 7.48,
       "coastal": false,
-      "sq_mi": 12.26294144
+      "sq_mi": 12.26294144,
+      "is_5yr_fallback": false
     },
     {
       "town": "OTIS",
@@ -1419,7 +1518,8 @@
       "median_household_income": 69485,
       "price_to_income": 5.68,
       "coastal": false,
-      "sq_mi": 38.05203942
+      "sq_mi": 38.05203942,
+      "is_5yr_fallback": false
     },
     {
       "town": "STOCKBRIDGE",
@@ -1434,7 +1534,8 @@
       "median_household_income": 56554,
       "price_to_income": 14.85,
       "coastal": false,
-      "sq_mi": 23.67989591
+      "sq_mi": 23.67989591,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTFIELD",
@@ -1449,7 +1550,8 @@
       "median_household_income": 62969,
       "price_to_income": 5.8,
       "coastal": false,
-      "sq_mi": 47.31278695
+      "sq_mi": 47.31278695,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOLYOKE",
@@ -1464,7 +1566,8 @@
       "median_household_income": 38829,
       "price_to_income": 8.5,
       "coastal": false,
-      "sq_mi": 22.79894569
+      "sq_mi": 22.79894569,
+      "is_5yr_fallback": false
     },
     {
       "town": "WINDSOR",
@@ -1479,7 +1582,8 @@
       "median_household_income": 76563,
       "price_to_income": 5.19,
       "coastal": false,
-      "sq_mi": 35.16200029
+      "sq_mi": 35.16200029,
+      "is_5yr_fallback": false
     },
     {
       "town": "MARLBOROUGH",
@@ -1494,7 +1598,8 @@
       "median_household_income": 72222,
       "price_to_income": 7.75,
       "coastal": false,
-      "sq_mi": 22.10111656
+      "sq_mi": 22.10111656,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOMERVILLE",
@@ -1509,7 +1614,8 @@
       "median_household_income": 78673,
       "price_to_income": 13.35,
       "coastal": true,
-      "sq_mi": 4.13061877
+      "sq_mi": 4.13061877,
+      "is_5yr_fallback": false
     },
     {
       "town": "LAWRENCE",
@@ -1524,7 +1630,8 @@
       "median_household_income": 36754,
       "price_to_income": 15.24,
       "coastal": true,
-      "sq_mi": 7.42723713
+      "sq_mi": 7.42723713,
+      "is_5yr_fallback": false
     },
     {
       "town": "MERRIMAC",
@@ -1539,7 +1646,8 @@
       "median_household_income": 77481,
       "price_to_income": 7.91,
       "coastal": true,
-      "sq_mi": 8.69864202
+      "sq_mi": 8.69864202,
+      "is_5yr_fallback": false
     },
     {
       "town": "CLINTON",
@@ -1554,7 +1662,8 @@
       "median_household_income": 60755,
       "price_to_income": 7.28,
       "coastal": false,
-      "sq_mi": 7.26089407
+      "sq_mi": 7.26089407,
+      "is_5yr_fallback": false
     },
     {
       "town": "BARRE",
@@ -1569,7 +1678,8 @@
       "median_household_income": 67500,
       "price_to_income": 6.07,
       "coastal": false,
-      "sq_mi": 44.63075303
+      "sq_mi": 44.63075303,
+      "is_5yr_fallback": false
     },
     {
       "town": "GRANBY",
@@ -1584,7 +1694,8 @@
       "median_household_income": 86692,
       "price_to_income": 4.61,
       "coastal": false,
-      "sq_mi": 28.07286488
+      "sq_mi": 28.07286488,
+      "is_5yr_fallback": false
     },
     {
       "town": "PEPPERELL",
@@ -1599,7 +1710,8 @@
       "median_household_income": 84980,
       "price_to_income": 7.06,
       "coastal": false,
-      "sq_mi": 23.19262433
+      "sq_mi": 23.19262433,
+      "is_5yr_fallback": false
     },
     {
       "town": "GREAT BARRINGTON",
@@ -1614,7 +1726,8 @@
       "median_household_income": 56431,
       "price_to_income": 8.15,
       "coastal": false,
-      "sq_mi": 45.76934924
+      "sq_mi": 45.76934924,
+      "is_5yr_fallback": false
     },
     {
       "town": "PITTSFIELD",
@@ -1629,7 +1742,8 @@
       "median_household_income": 45206,
       "price_to_income": 6.69,
       "coastal": false,
-      "sq_mi": 42.46751384
+      "sq_mi": 42.46751384,
+      "is_5yr_fallback": false
     },
     {
       "town": "LONGMEADOW",
@@ -1644,7 +1758,8 @@
       "median_household_income": 107976,
       "price_to_income": 4.84,
       "coastal": false,
-      "sq_mi": 9.59470593
+      "sq_mi": 9.59470593,
+      "is_5yr_fallback": false
     },
     {
       "town": "LYNNFIELD",
@@ -1659,7 +1774,8 @@
       "median_household_income": 117250,
       "price_to_income": 8.53,
       "coastal": false,
-      "sq_mi": 10.44284752
+      "sq_mi": 10.44284752,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTH BROOKFIELD",
@@ -1674,7 +1790,8 @@
       "median_household_income": 70873,
       "price_to_income": 5.82,
       "coastal": false,
-      "sq_mi": 21.94744775
+      "sq_mi": 21.94744775,
+      "is_5yr_fallback": false
     },
     {
       "town": "HINSDALE",
@@ -1689,7 +1806,8 @@
       "median_household_income": 60511,
       "price_to_income": 7.97,
       "coastal": false,
-      "sq_mi": 21.6937535
+      "sq_mi": 21.6937535,
+      "is_5yr_fallback": false
     },
     {
       "town": "WENHAM",
@@ -1704,7 +1822,8 @@
       "median_household_income": 99375,
       "price_to_income": 10.01,
       "coastal": true,
-      "sq_mi": 8.14134618
+      "sq_mi": 8.14134618,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOMERSET",
@@ -1719,7 +1838,8 @@
       "median_household_income": 68900,
       "price_to_income": 7.47,
       "coastal": true,
-      "sq_mi": 8.16993761
+      "sq_mi": 8.16993761,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHESHIRE",
@@ -1734,7 +1854,8 @@
       "median_household_income": 58145,
       "price_to_income": 5.23,
       "coastal": false,
-      "sq_mi": 27.51685104
+      "sq_mi": 27.51685104,
+      "is_5yr_fallback": false
     },
     {
       "town": "WARWICK",
@@ -1749,7 +1870,8 @@
       "median_household_income": 56838,
       "price_to_income": 8.6,
       "coastal": false,
-      "sq_mi": 37.64126348
+      "sq_mi": 37.64126348,
+      "is_5yr_fallback": false
     },
     {
       "town": "MARBLEHEAD",
@@ -1764,7 +1886,8 @@
       "median_household_income": 103148,
       "price_to_income": 8.89,
       "coastal": true,
-      "sq_mi": 4.3733444
+      "sq_mi": 4.3733444,
+      "is_5yr_fallback": false
     },
     {
       "town": "LOWELL",
@@ -1779,7 +1902,8 @@
       "median_household_income": 46972,
       "price_to_income": 10.86,
       "coastal": false,
-      "sq_mi": 14.52946192
+      "sq_mi": 14.52946192,
+      "is_5yr_fallback": false
     },
     {
       "town": "RUTLAND",
@@ -1794,7 +1918,8 @@
       "median_household_income": 95347,
       "price_to_income": 5.51,
       "coastal": false,
-      "sq_mi": 36.26120362
+      "sq_mi": 36.26120362,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOLBROOK",
@@ -1809,7 +1934,8 @@
       "median_household_income": 67508,
       "price_to_income": 8,
       "coastal": false,
-      "sq_mi": 7.36320183
+      "sq_mi": 7.36320183,
+      "is_5yr_fallback": false
     },
     {
       "town": "WHITMAN",
@@ -1824,7 +1950,8 @@
       "median_household_income": 75898,
       "price_to_income": 7.01,
       "coastal": false,
-      "sq_mi": 6.95848344
+      "sq_mi": 6.95848344,
+      "is_5yr_fallback": false
     },
     {
       "town": "MONROE",
@@ -1834,7 +1961,8 @@
       ],
       "median_household_income": 31750,
       "coastal": false,
-      "sq_mi": 10.78785126
+      "sq_mi": 10.78785126,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTON",
@@ -1849,7 +1977,8 @@
       "median_household_income": 191744,
       "price_to_income": 12.71,
       "coastal": false,
-      "sq_mi": 17.33070424
+      "sq_mi": 17.33070424,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST BROOKFIELD",
@@ -1864,7 +1993,8 @@
       "median_household_income": 62969,
       "price_to_income": 7.62,
       "coastal": false,
-      "sq_mi": 21.10746007
+      "sq_mi": 21.10746007,
+      "is_5yr_fallback": false
     },
     {
       "town": "HALIFAX",
@@ -1879,7 +2009,8 @@
       "median_household_income": 73119,
       "price_to_income": 6.45,
       "coastal": false,
-      "sq_mi": 17.38577303
+      "sq_mi": 17.38577303,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEW SALEM",
@@ -1894,7 +2025,8 @@
       "median_household_income": 71375,
       "price_to_income": 5.9,
       "coastal": false,
-      "sq_mi": 58.68890348
+      "sq_mi": 58.68890348,
+      "is_5yr_fallback": false
     },
     {
       "town": "BRIDGEWATER",
@@ -1909,7 +2041,8 @@
       "median_household_income": 85992,
       "price_to_income": 6.92,
       "coastal": false,
-      "sq_mi": 28.36006388
+      "sq_mi": 28.36006388,
+      "is_5yr_fallback": false
     },
     {
       "town": "BEDFORD",
@@ -1924,7 +2057,8 @@
       "median_household_income": 117688,
       "price_to_income": 8.62,
       "coastal": false,
-      "sq_mi": 13.83837315
+      "sq_mi": 13.83837315,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORFOLK",
@@ -1939,7 +2073,8 @@
       "median_household_income": 138452,
       "price_to_income": 6.25,
       "coastal": false,
-      "sq_mi": 15.39601892
+      "sq_mi": 15.39601892,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOURNE",
@@ -1954,7 +2089,8 @@
       "median_household_income": 70304,
       "price_to_income": 8.77,
       "coastal": true,
-      "sq_mi": 41.08351619
+      "sq_mi": 41.08351619,
+      "is_5yr_fallback": false
     },
     {
       "town": "WALPOLE",
@@ -1969,7 +2105,8 @@
       "median_household_income": 99102,
       "price_to_income": 7.74,
       "coastal": false,
-      "sq_mi": 21.09290642
+      "sq_mi": 21.09290642,
+      "is_5yr_fallback": false
     },
     {
       "town": "WAREHAM",
@@ -1984,7 +2121,8 @@
       "median_household_income": 65641,
       "price_to_income": 6.86,
       "coastal": true,
-      "sq_mi": 37.14416033
+      "sq_mi": 37.14416033,
+      "is_5yr_fallback": false
     },
     {
       "town": "PLAINFIELD",
@@ -1999,7 +2137,8 @@
       "median_household_income": 54886,
       "price_to_income": 5.31,
       "coastal": false,
-      "sq_mi": 21.32029926
+      "sq_mi": 21.32029926,
+      "is_5yr_fallback": false
     },
     {
       "town": "PAXTON",
@@ -2014,7 +2153,8 @@
       "median_household_income": 93654,
       "price_to_income": 6.09,
       "coastal": false,
-      "sq_mi": 15.45159715
+      "sq_mi": 15.45159715,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTH ADAMS",
@@ -2029,7 +2169,8 @@
       "median_household_income": 32804,
       "price_to_income": 7.5,
       "coastal": false,
-      "sq_mi": 20.61517388
+      "sq_mi": 20.61517388,
+      "is_5yr_fallback": false
     },
     {
       "town": "EAST BRIDGEWATER",
@@ -2044,7 +2185,8 @@
       "median_household_income": 82823,
       "price_to_income": 6.94,
       "coastal": false,
-      "sq_mi": 17.5401107
+      "sq_mi": 17.5401107,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOPEDALE",
@@ -2059,7 +2201,8 @@
       "median_household_income": 99792,
       "price_to_income": 5.64,
       "coastal": false,
-      "sq_mi": 5.34222463
+      "sq_mi": 5.34222463,
+      "is_5yr_fallback": false
     },
     {
       "town": "RUSSELL",
@@ -2074,7 +2217,8 @@
       "median_household_income": 70045,
       "price_to_income": 5.1,
       "coastal": false,
-      "sq_mi": 17.90399749
+      "sq_mi": 17.90399749,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHARLEMONT",
@@ -2089,7 +2233,8 @@
       "median_household_income": 50625,
       "price_to_income": 7.9,
       "coastal": false,
-      "sq_mi": 26.35588667
+      "sq_mi": 26.35588667,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOYLSTON",
@@ -2104,7 +2249,8 @@
       "median_household_income": 93197,
       "price_to_income": 6.5,
       "coastal": false,
-      "sq_mi": 19.7501388
+      "sq_mi": 19.7501388,
+      "is_5yr_fallback": false
     },
     {
       "town": "AYER",
@@ -2119,7 +2265,8 @@
       "median_household_income": 77112,
       "price_to_income": 7.29,
       "coastal": false,
-      "sq_mi": 9.50334293
+      "sq_mi": 9.50334293,
+      "is_5yr_fallback": false
     },
     {
       "town": "PROVINCETOWN",
@@ -2134,7 +2281,8 @@
       "median_household_income": 42228,
       "price_to_income": 27.23,
       "coastal": true,
-      "sq_mi": 10.4424858
+      "sq_mi": 10.4424858,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOSTON",
@@ -2149,7 +2297,8 @@
       "median_household_income": 58516,
       "price_to_income": 14.36,
       "coastal": true,
-      "sq_mi": 49.68955783
+      "sq_mi": 49.68955783,
+      "is_5yr_fallback": false
     },
     {
       "town": "BELMONT",
@@ -2164,7 +2313,8 @@
       "median_household_income": 114141,
       "price_to_income": 12.52,
       "coastal": false,
-      "sq_mi": 4.7146431
+      "sq_mi": 4.7146431,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOXBOROUGH",
@@ -2179,7 +2329,8 @@
       "median_household_income": 103556,
       "price_to_income": 7.58,
       "coastal": false,
-      "sq_mi": 10.40614717
+      "sq_mi": 10.40614717,
+      "is_5yr_fallback": false
     },
     {
       "town": "FITCHBURG",
@@ -2194,7 +2345,8 @@
       "median_household_income": 50617,
       "price_to_income": 8.5,
       "coastal": false,
-      "sq_mi": 28.11683697
+      "sq_mi": 28.11683697,
+      "is_5yr_fallback": false
     },
     {
       "town": "FALMOUTH",
@@ -2209,7 +2361,8 @@
       "median_household_income": 68444,
       "price_to_income": 12.36,
       "coastal": true,
-      "sq_mi": 45.5473377
+      "sq_mi": 45.5473377,
+      "is_5yr_fallback": false
     },
     {
       "town": "ACTON",
@@ -2224,7 +2377,8 @@
       "median_household_income": 131099,
       "price_to_income": 6.5,
       "coastal": false,
-      "sq_mi": 20.29546005
+      "sq_mi": 20.29546005,
+      "is_5yr_fallback": false
     },
     {
       "town": "YARMOUTH",
@@ -2239,7 +2393,8 @@
       "median_household_income": 59630,
       "price_to_income": 9.88,
       "coastal": true,
-      "sq_mi": 24.91778499
+      "sq_mi": 24.91778499,
+      "is_5yr_fallback": false
     },
     {
       "town": "OXFORD",
@@ -2254,7 +2409,8 @@
       "median_household_income": 64616,
       "price_to_income": 6.35,
       "coastal": false,
-      "sq_mi": 27.42283532
+      "sq_mi": 27.42283532,
+      "is_5yr_fallback": false
     },
     {
       "town": "MILFORD",
@@ -2269,7 +2425,8 @@
       "median_household_income": 72750,
       "price_to_income": 7.44,
       "coastal": false,
-      "sq_mi": 15.02323757
+      "sq_mi": 15.02323757,
+      "is_5yr_fallback": false
     },
     {
       "town": "BERKLEY",
@@ -2284,7 +2441,8 @@
       "median_household_income": 95186,
       "price_to_income": 7.24,
       "coastal": true,
-      "sq_mi": 16.58095613
+      "sq_mi": 16.58095613,
+      "is_5yr_fallback": false
     },
     {
       "town": "BERLIN",
@@ -2299,7 +2457,8 @@
       "median_household_income": 97614,
       "price_to_income": 7.53,
       "coastal": false,
-      "sq_mi": 13.17287091
+      "sq_mi": 13.17287091,
+      "is_5yr_fallback": false
     },
     {
       "town": "TEMPLETON",
@@ -2314,7 +2473,8 @@
       "median_household_income": 67515,
       "price_to_income": 6.15,
       "coastal": false,
-      "sq_mi": 32.38103956
+      "sq_mi": 32.38103956,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROWLEY",
@@ -2329,7 +2489,8 @@
       "median_household_income": 85496,
       "price_to_income": 10,
       "coastal": true,
-      "sq_mi": 18.5391845
+      "sq_mi": 18.5391845,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHILMARK",
@@ -2344,7 +2505,8 @@
       "median_household_income": 78542,
       "price_to_income": 47.24,
       "coastal": true,
-      "sq_mi": 20.271762
+      "sq_mi": 20.271762,
+      "is_5yr_fallback": false
     },
     {
       "town": "HARDWICK",
@@ -2359,7 +2521,8 @@
       "median_household_income": 56216,
       "price_to_income": 7.03,
       "coastal": false,
-      "sq_mi": 40.85665293
+      "sq_mi": 40.85665293,
+      "is_5yr_fallback": false
     },
     {
       "town": "MEDFIELD",
@@ -2374,7 +2537,8 @@
       "median_household_income": 147630,
       "price_to_income": 7.45,
       "coastal": false,
-      "sq_mi": 14.65492311
+      "sq_mi": 14.65492311,
+      "is_5yr_fallback": false
     },
     {
       "town": "GEORGETOWN",
@@ -2389,7 +2553,8 @@
       "median_household_income": 106016,
       "price_to_income": 7.08,
       "coastal": true,
-      "sq_mi": 13.14855481
+      "sq_mi": 13.14855481,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHEFFIELD",
@@ -2404,7 +2569,8 @@
       "median_household_income": 68603,
       "price_to_income": 13.56,
       "coastal": false,
-      "sq_mi": 48.53977628
+      "sq_mi": 48.53977628,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOPKINTON",
@@ -2419,7 +2585,8 @@
       "median_household_income": 143190,
       "price_to_income": 7.16,
       "coastal": false,
-      "sq_mi": 27.85251794
+      "sq_mi": 27.85251794,
+      "is_5yr_fallback": false
     },
     {
       "town": "PHILLIPSTON",
@@ -2434,7 +2601,8 @@
       "median_household_income": 73750,
       "price_to_income": 7.78,
       "coastal": false,
-      "sq_mi": 24.6349242
+      "sq_mi": 24.6349242,
+      "is_5yr_fallback": false
     },
     {
       "town": "WARREN",
@@ -2449,7 +2617,8 @@
       "median_household_income": 51882,
       "price_to_income": 6.97,
       "coastal": false,
-      "sq_mi": 27.63385194
+      "sq_mi": 27.63385194,
+      "is_5yr_fallback": false
     },
     {
       "town": "BURLINGTON",
@@ -2464,7 +2633,8 @@
       "median_household_income": 92141,
       "price_to_income": 9.24,
       "coastal": false,
-      "sq_mi": 11.86247934
+      "sq_mi": 11.86247934,
+      "is_5yr_fallback": false
     },
     {
       "town": "MONSON",
@@ -2479,7 +2649,8 @@
       "median_household_income": 74031,
       "price_to_income": 5.4,
       "coastal": false,
-      "sq_mi": 44.77692482
+      "sq_mi": 44.77692482,
+      "is_5yr_fallback": false
     },
     {
       "town": "BERNARDSTON",
@@ -2494,7 +2665,8 @@
       "median_household_income": 63625,
       "price_to_income": 5.97,
       "coastal": false,
-      "sq_mi": 23.39611025
+      "sq_mi": 23.39611025,
+      "is_5yr_fallback": false
     },
     {
       "town": "WELLFLEET",
@@ -2509,7 +2681,8 @@
       "median_household_income": 48452,
       "price_to_income": 19.61,
       "coastal": true,
-      "sq_mi": 21.00355229
+      "sq_mi": 21.00355229,
+      "is_5yr_fallback": false
     },
     {
       "town": "HOLDEN",
@@ -2524,7 +2697,8 @@
       "median_household_income": 100599,
       "price_to_income": 5.47,
       "coastal": false,
-      "sq_mi": 36.32050329
+      "sq_mi": 36.32050329,
+      "is_5yr_fallback": false
     },
     {
       "town": "GRAFTON",
@@ -2539,7 +2713,8 @@
       "median_household_income": 96277,
       "price_to_income": 6.1,
       "coastal": false,
-      "sq_mi": 23.30947473
+      "sq_mi": 23.30947473,
+      "is_5yr_fallback": false
     },
     {
       "town": "MONTAGUE",
@@ -2554,7 +2729,8 @@
       "median_household_income": 53178,
       "price_to_income": 6.24,
       "coastal": false,
-      "sq_mi": 31.44171291
+      "sq_mi": 31.44171291,
+      "is_5yr_fallback": false
     },
     {
       "town": "DUXBURY",
@@ -2569,7 +2745,8 @@
       "median_household_income": 119428,
       "price_to_income": 9,
       "coastal": true,
-      "sq_mi": 24.07013955
+      "sq_mi": 24.07013955,
+      "is_5yr_fallback": false
     },
     {
       "town": "ABINGTON",
@@ -2584,7 +2761,8 @@
       "median_household_income": 76989,
       "price_to_income": 7.86,
       "coastal": false,
-      "sq_mi": 10.18966948
+      "sq_mi": 10.18966948,
+      "is_5yr_fallback": false
     },
     {
       "town": "LEICESTER",
@@ -2599,7 +2777,8 @@
       "median_household_income": 72637,
       "price_to_income": 5.88,
       "coastal": false,
-      "sq_mi": 24.6332999
+      "sq_mi": 24.6332999,
+      "is_5yr_fallback": false
     },
     {
       "town": "EASTON",
@@ -2614,7 +2793,8 @@
       "median_household_income": 100028,
       "price_to_income": 6.52,
       "coastal": false,
-      "sq_mi": 29.23352004
+      "sq_mi": 29.23352004,
+      "is_5yr_fallback": false
     },
     {
       "town": "STOW",
@@ -2629,7 +2809,8 @@
       "median_household_income": 146799,
       "price_to_income": 5.4,
       "coastal": false,
-      "sq_mi": 17.99570325
+      "sq_mi": 17.99570325,
+      "is_5yr_fallback": false
     },
     {
       "town": "ATHOL",
@@ -2644,7 +2825,8 @@
       "median_household_income": 47642,
       "price_to_income": 7.15,
       "coastal": false,
-      "sq_mi": 33.36293847
+      "sq_mi": 33.36293847,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEW BEDFORD",
@@ -2659,7 +2841,8 @@
       "median_household_income": 38178,
       "price_to_income": 12.44,
       "coastal": true,
-      "sq_mi": 20.27940617
+      "sq_mi": 20.27940617,
+      "is_5yr_fallback": false
     },
     {
       "town": "WINCHESTER",
@@ -2674,7 +2857,8 @@
       "median_household_income": 149321,
       "price_to_income": 9.88,
       "coastal": false,
-      "sq_mi": 6.34717438
+      "sq_mi": 6.34717438,
+      "is_5yr_fallback": false
     },
     {
       "town": "PERU",
@@ -2689,7 +2873,8 @@
       "median_household_income": 67250,
       "price_to_income": 4.59,
       "coastal": false,
-      "sq_mi": 26.03628106
+      "sq_mi": 26.03628106,
+      "is_5yr_fallback": false
     },
     {
       "town": "HUDSON",
@@ -2704,7 +2889,8 @@
       "median_household_income": 80574,
       "price_to_income": 7.51,
       "coastal": false,
-      "sq_mi": 11.86361154
+      "sq_mi": 11.86361154,
+      "is_5yr_fallback": false
     },
     {
       "town": "PELHAM",
@@ -2719,7 +2905,8 @@
       "median_household_income": 91518,
       "price_to_income": 5.74,
       "coastal": false,
-      "sq_mi": 26.54899654
+      "sq_mi": 26.54899654,
+      "is_5yr_fallback": false
     },
     {
       "town": "ASHFIELD",
@@ -2734,7 +2921,8 @@
       "median_household_income": 77031,
       "price_to_income": 7.11,
       "coastal": false,
-      "sq_mi": 40.27593306
+      "sq_mi": 40.27593306,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEEDHAM",
@@ -2749,7 +2937,8 @@
       "median_household_income": 139477,
       "price_to_income": 12.04,
       "coastal": false,
-      "sq_mi": 12.70352217
+      "sq_mi": 12.70352217,
+      "is_5yr_fallback": false
     },
     {
       "town": "TEWKSBURY",
@@ -2764,7 +2953,8 @@
       "median_household_income": 92897,
       "price_to_income": 7.08,
       "coastal": false,
-      "sq_mi": 21.14758149
+      "sq_mi": 21.14758149,
+      "is_5yr_fallback": false
     },
     {
       "town": "WILLIAMSTOWN",
@@ -2779,7 +2969,8 @@
       "median_household_income": 72739,
       "price_to_income": 6.81,
       "coastal": false,
-      "sq_mi": 46.85432005
+      "sq_mi": 46.85432005,
+      "is_5yr_fallback": false
     },
     {
       "town": "ASHLAND",
@@ -2794,7 +2985,8 @@
       "median_household_income": 103700,
       "price_to_income": 6.22,
       "coastal": false,
-      "sq_mi": 12.87379004
+      "sq_mi": 12.87379004,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTFORD",
@@ -2809,7 +3001,8 @@
       "median_household_income": 130739,
       "price_to_income": 6.41,
       "coastal": false,
-      "sq_mi": 31.36205267
+      "sq_mi": 31.36205267,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHERBORN",
@@ -2824,7 +3017,8 @@
       "median_household_income": 158250,
       "price_to_income": 7.51,
       "coastal": false,
-      "sq_mi": 16.15512354
+      "sq_mi": 16.15512354,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHESTERFIELD",
@@ -2839,7 +3033,8 @@
       "median_household_income": 66500,
       "price_to_income": 6.47,
       "coastal": false,
-      "sq_mi": 31.2443961
+      "sq_mi": 31.2443961,
+      "is_5yr_fallback": false
     },
     {
       "town": "ANDOVER",
@@ -2854,7 +3049,8 @@
       "median_household_income": 134627,
       "price_to_income": 7.33,
       "coastal": false,
-      "sq_mi": 32.15278074
+      "sq_mi": 32.15278074,
+      "is_5yr_fallback": false
     },
     {
       "town": "PLYMPTON",
@@ -2869,7 +3065,8 @@
       "median_household_income": 84602,
       "price_to_income": 7.92,
       "coastal": false,
-      "sq_mi": 15.10482944
+      "sq_mi": 15.10482944,
+      "is_5yr_fallback": false
     },
     {
       "town": "BROCKTON",
@@ -2884,7 +3081,8 @@
       "median_household_income": 49956,
       "price_to_income": 10.21,
       "coastal": false,
-      "sq_mi": 21.51537087
+      "sq_mi": 21.51537087,
+      "is_5yr_fallback": false
     },
     {
       "town": "SANDISFIELD",
@@ -2899,7 +3097,8 @@
       "median_household_income": 67333,
       "price_to_income": 4.82,
       "coastal": false,
-      "sq_mi": 52.95242066
+      "sq_mi": 52.95242066,
+      "is_5yr_fallback": false
     },
     {
       "town": "SPENCER",
@@ -2914,7 +3113,8 @@
       "median_household_income": 65858,
       "price_to_income": 6.58,
       "coastal": false,
-      "sq_mi": 34.00651711
+      "sq_mi": 34.00651711,
+      "is_5yr_fallback": false
     },
     {
       "town": "AGAWAM",
@@ -2929,7 +3129,8 @@
       "median_household_income": 60201,
       "price_to_income": 5.98,
       "coastal": false,
-      "sq_mi": 24.3350933
+      "sq_mi": 24.3350933,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST BRIDGEWATER",
@@ -2944,7 +3145,8 @@
       "median_household_income": 80709,
       "price_to_income": 6.95,
       "coastal": false,
-      "sq_mi": 15.67354645
+      "sq_mi": 15.67354645,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHELMSFORD",
@@ -2959,7 +3161,8 @@
       "median_household_income": 102160,
       "price_to_income": 6.36,
       "coastal": false,
-      "sq_mi": 23.08428865
+      "sq_mi": 23.08428865,
+      "is_5yr_fallback": false
     },
     {
       "town": "ORLEANS",
@@ -2974,7 +3177,8 @@
       "median_household_income": 50884,
       "price_to_income": 16.95,
       "coastal": true,
-      "sq_mi": 14.56760574
+      "sq_mi": 14.56760574,
+      "is_5yr_fallback": false
     },
     {
       "town": "HARWICH",
@@ -2989,7 +3193,8 @@
       "median_household_income": 69730,
       "price_to_income": 10.76,
       "coastal": true,
-      "sq_mi": 22.50165645
+      "sq_mi": 22.50165645,
+      "is_5yr_fallback": false
     },
     {
       "town": "HAMPDEN",
@@ -3004,7 +3209,8 @@
       "median_household_income": 80375,
       "price_to_income": 5.38,
       "coastal": false,
-      "sq_mi": 19.63907385
+      "sq_mi": 19.63907385,
+      "is_5yr_fallback": false
     },
     {
       "town": "EGREMONT",
@@ -3012,9 +3218,15 @@
         -73.42112147826087,
         42.16680495652173
       ],
+      "median_sold": 493000,
+      "sold_count": 3,
+      "median_dom": 44,
+      "sold_psf": null,
       "median_household_income": 66081,
+      "price_to_income": 7.46,
       "coastal": false,
-      "sq_mi": 18.88504238
+      "sq_mi": 18.88504238,
+      "is_5yr_fallback": true
     },
     {
       "town": "DEERFIELD",
@@ -3029,7 +3241,8 @@
       "median_household_income": 80000,
       "price_to_income": 5.13,
       "coastal": false,
-      "sq_mi": 33.45149453
+      "sq_mi": 33.45149453,
+      "is_5yr_fallback": false
     },
     {
       "town": "EASTHAMPTON",
@@ -3044,7 +3257,8 @@
       "median_household_income": 58552,
       "price_to_income": 7.51,
       "coastal": false,
-      "sq_mi": 13.60532552
+      "sq_mi": 13.60532552,
+      "is_5yr_fallback": false
     },
     {
       "town": "AQUINNAH",
@@ -3059,7 +3273,8 @@
       "median_household_income": 62500,
       "price_to_income": 25.2,
       "coastal": true,
-      "sq_mi": 5.77680078
+      "sq_mi": 5.77680078,
+      "is_5yr_fallback": false
     },
     {
       "town": "WENDELL",
@@ -3074,7 +3289,8 @@
       "median_household_income": 43036,
       "price_to_income": 9.27,
       "coastal": false,
-      "sq_mi": 32.22417002
+      "sq_mi": 32.22417002,
+      "is_5yr_fallback": false
     },
     {
       "town": "BOXFORD",
@@ -3089,7 +3305,8 @@
       "median_household_income": 153578,
       "price_to_income": 7.1,
       "coastal": false,
-      "sq_mi": 24.40459703
+      "sq_mi": 24.40459703,
+      "is_5yr_fallback": false
     },
     {
       "town": "MANSFIELD",
@@ -3104,7 +3321,8 @@
       "median_household_income": 102090,
       "price_to_income": 6.43,
       "coastal": false,
-      "sq_mi": 20.42578746
+      "sq_mi": 20.42578746,
+      "is_5yr_fallback": false
     },
     {
       "town": "ERVING",
@@ -3119,7 +3337,8 @@
       "median_household_income": 62171,
       "price_to_income": 5.4,
       "coastal": false,
-      "sq_mi": 14.38591555
+      "sq_mi": 14.38591555,
+      "is_5yr_fallback": false
     },
     {
       "town": "MONTGOMERY",
@@ -3134,7 +3353,8 @@
       "median_household_income": 75500,
       "price_to_income": 7.55,
       "coastal": false,
-      "sq_mi": 15.06710015
+      "sq_mi": 15.06710015,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROCKPORT",
@@ -3149,7 +3369,8 @@
       "median_household_income": 68448,
       "price_to_income": 12.26,
       "coastal": true,
-      "sq_mi": 7.0169341
+      "sq_mi": 7.0169341,
+      "is_5yr_fallback": false
     },
     {
       "town": "LANCASTER",
@@ -3164,7 +3385,8 @@
       "median_household_income": 93750,
       "price_to_income": 6.21,
       "coastal": false,
-      "sq_mi": 27.9839718
+      "sq_mi": 27.9839718,
+      "is_5yr_fallback": false
     },
     {
       "town": "MIDDLEBOROUGH",
@@ -3179,7 +3401,8 @@
       "median_household_income": 76961,
       "price_to_income": 7.59,
       "coastal": false,
-      "sq_mi": 72.20213169
+      "sq_mi": 72.20213169,
+      "is_5yr_fallback": false
     },
     {
       "town": "MILTON",
@@ -3194,7 +3417,8 @@
       "median_household_income": 122516,
       "price_to_income": 8.16,
       "coastal": true,
-      "sq_mi": 13.17796808
+      "sq_mi": 13.17796808,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHARLTON",
@@ -3209,7 +3433,8 @@
       "median_household_income": 92227,
       "price_to_income": 5.9,
       "coastal": false,
-      "sq_mi": 43.78916678
+      "sq_mi": 43.78916678,
+      "is_5yr_fallback": false
     },
     {
       "town": "PETERSHAM",
@@ -3224,7 +3449,8 @@
       "median_household_income": 65774,
       "price_to_income": 7.4,
       "coastal": false,
-      "sq_mi": 68.24368404
+      "sq_mi": 68.24368404,
+      "is_5yr_fallback": false
     },
     {
       "town": "WRENTHAM",
@@ -3239,7 +3465,8 @@
       "median_household_income": 99924,
       "price_to_income": 7.12,
       "coastal": false,
-      "sq_mi": 22.60205261
+      "sq_mi": 22.60205261,
+      "is_5yr_fallback": false
     },
     {
       "town": "WINCHENDON",
@@ -3254,7 +3481,8 @@
       "median_household_income": 61998,
       "price_to_income": 6.61,
       "coastal": false,
-      "sq_mi": 44.11076579
+      "sq_mi": 44.11076579,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORWELL",
@@ -3269,7 +3497,8 @@
       "median_household_income": 114560,
       "price_to_income": 9.89,
       "coastal": true,
-      "sq_mi": 21.12243567
+      "sq_mi": 21.12243567,
+      "is_5yr_fallback": false
     },
     {
       "town": "SALEM",
@@ -3284,7 +3513,8 @@
       "median_household_income": 61093,
       "price_to_income": 9.85,
       "coastal": true,
-      "sq_mi": 8.3306881
+      "sq_mi": 8.3306881,
+      "is_5yr_fallback": false
     },
     {
       "town": "RANDOLPH",
@@ -3299,7 +3529,8 @@
       "median_household_income": 65316,
       "price_to_income": 8.73,
       "coastal": false,
-      "sq_mi": 10.41403218
+      "sq_mi": 10.41403218,
+      "is_5yr_fallback": false
     },
     {
       "town": "WORCESTER",
@@ -3314,7 +3545,8 @@
       "median_household_income": 45599,
       "price_to_income": 10.09,
       "coastal": false,
-      "sq_mi": 38.44170038
+      "sq_mi": 38.44170038,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST STOCKBRIDGE",
@@ -3324,7 +3556,8 @@
       ],
       "median_household_income": 69167,
       "coastal": false,
-      "sq_mi": 18.67916491
+      "sq_mi": 18.67916491,
+      "is_5yr_fallback": false
     },
     {
       "town": "ARLINGTON",
@@ -3339,7 +3572,8 @@
       "median_household_income": 98103,
       "price_to_income": 11.26,
       "coastal": false,
-      "sq_mi": 5.48421953
+      "sq_mi": 5.48421953,
+      "is_5yr_fallback": false
     },
     {
       "town": "STURBRIDGE",
@@ -3354,7 +3588,8 @@
       "median_household_income": 85000,
       "price_to_income": 5.85,
       "coastal": false,
-      "sq_mi": 38.96589078
+      "sq_mi": 38.96589078,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHESTER",
@@ -3369,7 +3604,8 @@
       "median_household_income": 77917,
       "price_to_income": 4.04,
       "coastal": false,
-      "sq_mi": 37.1642495
+      "sq_mi": 37.1642495,
+      "is_5yr_fallback": false
     },
     {
       "town": "ALFORD",
@@ -3379,7 +3615,8 @@
       ],
       "median_household_income": 98056,
       "coastal": false,
-      "sq_mi": 11.53340377
+      "sq_mi": 11.53340377,
+      "is_5yr_fallback": false
     },
     {
       "town": "MENDON",
@@ -3394,7 +3631,8 @@
       "median_household_income": 121298,
       "price_to_income": 5.83,
       "coastal": false,
-      "sq_mi": 17.98728416
+      "sq_mi": 17.98728416,
+      "is_5yr_fallback": false
     },
     {
       "town": "SUTTON",
@@ -3409,7 +3647,8 @@
       "median_household_income": 99580,
       "price_to_income": 5.95,
       "coastal": false,
-      "sq_mi": 34.02579603
+      "sq_mi": 34.02579603,
+      "is_5yr_fallback": false
     },
     {
       "town": "BELCHERTOWN",
@@ -3424,7 +3663,8 @@
       "median_household_income": 80502,
       "price_to_income": 5.5,
       "coastal": false,
-      "sq_mi": 55.27639719
+      "sq_mi": 55.27639719,
+      "is_5yr_fallback": false
     },
     {
       "town": "HARVARD",
@@ -3439,7 +3679,8 @@
       "median_household_income": 131719,
       "price_to_income": 6.11,
       "coastal": false,
-      "sq_mi": 27.15382569
+      "sq_mi": 27.15382569,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHICOPEE",
@@ -3454,7 +3695,8 @@
       "median_household_income": 49005,
       "price_to_income": 6.24,
       "coastal": false,
-      "sq_mi": 23.871431
+      "sq_mi": 23.871431,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTON",
@@ -3469,7 +3711,8 @@
       "median_household_income": 95221,
       "price_to_income": 6.3,
       "coastal": false,
-      "sq_mi": 29.31256532
+      "sq_mi": 29.31256532,
+      "is_5yr_fallback": false
     },
     {
       "town": "LITTLETON",
@@ -3484,7 +3727,8 @@
       "median_household_income": 108704,
       "price_to_income": 7.36,
       "coastal": false,
-      "sq_mi": 17.51032621
+      "sq_mi": 17.51032621,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORWOOD",
@@ -3499,7 +3743,8 @@
       "median_household_income": 83883,
       "price_to_income": 8.52,
       "coastal": false,
-      "sq_mi": 10.50086935
+      "sq_mi": 10.50086935,
+      "is_5yr_fallback": false
     },
     {
       "town": "DRACUT",
@@ -3514,7 +3759,8 @@
       "median_household_income": 86716,
       "price_to_income": 6.34,
       "coastal": false,
-      "sq_mi": 21.43737319
+      "sq_mi": 21.43737319,
+      "is_5yr_fallback": false
     },
     {
       "town": "TYNGSBOROUGH",
@@ -3529,7 +3775,8 @@
       "median_household_income": 99325,
       "price_to_income": 6.77,
       "coastal": false,
-      "sq_mi": 18.06994281
+      "sq_mi": 18.06994281,
+      "is_5yr_fallback": false
     },
     {
       "town": "NATICK",
@@ -3544,7 +3791,8 @@
       "median_household_income": 104372,
       "price_to_income": 8.97,
       "coastal": false,
-      "sq_mi": 15.960812
+      "sq_mi": 15.960812,
+      "is_5yr_fallback": false
     },
     {
       "town": "SUNDERLAND",
@@ -3559,7 +3807,8 @@
       "median_household_income": 53934,
       "price_to_income": 8.75,
       "coastal": false,
-      "sq_mi": 14.7363142
+      "sq_mi": 14.7363142,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOUTHBOROUGH",
@@ -3574,7 +3823,8 @@
       "median_household_income": 145455,
       "price_to_income": 5.98,
       "coastal": false,
-      "sq_mi": 15.52349331
+      "sq_mi": 15.52349331,
+      "is_5yr_fallback": false
     },
     {
       "town": "HAVERHILL",
@@ -3589,7 +3839,8 @@
       "median_household_income": 62751,
       "price_to_income": 8.6,
       "coastal": true,
-      "sq_mi": 35.28711445
+      "sq_mi": 35.28711445,
+      "is_5yr_fallback": false
     },
     {
       "town": "TOWNSEND",
@@ -3604,7 +3855,8 @@
       "median_household_income": 82519,
       "price_to_income": 6.24,
       "coastal": false,
-      "sq_mi": 32.97536031
+      "sq_mi": 32.97536031,
+      "is_5yr_fallback": false
     },
     {
       "town": "MIDDLETON",
@@ -3619,7 +3871,8 @@
       "median_household_income": 106326,
       "price_to_income": 7.76,
       "coastal": false,
-      "sq_mi": 14.48696643
+      "sq_mi": 14.48696643,
+      "is_5yr_fallback": false
     },
     {
       "town": "CONWAY",
@@ -3634,7 +3887,8 @@
       "median_household_income": 89297,
       "price_to_income": 5.46,
       "coastal": false,
-      "sq_mi": 37.8770628
+      "sq_mi": 37.8770628,
+      "is_5yr_fallback": false
     },
     {
       "town": "WAYLAND",
@@ -3649,7 +3903,8 @@
       "median_household_income": 157500,
       "price_to_income": 6.98,
       "coastal": false,
-      "sq_mi": 15.85468076
+      "sq_mi": 15.85468076,
+      "is_5yr_fallback": false
     },
     {
       "town": "QUINCY",
@@ -3664,7 +3919,8 @@
       "median_household_income": 64890,
       "price_to_income": 10.63,
       "coastal": true,
-      "sq_mi": 17.39173796
+      "sq_mi": 17.39173796,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEST NEWBURY",
@@ -3679,7 +3935,8 @@
       "median_household_income": 138947,
       "price_to_income": 6.59,
       "coastal": true,
-      "sq_mi": 13.97188439
+      "sq_mi": 13.97188439,
+      "is_5yr_fallback": false
     },
     {
       "town": "COLRAIN",
@@ -3694,7 +3951,8 @@
       "median_household_income": 54500,
       "price_to_income": 6.56,
       "coastal": false,
-      "sq_mi": 43.36505469
+      "sq_mi": 43.36505469,
+      "is_5yr_fallback": false
     },
     {
       "town": "HANCOCK",
@@ -3702,9 +3960,15 @@
         -73.3031764,
         42.5409853
       ],
+      "median_sold": 251875,
+      "sold_count": 4,
+      "median_dom": 99,
+      "sold_psf": null,
       "median_household_income": 72778,
+      "price_to_income": 3.46,
       "coastal": false,
-      "sq_mi": 35.74036068
+      "sq_mi": 35.74036068,
+      "is_5yr_fallback": true
     },
     {
       "town": "DARTMOUTH",
@@ -3719,7 +3983,8 @@
       "median_household_income": 69460,
       "price_to_income": 9,
       "coastal": true,
-      "sq_mi": 61.95846789
+      "sq_mi": 61.95846789,
+      "is_5yr_fallback": false
     },
     {
       "town": "WALTHAM",
@@ -3734,7 +3999,8 @@
       "median_household_income": 82188,
       "price_to_income": 9.98,
       "coastal": false,
-      "sq_mi": 13.76443637
+      "sq_mi": 13.76443637,
+      "is_5yr_fallback": false
     },
     {
       "town": "BUCKLAND",
@@ -3749,7 +4015,8 @@
       "median_household_income": 50407,
       "price_to_income": 6.89,
       "coastal": false,
-      "sq_mi": 19.87729552
+      "sq_mi": 19.87729552,
+      "is_5yr_fallback": false
     },
     {
       "town": "BREWSTER",
@@ -3764,7 +4031,8 @@
       "median_household_income": 67340,
       "price_to_income": 10.4,
       "coastal": true,
-      "sq_mi": 25.51687906
+      "sq_mi": 25.51687906,
+      "is_5yr_fallback": false
     },
     {
       "town": "MANCHESTER BY THE SEA",
@@ -3778,7 +4046,8 @@
       "sold_psf": 528.2950000000001,
       "median_household_income": null,
       "coastal": true,
-      "sq_mi": 7.78562374
+      "sq_mi": 7.78562374,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEWTON",
@@ -3793,7 +4062,8 @@
       "median_household_income": 127402,
       "price_to_income": 12.52,
       "coastal": false,
-      "sq_mi": 18.15448932
+      "sq_mi": 18.15448932,
+      "is_5yr_fallback": false
     },
     {
       "town": "LYNN",
@@ -3808,7 +4078,8 @@
       "median_household_income": 50774,
       "price_to_income": 11.42,
       "coastal": true,
-      "sq_mi": 11.54843266
+      "sq_mi": 11.54843266,
+      "is_5yr_fallback": false
     },
     {
       "town": "PEABODY",
@@ -3823,7 +4094,8 @@
       "median_household_income": 64071,
       "price_to_income": 10.14,
       "coastal": true,
-      "sq_mi": 16.77663844
+      "sq_mi": 16.77663844,
+      "is_5yr_fallback": false
     },
     {
       "town": "AVON",
@@ -3838,7 +4110,8 @@
       "median_household_income": 68021,
       "price_to_income": 8.37,
       "coastal": false,
-      "sq_mi": 4.5383476
+      "sq_mi": 4.5383476,
+      "is_5yr_fallback": false
     },
     {
       "town": "LUDLOW",
@@ -3853,7 +4126,8 @@
       "median_household_income": 64537,
       "price_to_income": 5.66,
       "coastal": false,
-      "sq_mi": 28.33593222
+      "sq_mi": 28.33593222,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTHAMPTON",
@@ -3868,7 +4142,8 @@
       "median_household_income": 61813,
       "price_to_income": 8.33,
       "coastal": false,
-      "sq_mi": 35.74847064
+      "sq_mi": 35.74847064,
+      "is_5yr_fallback": false
     },
     {
       "town": "PLAINVILLE",
@@ -3883,7 +4158,8 @@
       "median_household_income": 92014,
       "price_to_income": 5.71,
       "coastal": false,
-      "sq_mi": 11.49670715
+      "sq_mi": 11.49670715,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTHBRIDGE",
@@ -3898,7 +4174,8 @@
       "median_household_income": 73464,
       "price_to_income": 7.86,
       "coastal": false,
-      "sq_mi": 18.05055583
+      "sq_mi": 18.05055583,
+      "is_5yr_fallback": false
     },
     {
       "town": "DANVERS",
@@ -3913,7 +4190,8 @@
       "median_household_income": 79913,
       "price_to_income": 8.32,
       "coastal": true,
-      "sq_mi": 13.78589203
+      "sq_mi": 13.78589203,
+      "is_5yr_fallback": false
     },
     {
       "town": "UXBRIDGE",
@@ -3928,7 +4206,8 @@
       "median_household_income": 88750,
       "price_to_income": 6.2,
       "coastal": false,
-      "sq_mi": 29.96703339
+      "sq_mi": 29.96703339,
+      "is_5yr_fallback": false
     },
     {
       "town": "GROVELAND",
@@ -3943,7 +4222,8 @@
       "median_household_income": 96512,
       "price_to_income": 7.25,
       "coastal": true,
-      "sq_mi": 9.1918636
+      "sq_mi": 9.1918636,
+      "is_5yr_fallback": false
     },
     {
       "town": "DOUGLAS",
@@ -3958,7 +4238,8 @@
       "median_household_income": 90020,
       "price_to_income": 5.98,
       "coastal": false,
-      "sq_mi": 38.19721002
+      "sq_mi": 38.19721002,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHARON",
@@ -3973,7 +4254,8 @@
       "median_household_income": 127500,
       "price_to_income": 6.27,
       "coastal": false,
-      "sq_mi": 24.45314554
+      "sq_mi": 24.45314554,
+      "is_5yr_fallback": false
     },
     {
       "town": "SWANSEA",
@@ -3988,7 +4270,8 @@
       "median_household_income": 77531,
       "price_to_income": 6.47,
       "coastal": true,
-      "sq_mi": 22.9588237
+      "sq_mi": 22.9588237,
+      "is_5yr_fallback": false
     },
     {
       "town": "DOVER",
@@ -4003,7 +4286,8 @@
       "median_household_income": 189265,
       "price_to_income": 10.32,
       "coastal": false,
-      "sq_mi": 15.41758086
+      "sq_mi": 15.41758086,
+      "is_5yr_fallback": false
     },
     {
       "town": "WORTHINGTON",
@@ -4018,7 +4302,8 @@
       "median_household_income": 74500,
       "price_to_income": 5.25,
       "coastal": false,
-      "sq_mi": 32.10330225
+      "sq_mi": 32.10330225,
+      "is_5yr_fallback": false
     },
     {
       "town": "EVERETT",
@@ -4033,7 +4318,8 @@
       "median_household_income": 52457,
       "price_to_income": 13.77,
       "coastal": true,
-      "sq_mi": 3.4382123
+      "sq_mi": 3.4382123,
+      "is_5yr_fallback": false
     },
     {
       "town": "PEMBROKE",
@@ -4048,7 +4334,8 @@
       "median_household_income": 93075,
       "price_to_income": 6.78,
       "coastal": true,
-      "sq_mi": 23.55002151
+      "sq_mi": 23.55002151,
+      "is_5yr_fallback": false
     },
     {
       "town": "MARION",
@@ -4063,7 +4350,8 @@
       "median_household_income": 75449,
       "price_to_income": 10.37,
       "coastal": true,
-      "sq_mi": 14.1196009
+      "sq_mi": 14.1196009,
+      "is_5yr_fallback": false
     },
     {
       "town": "WATERTOWN",
@@ -4078,7 +4366,8 @@
       "median_household_income": 92050,
       "price_to_income": 9.73,
       "coastal": false,
-      "sq_mi": 4.08728032
+      "sq_mi": 4.08728032,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOUTH HADLEY",
@@ -4093,7 +4382,8 @@
       "median_household_income": 62004,
       "price_to_income": 6.45,
       "coastal": false,
-      "sq_mi": 18.43364907
+      "sq_mi": 18.43364907,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTWOOD",
@@ -4108,7 +4398,8 @@
       "median_household_income": 140355,
       "price_to_income": 8.78,
       "coastal": false,
-      "sq_mi": 11.15432183
+      "sq_mi": 11.15432183,
+      "is_5yr_fallback": false
     },
     {
       "town": "ORANGE",
@@ -4123,7 +4414,8 @@
       "median_household_income": 37183,
       "price_to_income": 8.54,
       "coastal": false,
-      "sq_mi": 36.01570544
+      "sq_mi": 36.01570544,
+      "is_5yr_fallback": false
     },
     {
       "town": "FRAMINGHAM",
@@ -4138,7 +4430,8 @@
       "median_household_income": 70706,
       "price_to_income": 9.69,
       "coastal": false,
-      "sq_mi": 26.50306796
+      "sq_mi": 26.50306796,
+      "is_5yr_fallback": false
     },
     {
       "town": "HADLEY",
@@ -4153,7 +4446,8 @@
       "median_household_income": 62634,
       "price_to_income": 9.37,
       "coastal": false,
-      "sq_mi": 24.61289014
+      "sq_mi": 24.61289014,
+      "is_5yr_fallback": false
     },
     {
       "town": "MILLVILLE",
@@ -4168,7 +4462,8 @@
       "median_household_income": 91250,
       "price_to_income": 5.48,
       "coastal": false,
-      "sq_mi": 4.96676841
+      "sq_mi": 4.96676841,
+      "is_5yr_fallback": false
     },
     {
       "town": "SAVOY",
@@ -4183,7 +4478,8 @@
       "median_household_income": 49000,
       "price_to_income": 8,
       "coastal": false,
-      "sq_mi": 36.02763916
+      "sq_mi": 36.02763916,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEBSTER",
@@ -4198,7 +4494,8 @@
       "median_household_income": 51229,
       "price_to_income": 8.78,
       "coastal": false,
-      "sq_mi": 14.59638278
+      "sq_mi": 14.59638278,
+      "is_5yr_fallback": false
     },
     {
       "town": "COHASSET",
@@ -4213,7 +4510,8 @@
       "median_household_income": 128224,
       "price_to_income": 10.88,
       "coastal": true,
-      "sq_mi": 10.05733886
+      "sq_mi": 10.05733886,
+      "is_5yr_fallback": false
     },
     {
       "town": "HUNTINGTON",
@@ -4228,7 +4526,8 @@
       "median_household_income": 68958,
       "price_to_income": 3.93,
       "coastal": false,
-      "sq_mi": 26.79298324
+      "sq_mi": 26.79298324,
+      "is_5yr_fallback": false
     },
     {
       "town": "PRINCETON",
@@ -4243,7 +4542,8 @@
       "median_household_income": 121500,
       "price_to_income": 5.15,
       "coastal": false,
-      "sq_mi": 35.84243226
+      "sq_mi": 35.84243226,
+      "is_5yr_fallback": false
     },
     {
       "town": "WINTHROP",
@@ -4258,7 +4558,8 @@
       "median_household_income": 62997,
       "price_to_income": 11.35,
       "coastal": true,
-      "sq_mi": 2.27708109
+      "sq_mi": 2.27708109,
+      "is_5yr_fallback": false
     },
     {
       "town": "DUNSTABLE",
@@ -4273,7 +4574,8 @@
       "median_household_income": 118984,
       "price_to_income": 6.51,
       "coastal": false,
-      "sq_mi": 16.75219436
+      "sq_mi": 16.75219436,
+      "is_5yr_fallback": false
     },
     {
       "town": "TISBURY",
@@ -4288,7 +4590,8 @@
       "median_household_income": 46816,
       "price_to_income": 27.77,
       "coastal": true,
-      "sq_mi": 6.57171228
+      "sq_mi": 6.57171228,
+      "is_5yr_fallback": false
     },
     {
       "town": "TYRINGHAM",
@@ -4298,7 +4601,8 @@
       ],
       "median_household_income": 79375,
       "coastal": false,
-      "sq_mi": 18.85699004
+      "sq_mi": 18.85699004,
+      "is_5yr_fallback": false
     },
     {
       "town": "ASHBURNHAM",
@@ -4313,7 +4617,8 @@
       "median_household_income": 86219,
       "price_to_income": 5.22,
       "coastal": false,
-      "sq_mi": 40.9517768
+      "sq_mi": 40.9517768,
+      "is_5yr_fallback": false
     },
     {
       "town": "RAYNHAM",
@@ -4328,7 +4633,8 @@
       "median_household_income": 85998,
       "price_to_income": 6.82,
       "coastal": true,
-      "sq_mi": 20.76275147
+      "sq_mi": 20.76275147,
+      "is_5yr_fallback": false
     },
     {
       "town": "KINGSTON",
@@ -4343,7 +4649,8 @@
       "median_household_income": 88694,
       "price_to_income": 7.72,
       "coastal": true,
-      "sq_mi": 19.00033871
+      "sq_mi": 19.00033871,
+      "is_5yr_fallback": false
     },
     {
       "town": "BRIMFIELD",
@@ -4358,7 +4665,8 @@
       "median_household_income": 83273,
       "price_to_income": 5.1,
       "coastal": false,
-      "sq_mi": 35.31757261
+      "sq_mi": 35.31757261,
+      "is_5yr_fallback": false
     },
     {
       "town": "EASTHAM",
@@ -4373,7 +4681,8 @@
       "median_household_income": 57989,
       "price_to_income": 14.1,
       "coastal": true,
-      "sq_mi": 14.35450155
+      "sq_mi": 14.35450155,
+      "is_5yr_fallback": false
     },
     {
       "town": "WARE",
@@ -4388,7 +4697,8 @@
       "median_household_income": 49678,
       "price_to_income": 7.03,
       "coastal": false,
-      "sq_mi": 39.97726405
+      "sq_mi": 39.97726405,
+      "is_5yr_fallback": false
     },
     {
       "town": "HUBBARDSTON",
@@ -4403,7 +4713,8 @@
       "median_household_income": 84803,
       "price_to_income": 5.13,
       "coastal": false,
-      "sq_mi": 41.98608834
+      "sq_mi": 41.98608834,
+      "is_5yr_fallback": false
     },
     {
       "town": "TAUNTON",
@@ -4418,7 +4729,8 @@
       "median_household_income": 54785,
       "price_to_income": 8.86,
       "coastal": true,
-      "sq_mi": 48.29859323
+      "sq_mi": 48.29859323,
+      "is_5yr_fallback": false
     },
     {
       "town": "MOUNT WASHINGTON",
@@ -4428,7 +4740,8 @@
       ],
       "median_household_income": 65417,
       "coastal": false,
-      "sq_mi": 22.38978351
+      "sq_mi": 22.38978351,
+      "is_5yr_fallback": false
     },
     {
       "town": "STERLING",
@@ -4443,7 +4756,8 @@
       "median_household_income": 104187,
       "price_to_income": 5.45,
       "coastal": false,
-      "sq_mi": 31.66280906
+      "sq_mi": 31.66280906,
+      "is_5yr_fallback": false
     },
     {
       "town": "BILLERICA",
@@ -4458,7 +4772,8 @@
       "median_household_income": 100484,
       "price_to_income": 6.87,
       "coastal": false,
-      "sq_mi": 26.31650623
+      "sq_mi": 26.31650623,
+      "is_5yr_fallback": false
     },
     {
       "town": "DIGHTON",
@@ -4473,7 +4788,8 @@
       "median_household_income": 92818,
       "price_to_income": 6.76,
       "coastal": true,
-      "sq_mi": 22.16942874
+      "sq_mi": 22.16942874,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHELBURNE",
@@ -4488,7 +4804,8 @@
       "median_household_income": 58287,
       "price_to_income": 8.1,
       "coastal": false,
-      "sq_mi": 23.4111058
+      "sq_mi": 23.4111058,
+      "is_5yr_fallback": false
     },
     {
       "town": "STONEHAM",
@@ -4503,7 +4820,8 @@
       "median_household_income": 83783,
       "price_to_income": 8.95,
       "coastal": false,
-      "sq_mi": 6.64630523
+      "sq_mi": 6.64630523,
+      "is_5yr_fallback": false
     },
     {
       "town": "ESSEX",
@@ -4518,7 +4836,8 @@
       "median_household_income": 103750,
       "price_to_income": 9.25,
       "coastal": true,
-      "sq_mi": 14.25672988
+      "sq_mi": 14.25672988,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEW MARLBOROUGH",
@@ -4533,7 +4852,8 @@
       "median_household_income": 72321,
       "price_to_income": 42.86,
       "coastal": false,
-      "sq_mi": 47.89741862
+      "sq_mi": 47.89741862,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTHBOROUGH",
@@ -4548,7 +4868,8 @@
       "median_household_income": 110147,
       "price_to_income": 6.26,
       "coastal": false,
-      "sq_mi": 18.74347709
+      "sq_mi": 18.74347709,
+      "is_5yr_fallback": false
     },
     {
       "town": "GOSHEN",
@@ -4563,7 +4884,8 @@
       "median_household_income": 74432,
       "price_to_income": 5.58,
       "coastal": false,
-      "sq_mi": 17.69888554
+      "sq_mi": 17.69888554,
+      "is_5yr_fallback": false
     },
     {
       "town": "READING",
@@ -4578,7 +4900,8 @@
       "median_household_income": 108894,
       "price_to_income": 7.87,
       "coastal": false,
-      "sq_mi": 9.99028101
+      "sq_mi": 9.99028101,
+      "is_5yr_fallback": false
     },
     {
       "town": "HATFIELD",
@@ -4593,7 +4916,8 @@
       "median_household_income": 64427,
       "price_to_income": 7.72,
       "coastal": false,
-      "sq_mi": 16.82241071
+      "sq_mi": 16.82241071,
+      "is_5yr_fallback": false
     },
     {
       "town": "PLYMOUTH",
@@ -4608,7 +4932,8 @@
       "median_household_income": 80905,
       "price_to_income": 8.36,
       "coastal": true,
-      "sq_mi": 102.774206
+      "sq_mi": 102.774206,
+      "is_5yr_fallback": false
     },
     {
       "town": "FRANKLIN",
@@ -4623,7 +4948,8 @@
       "median_household_income": 108815,
       "price_to_income": 6.07,
       "coastal": false,
-      "sq_mi": 27.02664667
+      "sq_mi": 27.02664667,
+      "is_5yr_fallback": false
     },
     {
       "town": "BECKET",
@@ -4638,7 +4964,8 @@
       "median_household_income": 70750,
       "price_to_income": 4.24,
       "coastal": false,
-      "sq_mi": 47.79274523
+      "sq_mi": 47.79274523,
+      "is_5yr_fallback": false
     },
     {
       "town": "FLORIDA",
@@ -4653,7 +4980,8 @@
       "median_household_income": 61000,
       "price_to_income": 7.19,
       "coastal": false,
-      "sq_mi": 24.59801563
+      "sq_mi": 24.59801563,
+      "is_5yr_fallback": false
     },
     {
       "town": "WELLESLEY",
@@ -4668,7 +4996,8 @@
       "median_household_income": 171719,
       "price_to_income": 11.94,
       "coastal": false,
-      "sq_mi": 10.5467313
+      "sq_mi": 10.5467313,
+      "is_5yr_fallback": false
     },
     {
       "town": "REHOBOTH",
@@ -4683,7 +5012,8 @@
       "median_household_income": 90394,
       "price_to_income": 7.63,
       "coastal": true,
-      "sq_mi": 47.46946964
+      "sq_mi": 47.46946964,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTHFIELD",
@@ -4698,7 +5028,8 @@
       "median_household_income": 63963,
       "price_to_income": 5.94,
       "coastal": false,
-      "sq_mi": 35.37271386
+      "sq_mi": 35.37271386,
+      "is_5yr_fallback": false
     },
     {
       "town": "MONTEREY",
@@ -4708,7 +5039,8 @@
       ],
       "median_household_income": 56146,
       "coastal": false,
-      "sq_mi": 27.40441306
+      "sq_mi": 27.40441306,
+      "is_5yr_fallback": false
     },
     {
       "town": "AMESBURY",
@@ -4723,7 +5055,8 @@
       "median_household_income": 75861,
       "price_to_income": 8.24,
       "coastal": true,
-      "sq_mi": 13.1872471
+      "sq_mi": 13.1872471,
+      "is_5yr_fallback": false
     },
     {
       "town": "SEEKONK",
@@ -4738,7 +5071,8 @@
       "median_household_income": 82094,
       "price_to_income": 7.31,
       "coastal": true,
-      "sq_mi": 18.64481087
+      "sq_mi": 18.64481087,
+      "is_5yr_fallback": false
     },
     {
       "town": "SHUTESBURY",
@@ -4753,7 +5087,8 @@
       "median_household_income": 81406,
       "price_to_income": 5.22,
       "coastal": false,
-      "sq_mi": 27.10918253
+      "sq_mi": 27.10918253,
+      "is_5yr_fallback": false
     },
     {
       "town": "LUNENBURG",
@@ -4768,7 +5103,8 @@
       "median_household_income": 89706,
       "price_to_income": 5.87,
       "coastal": false,
-      "sq_mi": 27.74673183
+      "sq_mi": 27.74673183,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTH READING",
@@ -4783,7 +5119,8 @@
       "median_household_income": 119933,
       "price_to_income": 6.25,
       "coastal": false,
-      "sq_mi": 13.48924037
+      "sq_mi": 13.48924037,
+      "is_5yr_fallback": false
     },
     {
       "town": "CHATHAM",
@@ -4798,7 +5135,8 @@
       "median_household_income": 65750,
       "price_to_income": 22.78,
       "coastal": true,
-      "sq_mi": 17.04160948
+      "sq_mi": 17.04160948,
+      "is_5yr_fallback": false
     },
     {
       "town": "DENNIS",
@@ -4813,7 +5151,8 @@
       "median_household_income": 55506,
       "price_to_income": 11.35,
       "coastal": true,
-      "sq_mi": 20.87484957
+      "sq_mi": 20.87484957,
+      "is_5yr_fallback": false
     },
     {
       "town": "WASHINGTON",
@@ -4828,7 +5167,8 @@
       "median_household_income": 76094,
       "price_to_income": 3.61,
       "coastal": false,
-      "sq_mi": 38.8156511
+      "sq_mi": 38.8156511,
+      "is_5yr_fallback": false
     },
     {
       "town": "TOLLAND",
@@ -4843,7 +5183,8 @@
       "median_household_income": 84500,
       "price_to_income": 5.1,
       "coastal": false,
-      "sq_mi": 32.81271691
+      "sq_mi": 32.81271691,
+      "is_5yr_fallback": false
     },
     {
       "town": "CAMBRIDGE",
@@ -4858,7 +5199,8 @@
       "median_household_income": 83122,
       "price_to_income": 15.04,
       "coastal": true,
-      "sq_mi": 6.6622029
+      "sq_mi": 6.6622029,
+      "is_5yr_fallback": false
     },
     {
       "town": "ROWE",
@@ -4873,7 +5215,8 @@
       "median_household_income": 52143,
       "price_to_income": 7.96,
       "coastal": false,
-      "sq_mi": 24.00166668
+      "sq_mi": 24.00166668,
+      "is_5yr_fallback": false
     },
     {
       "town": "LINCOLN",
@@ -4888,7 +5231,8 @@
       "median_household_income": 130870,
       "price_to_income": 11.08,
       "coastal": false,
-      "sq_mi": 14.98125522
+      "sq_mi": 14.98125522,
+      "is_5yr_fallback": false
     },
     {
       "town": "SOUTHAMPTON",
@@ -4903,7 +5247,8 @@
       "median_household_income": 90318,
       "price_to_income": 6.54,
       "coastal": false,
-      "sq_mi": 28.94693358
+      "sq_mi": 28.94693358,
+      "is_5yr_fallback": false
     },
     {
       "town": "TRURO",
@@ -4918,7 +5263,8 @@
       "median_household_income": 62051,
       "price_to_income": 15.26,
       "coastal": true,
-      "sq_mi": 22.00328266
+      "sq_mi": 22.00328266,
+      "is_5yr_fallback": false
     },
     {
       "town": "EDGARTOWN",
@@ -4933,7 +5279,8 @@
       "median_household_income": 70556,
       "price_to_income": 32.35,
       "coastal": true,
-      "sq_mi": 26.7104911
+      "sq_mi": 26.7104911,
+      "is_5yr_fallback": false
     },
     {
       "town": "FOXBOROUGH",
@@ -4948,7 +5295,8 @@
       "median_household_income": 95665,
       "price_to_income": 6.98,
       "coastal": false,
-      "sq_mi": 20.84488068
+      "sq_mi": 20.84488068,
+      "is_5yr_fallback": false
     },
     {
       "town": "WEYMOUTH",
@@ -4963,7 +5311,8 @@
       "median_household_income": 69744,
       "price_to_income": 8.86,
       "coastal": true,
-      "sq_mi": 17.83172592
+      "sq_mi": 17.83172592,
+      "is_5yr_fallback": false
     },
     {
       "town": "NORTH ANDOVER",
@@ -4978,7 +5327,8 @@
       "median_household_income": 102008,
       "price_to_income": 7.5,
       "coastal": true,
-      "sq_mi": 27.71730429
+      "sq_mi": 27.71730429,
+      "is_5yr_fallback": false
     },
     {
       "town": "SPRINGFIELD",
@@ -4993,7 +5343,8 @@
       "median_household_income": 35742,
       "price_to_income": 8.79,
       "coastal": false,
-      "sq_mi": 33.07746383
+      "sq_mi": 33.07746383,
+      "is_5yr_fallback": false
     },
     {
       "town": "NEWBURYPORT",
@@ -5008,7 +5359,8 @@
       "median_household_income": 87162,
       "price_to_income": 10.47,
       "coastal": true,
-      "sq_mi": 8.74524995
+      "sq_mi": 8.74524995,
+      "is_5yr_fallback": false
     },
     {
       "town": "WALES",
@@ -5023,7 +5375,8 @@
       "median_household_income": 51351,
       "price_to_income": 7.59,
       "coastal": false,
-      "sq_mi": 15.97375634
+      "sq_mi": 15.97375634,
+      "is_5yr_fallback": false
     },
     {
       "town": "TOPSFIELD",
@@ -5038,7 +5391,8 @@
       "median_household_income": 128283,
       "price_to_income": 7.55,
       "coastal": true,
-      "sq_mi": 12.80497262
+      "sq_mi": 12.80497262,
+      "is_5yr_fallback": false
     },
     {
       "town": "RICHMOND",
@@ -5053,7 +5407,8 @@
       "median_household_income": 93750,
       "price_to_income": 8.27,
       "coastal": false,
-      "sq_mi": 19.02812968
+      "sq_mi": 19.02812968,
+      "is_5yr_fallback": false
     },
     {
       "town": "HULL",
@@ -5068,7 +5423,8 @@
       "median_household_income": 78114,
       "price_to_income": 8.13,
       "coastal": true,
-      "sq_mi": 2.98318476
+      "sq_mi": 2.98318476,
+      "is_5yr_fallback": false
     },
     {
       "town": "BROOKFIELD",
@@ -5083,7 +5439,8 @@
       "median_household_income": 63906,
       "price_to_income": 5.48,
       "coastal": false,
-      "sq_mi": 16.58086092
+      "sq_mi": 16.58086092,
+      "is_5yr_fallback": false
     },
     {
       "town": "MILLBURY",
@@ -5098,7 +5455,8 @@
       "median_household_income": 72566,
       "price_to_income": 6.89,
       "coastal": false,
-      "sq_mi": 16.44425791
+      "sq_mi": 16.44425791,
+      "is_5yr_fallback": false
     },
     {
       "town": "STOUGHTON",
@@ -5113,7 +5471,8 @@
       "median_household_income": 75109,
       "price_to_income": 7.5,
       "coastal": false,
-      "sq_mi": 16.46553636
+      "sq_mi": 16.46553636,
+      "is_5yr_fallback": false
     },
     {
       "town": "BELLINGHAM",
@@ -5128,7 +5487,8 @@
       "median_household_income": 90630,
       "price_to_income": 5.83,
       "coastal": false,
-      "sq_mi": 18.8879353
+      "sq_mi": 18.8879353,
+      "is_5yr_fallback": false
     },
     {
       "town": "WESTPORT",
@@ -5143,7 +5503,8 @@
       "median_household_income": 79905,
       "price_to_income": 8.57,
       "coastal": true,
-      "sq_mi": 52.11099058
+      "sq_mi": 52.11099058,
+      "is_5yr_fallback": false
     },
     {
       "town": "BEVERLY",
@@ -5158,7 +5519,8 @@
       "median_household_income": 73839,
       "price_to_income": 10.16,
       "coastal": true,
-      "sq_mi": 15.41147364
+      "sq_mi": 15.41147364,
+      "is_5yr_fallback": false
     },
     {
       "town": "HAWLEY",
@@ -5173,7 +5535,8 @@
       "median_household_income": 65417,
       "price_to_income": 6.04,
       "coastal": false,
-      "sq_mi": 30.82459971
+      "sq_mi": 30.82459971,
+      "is_5yr_fallback": false
     },
     {
       "town": "AUBURN",
@@ -5188,7 +5551,8 @@
       "median_household_income": 71522,
       "price_to_income": 6.51,
       "coastal": false,
-      "sq_mi": 16.41446254
+      "sq_mi": 16.41446254,
+      "is_5yr_fallback": false
     },
     {
       "town": "LAKEVILLE",
@@ -5203,7 +5567,8 @@
       "median_household_income": 93691,
       "price_to_income": 6.27,
       "coastal": false,
-      "sq_mi": 36.11942016
+      "sq_mi": 36.11942016,
+      "is_5yr_fallback": false
     },
     {
       "town": "NANTUCKET",
@@ -5218,7 +5583,8 @@
       "median_household_income": 89428,
       "price_to_income": 27.22,
       "coastal": true,
-      "sq_mi": 48.91162825
+      "sq_mi": 48.91162825,
+      "is_5yr_fallback": false
     }
   ]
 }

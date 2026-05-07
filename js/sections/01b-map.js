@@ -123,27 +123,32 @@
         const town = t.TOWN;
         const row = byTown.get(town);
         if (!row || row.median_sold == null) {
-          // 11 towns truly have no MLSPIN data — Berkshire towns are mostly
-          // covered by Berkshire County MLS rather than MLSPIN, plus Gosnold
-          // (Cuttyhunk) is too small. Median household income is still shown.
+          // 7 towns truly have no MLSPIN data even over 5 years —
+          // verified by Duncan's manual MLSPIN sub-report PDFs.
+          // These all route through Berkshire County MLS.
           const inc = t.Median_Household_Income;
           return {
             html: `
               <div class="tt-title">${town}</div>
               <div class="tt-row"><span>Median income</span><b style="color:#00b8ff">${METRICS.median_household_income.format(inc)}</b></div>
-              <div class="tt-row" style="margin-top:6px"><span style="color:#95a0bb">no MLSPIN sales recorded — likely Berkshire MLS coverage</span></div>
+              <div class="tt-row" style="margin-top:6px"><span style="color:#95a0bb">0 MLSPIN closed sales over 5 years &mdash; Berkshire MLS coverage</span></div>
             `,
             style: tooltipStyle()
           };
         }
-        const smallSample = row.sold_count != null && row.sold_count < 5;
+        const is5yr = row.is_5yr_fallback === true;
+        const smallSample = !is5yr && row.sold_count != null && row.sold_count < 5;
+        let badge = '';
+        if (is5yr) badge = ' <span style="font-size:0.62rem;letter-spacing:0.1em;color:#00b8ff;font-family:JetBrains Mono,monospace;text-transform:uppercase">· 5-yr avg</span>';
+        else if (smallSample) badge = ' <span style="font-size:0.62rem;letter-spacing:0.1em;color:#ffd600;font-family:JetBrains Mono,monospace;text-transform:uppercase">· small sample</span>';
+        const salesLabel = is5yr ? 'Sales (5 yr)' : 'Sales (12 mo)';
         const html = `
-          <div class="tt-title">${town}${smallSample ? ' <span style="font-size:0.62rem;letter-spacing:0.1em;color:#ffd600;font-family:JetBrains Mono,monospace;text-transform:uppercase">· small sample</span>' : ''}</div>
+          <div class="tt-title">${town}${badge}</div>
           <div class="tt-row"><span>Price ÷ Income</span><b style="color:#ff1744">${row.price_to_income ? row.price_to_income.toFixed(1)+'×' : '—'}</b></div>
           <div class="tt-row"><span>Median sold</span><b style="color:#ffd600">${METRICS.median_sold.format(row.median_sold)}</b></div>
           <div class="tt-row"><span>Median income</span><b style="color:#00b8ff">${METRICS.median_household_income.format(row.median_household_income)}</b></div>
           <div class="tt-row"><span>Days on market</span><b>${METRICS.median_dom.format(row.median_dom)}</b></div>
-          <div class="tt-row"><span>Sales (12 mo)</span><b style="${smallSample ? 'color:#ffd600' : ''}">${row.sold_count || '—'}</b></div>
+          <div class="tt-row"><span>${salesLabel}</span><b style="${(is5yr || smallSample) ? 'color:#ffd600' : ''}">${row.sold_count || '—'}</b></div>
         `;
         return { html, style: tooltipStyle() };
       },

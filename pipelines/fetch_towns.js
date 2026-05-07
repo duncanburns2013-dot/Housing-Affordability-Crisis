@@ -122,6 +122,20 @@ const TOWN_ALIASES = {
   const closedByName = new Map(closed.rows.map(r => [norm(r.City), r]));
   const activeByName = new Map(active.rows.map(r => [norm(r.City), r]));
 
+  // 5-year MLSPIN fallback for towns whose 12-month API pull returned no
+  // closed sales (parsed from Duncan's manual MLSPIN sub-report PDFs).
+  let fiveYrFallback = new Map();
+  const fbPath = path.join(OUT, 'ma-towns-5yr-fallback.json');
+  if (fs.existsSync(fbPath)) {
+    const fb = JSON.parse(fs.readFileSync(fbPath, 'utf8'));
+    for (const t of fb.towns) {
+      if (t.fiveYearTotalCount > 0) {
+        fiveYrFallback.set(norm(t.town), t);
+      }
+    }
+    console.log(`Loaded 5-yr fallback for ${fiveYrFallback.size} towns from ${path.basename(fbPath)}`);
+  }
+
   let matched = 0, missing = 0;
   const missingNames = [];
 
@@ -140,6 +154,17 @@ const TOWN_ALIASES = {
       f.properties.median_dom = c.median_MLSPIN_MARKET_TIME;
       f.properties.sold_psf = c.median_MLSPIN_SOLD_PRICE_PER_SQFT;
       f.properties.median_orig_list = Math.round(c.median_OriginalListPrice || 0);
+      matched++;
+    } else if (fiveYrFallback.has(key)) {
+      // Use 5-yr MLSPIN sub-report as fallback for tiny towns
+      const fb = fiveYrFallback.get(key);
+      f.properties.median_sold = fb.fiveYearAvgSalePrice;
+      f.properties.sold_count = fb.fiveYearTotalCount;
+      f.properties.median_dom = fb.fiveYearAvgDom;
+      f.properties.sold_psf = null;
+      f.properties.median_orig_list = null;
+      f.properties.is_5yr_fallback = true;
+      f.properties.fallback_window = fb.fiveYearWindow;
       matched++;
     } else {
       missing++;
@@ -179,7 +204,8 @@ const TOWN_ALIASES = {
     median_household_income: f.properties.Median_Household_Income,
     price_to_income: f.properties.price_to_income,
     coastal: f.properties.Coastal === 1,
-    sq_mi: f.properties.SQUARE_MILES
+    sq_mi: f.properties.SQUARE_MILES,
+    is_5yr_fallback: f.properties.is_5yr_fallback === true
   }));
   fs.writeFileSync(path.join(OUT, 'ma-towns-stats.json'), JSON.stringify({
     meta: { generated: new Date().toISOString(), towns: slim.length, matched, missing },
