@@ -1,0 +1,27 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# node
+node_modules/
+npm-debug.log*
+
+# local data caches that can be regenerated
+data/raw/*.zip
+data/raw/*.xlsx
+data/raw/.cache/
+
+# logs
+*.log
+
+# secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.token
+*.secret
+data/raw/mlspin_*.json
+data/raw/bridge_*.json

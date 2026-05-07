@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Massachusetts Affordability Crisis &mdash; A Data Investigation</title>
+<meta name="description" content="A data-driven Socratic investigation: it's not a housing crisis, it's an affordability crisis. Massachusetts." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+<!-- thin progress bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- side nav: section dots -->
+<nav class="dot-nav" id="dotNav" aria-label="Section navigation">
+  <a href="#hero" data-label="Open"><span class="dot"></span></a>
+  <a href="#s1" data-label="1. Shortage?"><span class="dot"></span></a>
+  <a href="#s2" data-label="2. Divergence"><span class="dot"></span></a>
+  <a href="#s3" data-label="3. Macro?"><span class="dot"></span></a>
+  <a href="#s4" data-label="4. Subsidies"><span class="dot"></span></a>
+  <a href="#s5" data-label="5. Outmigration"><span class="dot"></span></a>
+  <a href="#s6" data-label="6. Verdict"><span class="dot"></span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="kicker">A data investigation &middot; Massachusetts &middot; 2026</div>
+    <h1 class="hero-title">
+      It is not a <span class="strike">housing</span> crisis.<br />
+      It is an <em>affordability</em> crisis.
+    </h1>
+    <p class="hero-sub">
+      A Socratic walk through public data. Six questions. One conclusion.
+      Every chart is sourced. Every assumption is yours to change.
+    </p>
+    <a class="scroll-cue" href="#s1" aria-label="Begin">
+      <span>Begin</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true">
+        <path d="M8 2v18m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ SECTION 1 :: SHORTAGE? ============ -->
+<section id="s1" class="story-section" data-section="1">
+  <header class="section-header">
+    <div class="section-num">01</div>
+    <h2 class="section-question">Is this a <em>shortage</em> &mdash;<br/>or something else?</h2>
+    <p class="section-lede">
+      If Massachusetts has too few homes, we should see it in the data: empty pipelines,
+      falling vacancy, listings disappearing the moment they appear. Let's look.
+    </p>
+  </header>
+
+  <div class="scrolly">
+    <div class="scrolly-graphic">
+      <div class="chart-frame">
+        <div class="chart-eyebrow">Active for-sale inventory, Massachusetts vs. US state average</div>
+        <div id="chart-s1-inventory" class="chart"></div>
+        <div class="chart-source">Source: Zillow Research, monthly for-sale inventory (smoothed, SFR + condo).</div>
+      </div>
+    </div>
+
+    <div class="scrolly-text">
+      <div class="step" data-step="1">
+        <p class="step-q">First question: are listings drying up?</p>
+        <p>
+          Active for-sale inventory in Massachusetts peaked at <b class="hl">27,000</b> homes in 2018.
+          By 2024 it bottomed near <b class="hl">9,000</b> &mdash; a two-thirds collapse in seven years.
+          On its face, this looks like a textbook shortage.
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p class="step-q">But homes don't vanish.</p>
+        <p>
+          The <i>units</i> still exist. Census counts roughly <b class="hl">2.9 million</b> housing units in MA,
+          essentially flat with population. So if listings collapsed without units collapsing,
+          something stopped <em>existing owners from selling</em>.
+        </p>
+      </div>
+      <div class="step" data-step="3">
+        <p class="step-q">What stopped them? Rate lock.</p>
+        <p>
+          Roughly <b class="hl">85% of outstanding mortgages</b> nationally carry rates below today's market.
+          A homeowner with a 3% mortgage who moves to a similar home at 7% sees their payment double.
+          So they don't move.
+        </p>
+        <p class="footnote">
+          We'll wire MA-specific rate-lock figures in a follow-up. The dynamic is national.
+        </p>
+      </div>
+      <div class="step" data-step="4">
+        <p class="step-q">If supply were the bottleneck, what would buyers do?</p>
+        <p>
+          They would chase any home that listed. Days-on-market would be near zero, price reductions rare.
+          Instead, listings are commonly cut, deals fall through, and homes <i>do</i> sit &mdash; just at high
+          asking prices.
+        </p>
+      </div>
+      <div class="step" data-step="5">
+        <p class="step-q">So is this scarcity? Or price?</p>
+        <p>
+          Hold the question open. Section 2 measures the only ratio that matters:
+          home prices against the incomes of the people expected to buy them.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 2 :: DIVERGENCE ============ -->
+<section id="s2" class="story-section" data-section="2">
+  <header class="section-header">
+    <div class="section-num">02</div>
+    <h2 class="section-question">If supply is roughly intact,<br/>why have prices climbed so much?</h2>
+    <p class="section-lede">
+      The cleanest test of an affordability crisis is the price-to-income ratio.
+      Indexed to 2000, do prices and incomes track &mdash; or diverge?
+    </p>
+  </header>
+  <div class="placeholder-card">
+    <div class="placeholder-title">Price-to-Income Divergence &mdash; coming next turn</div>
+    <p>Will plot: MA ZHVI vs. MA median household income, both indexed to 2000=100.
+      Data: Zillow ZHVI (loaded), Census ACS B19013 (next).</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 3 :: MACRO? ============ -->
+<section id="s3" class="story-section" data-section="3">
+  <header class="section-header">
+    <div class="section-num">03</div>
+    <h2 class="section-question">Is this just rates, COVID,<br/>or a national problem?</h2>
+    <p class="section-lede">
+      If MA tracks the US, the explanation is national. If MA pulls away, the cause is local policy.
+    </p>
+  </header>
+  <div class="placeholder-card">
+    <div class="placeholder-title">MA vs. NH vs. US &mdash; coming next turn</div>
+    <p>Will plot: MA / NH / US ZHVI growth and price-to-income, with COVID and rate eras shaded.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 4 :: SUBSIDIES ============ -->
+<section id="s4" class="story-section" data-section="4">
+  <header class="section-header">
+    <div class="section-num">04</div>
+    <h2 class="section-question">Is public spending<br/><em>relieving</em> prices &mdash; or inflating them?</h2>
+    <p class="section-lede">
+      Demand subsidies in a constrained market raise the clearing price. We measure the spending,
+      then let you derive the implied recipient population from a cost-per-recipient slider you control.
+    </p>
+  </header>
+  <div class="placeholder-card">
+    <div class="placeholder-title">CTHRU Spending + Derived Caseload &mdash; coming next turn</div>
+    <p>Will plot: stacked spending FY19 &rarr; FY26 across EA family shelter, RAFT, MRVP, MassHealth Limited,
+      HSN, in-state tuition, refugee/resettlement, ESL grants. Slider lets the reader pick avg cost-per-recipient
+      and see implied population. Data: CTHRU exports + state budget books.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 5 :: OUTMIGRATION ============ -->
+<section id="s5" class="story-section" data-section="5">
+  <header class="section-header">
+    <div class="section-num">05</div>
+    <h2 class="section-question">What are residents <em>doing</em><br/>about it?</h2>
+    <p class="section-lede">
+      The migration data tells you what people decided when they had the choice.
+      Both the count and the AGI moving with them.
+    </p>
+  </header>
+  <div class="placeholder-card">
+    <div class="placeholder-title">IRS SOI Net Migration + AGI Outflow &mdash; coming next turn</div>
+    <p>Will plot: net domestic migration and AGI outflow from MA, by year, with destination breakdown
+      (NH, FL, ME leading). Data: IRS SOI county-to-county migration files.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 6 :: VERDICT ============ -->
+<section id="s6" class="story-section" data-section="6">
+  <header class="section-header">
+    <div class="section-num">06</div>
+    <h2 class="section-question">So what changes the trajectory?</h2>
+    <p class="section-lede">
+      Six questions, one conclusion: subsidize supply or starve demand &mdash; pick one.
+      Doing neither, while doing both poorly, is the policy in force.
+    </p>
+  </header>
+  <div class="placeholder-card">
+    <div class="placeholder-title">Conclusion + town-level explorer &mdash; coming next turn</div>
+    <p>3D extruded MA municipalities map (ECharts-GL or Deck.gl), each town extruded by
+      price-to-income ratio. MLSPIN town listings layered on top.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>The Massachusetts Affordability Crisis &middot; data investigation</div>
+  <div class="footer-sources">
+    Sources: Zillow Research &middot; US Census ACS &middot; BLS &middot; IRS SOI &middot; MA CTHRU &middot; EOHLC &middot; MLSPIN
+  </div>
+  <div class="footer-meta">All charts re-buildable from raw data. <a href="https://github.com/duncanburns2013-dot/Housing-Affordability-Crisis" target="_blank" rel="noopener">Source on GitHub</a>.</div>
+</footer>
+
+<!-- libraries -->
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- app -->
+<script src="js/main.js"></script>
+<script src="js/sections/01-shortage.js"></script>
+</body>
+</html>
