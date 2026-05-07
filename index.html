@@ -167,16 +167,76 @@
 <section id="s2" class="story-section" data-section="2">
   <header class="section-header">
     <div class="section-num">02</div>
-    <h2 class="section-question">If supply is roughly intact,<br/>why have prices climbed so much?</h2>
+    <h2 class="section-question">If supply is roughly intact,<br/>why have prices <em>climbed</em> so much?</h2>
     <p class="section-lede">
       The cleanest test of an affordability crisis is the price-to-income ratio.
-      Indexed to 2000, do prices and incomes track &mdash; or diverge?
+      Indexed to the year 2000, do home prices and household incomes track each other &mdash; or fork apart?
     </p>
   </header>
-  <div class="placeholder-card">
-    <div class="placeholder-title">Price-to-Income Divergence &mdash; coming next turn</div>
-    <p>Will plot: MA ZHVI vs. MA median household income, both indexed to 2000=100.
-      Data: Zillow ZHVI (loaded), Census ACS B19013 (next).</p>
+
+  <div class="scrolly">
+    <div class="scrolly-graphic">
+      <div class="chart-frame">
+        <div class="chart-eyebrow">Massachusetts home price &amp; household income, indexed to 2000 = 100</div>
+        <div id="chart-s2-divergence" class="chart"></div>
+        <div class="chart-source">Sources: Zillow ZHVI (annual mean), FRED MEHOINUSMAA646N (MA), MEHOINUSA646N (US).</div>
+      </div>
+    </div>
+
+    <div class="scrolly-text">
+      <div class="step" data-step="1">
+        <p class="step-q">Where did Massachusetts start?</p>
+        <p>
+          In <b class="hl">2000</b>, the typical Massachusetts home cost <b class="hl">$207,000</b> against a median household
+          income of <b class="hl">$47,000</b>. That's <b class="hl">4.4×</b> &mdash; already above the historical
+          national affordability benchmark of <i>2.6 to 3.0 years of income</i>. We were not starting from a healthy place.
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p class="step-q">Then came the bubble.</p>
+        <p>
+          By <b class="hl">2007</b>, MA homes hit <b class="hl">$354K</b> against <b class="hl">$58K</b> incomes. The ratio
+          surged to <b class="hl">6.0×</b>. Then the financial crisis. Foreclosures. By 2012 prices had fallen to <b class="hl">$295K</b>;
+          incomes had ground up to <b class="hl">$64K</b>. The ratio corrected to <b class="hl">4.6×</b>.
+        </p>
+      </div>
+      <div class="step" data-step="3">
+        <p class="step-q">The correction never finished.</p>
+        <p>
+          From 2012 onward, the price line resumed climbing &mdash; faster than incomes, every year, with one short pause
+          in 2018&ndash;2019. Then COVID. Cheap money. The wedge between the two lines began to gape.
+        </p>
+      </div>
+      <div class="step" data-step="4">
+        <p class="step-q">The US average is below MA &mdash; but rising the same way.</p>
+        <p>
+          Compare the dashed blue line. National household income tracks MA's closely (MA ahead by ~30%). National home
+          prices have risen too, but not at MA's slope. <i>This is not a national problem expressing itself locally.</i>
+          Massachusetts is doing something specific.
+        </p>
+      </div>
+      <div class="step" data-step="5">
+        <p class="step-q">Imagine the alternative.</p>
+        <p>
+          If the 2000 price-to-income ratio had simply held &mdash; if Massachusetts had stayed exactly as expensive as it
+          already was &mdash; the typical home in 2024 would cost <b class="hl">$502,000</b>. It actually costs
+          <b class="hl">$632,000</b>. That gap &mdash; <b class="hl">$130,000</b> per home, multiplied across the housing
+          stock &mdash; <em>is the affordability crisis</em>, in one number.
+        </p>
+        <p class="footnote">
+          Calculation: 2000 ratio 4.42× &middot; 2024 income $113,900 &middot; implied home $502K &middot; actual home $630K &middot;
+          gap $128K. We round.
+        </p>
+      </div>
+      <div class="step" data-step="6">
+        <p class="step-q">Two questions remain.</p>
+        <p>
+          The forces driving this gap could be national (rates, COVID), or local (policy). Section 3 measures them
+          against neighbors. The driver hiding in plain sight could be the public spending pumping demand into a constrained
+          market &mdash; we get to that next.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -265,5 +325,6 @@
 <script src="js/main.js"></script>
 <script src="js/sections/01-shortage.js"></script>
 <script src="js/sections/01b-map.js"></script>
+<script src="js/sections/02-divergence.js"></script>
 </body>
 </html>
