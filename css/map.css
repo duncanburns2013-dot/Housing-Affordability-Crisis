@@ -1,0 +1,280 @@
+/* ===========================================================
+   Section 1.5 — town map showpiece
+   Black void canvas, glass controls, glowing legend.
+   =========================================================== */
+
+.map-section {
+  padding-bottom: 4rem;
+}
+
+.map-stage {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ----- canvas wrap ----- */
+.map-canvas-wrap {
+  position: relative;
+  width: 100%;
+  height: 78vh;
+  min-height: 620px;
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(92, 200, 255, 0.06), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(255, 77, 90, 0.06), transparent 50%),
+    #02050d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+.map-canvas {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+}
+.map-canvas:active { cursor: grabbing; }
+.map-canvas canvas { display: block; }
+
+.map-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.map-loading::after {
+  content: '';
+  position: absolute;
+  width: 32px; height: 32px;
+  margin-top: 60px;
+  border: 2px solid rgba(255, 77, 90, 0.2);
+  border-top-color: var(--crisis);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.map-error {
+  padding: 2rem;
+  color: var(--crisis-soft);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+/* ----- controls (metric toggles) ----- */
+.map-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 auto 1.2rem;
+  padding: 0.5rem;
+  max-width: max-content;
+  background: var(--panel);
+  border: 1px solid var(--panel-stroke);
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+}
+.map-controls button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.map-controls button:hover { color: var(--ink); background: rgba(255, 255, 255, 0.04); }
+.map-controls button.active {
+  background: linear-gradient(135deg, rgba(255, 77, 90, 0.85), rgba(255, 140, 80, 0.85));
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 77, 90, 0.35);
+}
+
+/* ----- legend (top right of canvas) ----- */
+.map-legend {
+  position: absolute;
+  top: 16px; left: 16px;
+  background: rgba(8, 14, 28, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  z-index: 5;
+  pointer-events: none;
+  max-width: 320px;
+}
+.legend-title {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 0.5rem;
+}
+.legend-row {
+  display: flex;
+  gap: 0.7rem;
+}
+.legend-stop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-family: var(--mono);
+  color: var(--ink-soft);
+}
+.legend-swatch {
+  width: 22px; height: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* ----- auto-rotate toggle (bottom right of canvas) ----- */
+.map-rotate {
+  position: absolute;
+  bottom: 16px; right: 16px;
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  appearance: none;
+  background: rgba(8, 14, 28, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 6px 12px;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+.map-rotate svg { animation: spin 6s linear infinite; }
+.map-rotate.off { color: var(--ink-mute); }
+.map-rotate.off svg { animation: none; opacity: 0.3; }
+.map-rotate:hover { color: var(--ink); border-color: var(--crisis); }
+
+/* ----- leaderboard ----- */
+.map-leaderboard {
+  margin-top: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--panel);
+  border: 1px solid var(--panel-stroke);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+.lb-title {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 1rem;
+}
+.lb-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.lb-col {}
+.lb-head {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.lb-list {
+  list-style: none;
+  margin: 0; padding: 0;
+  counter-reset: lb;
+}
+.lb-list li {
+  counter-increment: lb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 2.2rem;
+}
+.lb-list li::before {
+  content: counter(lb);
+  position: absolute;
+  left: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--crisis);
+  font-weight: 600;
+  width: 1.6rem;
+  text-align: right;
+}
+.lb-town { color: var(--ink); font-weight: 500; }
+.lb-val {
+  font-family: var(--mono);
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+}
+.lb-sub {
+  grid-column: 1 / -1;
+  font-size: 0.74rem;
+  color: var(--ink-mute);
+  font-family: var(--mono);
+  margin-top: 2px;
+}
+
+.map-source {
+  margin-top: 1rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-mute);
+  text-align: center;
+}
+
+/* ----- tooltip rows (deck.gl injects html into a div whose style we set) ----- */
+/* Deck's tooltip uses inline style; the inner content uses these classes */
+.tt-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold);
+  margin-bottom: 0.45rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.tt-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  font-size: 0.78rem;
+  padding: 2px 0;
+}
+.tt-row span { color: var(--ink-mute); font-family: var(--mono); letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.66rem; }
+.tt-row b { color: var(--ink); font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+@media (max-width: 720px) {
+  .map-canvas-wrap { height: 64vh; min-height: 460px; }
+  .lb-grid { grid-template-columns: 1fr; }
+  .map-controls button { padding: 0.45rem 0.8rem; font-size: 0.74rem; }
+  .legend-row { gap: 0.4rem; }
+  .legend-stop { font-size: 0.66rem; }
+}

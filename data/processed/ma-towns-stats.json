@@ -1,0 +1,5195 @@
+{
+  "meta": {
+    "generated": "2026-05-07T17:32:31.782Z",
+    "towns": 351,
+    "matched": 335,
+    "missing": 16
+  },
+  "rows": [
+    {
+      "town": "DUDLEY",
+      "centroid": [
+        -71.8943224659091,
+        42.04777702272729
+      ],
+      "median_sold": 450000,
+      "sold_count": 90,
+      "median_dom": 23.5,
+      "sold_psf": 260.205,
+      "median_household_income": 62567,
+      "price_to_income": 7.19,
+      "coastal": false,
+      "sq_mi": 21.89025079
+    },
+    {
+      "town": "NEWBURY",
+      "centroid": [
+        -70.8424600291346,
+        42.77154839750545
+      ],
+      "median_sold": 920000,
+      "sold_count": 81,
+      "median_dom": 31,
+      "sold_psf": 443.13,
+      "median_household_income": 92454,
+      "price_to_income": 9.95,
+      "coastal": true,
+      "sq_mi": 24.2068658
+    },
+    {
+      "town": "MALDEN",
+      "centroid": [
+        -71.07209926262627,
+        42.4180521111111
+      ],
+      "median_sold": 638000,
+      "sold_count": 233,
+      "median_dom": 20,
+      "sold_psf": 461.34,
+      "median_household_income": 60085,
+      "price_to_income": 10.62,
+      "coastal": false,
+      "sq_mi": 5.06875565
+    },
+    {
+      "town": "SAUGUS",
+      "centroid": [
+        -70.9910197447005,
+        42.445628157790125
+      ],
+      "median_sold": 667500,
+      "sold_count": 234,
+      "median_dom": 21,
+      "sold_psf": 376.56,
+      "median_household_income": 78372,
+      "price_to_income": 8.52,
+      "coastal": true,
+      "sq_mi": 11.34033218
+    },
+    {
+      "town": "GROTON",
+      "centroid": [
+        -71.61829541062173,
+        42.61581176554399
+      ],
+      "median_sold": 805000,
+      "sold_count": 133,
+      "median_dom": 23,
+      "sold_psf": 332.62,
+      "median_household_income": 117500,
+      "price_to_income": 6.85,
+      "coastal": false,
+      "sq_mi": 33.77629491
+    },
+    {
+      "town": "HANSON",
+      "centroid": [
+        -70.85481377508653,
+        42.08290379238753
+      ],
+      "median_sold": 615000,
+      "sold_count": 119,
+      "median_dom": 25,
+      "sold_psf": 321.91,
+      "median_household_income": 93517,
+      "price_to_income": 6.58,
+      "coastal": true,
+      "sq_mi": 15.7330717
+    },
+    {
+      "town": "CUMMINGTON",
+      "centroid": [
+        -72.9155402,
+        42.467988000000005
+      ],
+      "median_sold": 419500,
+      "sold_count": 7,
+      "median_dom": 44,
+      "sold_psf": 258.46,
+      "median_household_income": 51731,
+      "price_to_income": 8.11,
+      "coastal": false,
+      "sq_mi": 23.06728903
+    },
+    {
+      "town": "EAST BROOKFIELD",
+      "centroid": [
+        -72.07278597619049,
+        42.21502585034012
+      ],
+      "median_sold": 425750,
+      "sold_count": 18,
+      "median_dom": 42,
+      "sold_psf": 254.97500000000002,
+      "median_household_income": 80714,
+      "price_to_income": 5.27,
+      "coastal": false,
+      "sq_mi": 10.4222709
+    },
+    {
+      "town": "SOUTHWICK",
+      "centroid": [
+        -72.76039953453447,
+        42.02298378378383
+      ],
+      "median_sold": 462500,
+      "sold_count": 74,
+      "median_dom": 23.5,
+      "sold_psf": 253.515,
+      "median_household_income": 76576,
+      "price_to_income": 6.04,
+      "coastal": false,
+      "sq_mi": 31.64596676
+    },
+    {
+      "town": "BLACKSTONE",
+      "centroid": [
+        -71.50470068965515,
+        42.02691441379311
+      ],
+      "median_sold": 453500,
+      "sold_count": 78,
+      "median_dom": 20,
+      "sold_psf": 290.485,
+      "median_household_income": 75544,
+      "price_to_income": 6,
+      "coastal": false,
+      "sq_mi": 11.38042054
+    },
+    {
+      "town": "UPTON",
+      "centroid": [
+        -71.56495789933771,
+        42.17021157350998
+      ],
+      "median_sold": 791900,
+      "sold_count": 93,
+      "median_dom": 21,
+      "sold_psf": 322.77,
+      "median_household_income": 116250,
+      "price_to_income": 6.81,
+      "coastal": false,
+      "sq_mi": 21.83335441
+    },
+    {
+      "town": "HAMILTON",
+      "centroid": [
+        -70.86417206272405,
+        42.64186567741934
+      ],
+      "median_sold": 850000,
+      "sold_count": 64,
+      "median_dom": 21,
+      "sold_psf": 411.66499999999996,
+      "median_household_income": 114907,
+      "price_to_income": 7.4,
+      "coastal": true,
+      "sq_mi": 14.90066236
+    },
+    {
+      "town": "MEDFORD",
+      "centroid": [
+        -71.09721110939508,
+        42.409525344916354
+      ],
+      "median_sold": 825000,
+      "sold_count": 401,
+      "median_dom": 21,
+      "sold_psf": 510.1,
+      "median_household_income": 79607,
+      "price_to_income": 10.36,
+      "coastal": true,
+      "sq_mi": 8.41418077
+    },
+    {
+      "town": "REVERE",
+      "centroid": [
+        -70.99539650515601,
+        42.4240012772182
+      ],
+      "median_sold": 520000,
+      "sold_count": 316,
+      "median_dom": 31,
+      "sold_psf": 448.67499999999995,
+      "median_household_income": 51482,
+      "price_to_income": 10.1,
+      "coastal": true,
+      "sq_mi": 6.162842
+    },
+    {
+      "town": "GARDNER",
+      "centroid": [
+        -72.02529274427484,
+        42.578833484732826
+      ],
+      "median_sold": 370000,
+      "sold_count": 175,
+      "median_dom": 22,
+      "sold_psf": 255.04,
+      "median_household_income": 46410,
+      "price_to_income": 7.97,
+      "coastal": false,
+      "sq_mi": 23.01312885
+    },
+    {
+      "town": "LEXINGTON",
+      "centroid": [
+        -71.21050351724136,
+        42.45650842528735
+      ],
+      "median_sold": 1836500,
+      "sold_count": 318,
+      "median_dom": 20,
+      "sold_psf": 580.27,
+      "median_household_income": 152872,
+      "price_to_income": 12.01,
+      "coastal": false,
+      "sq_mi": 16.63860742
+    },
+    {
+      "town": "HINGHAM",
+      "centroid": [
+        -70.88859787943827,
+        42.25404656544783
+      ],
+      "median_sold": 1336250,
+      "sold_count": 256,
+      "median_dom": 21,
+      "sold_psf": 554.835,
+      "median_household_income": 118148,
+      "price_to_income": 11.31,
+      "coastal": true,
+      "sq_mi": 22.7464896
+    },
+    {
+      "town": "BLANDFORD",
+      "centroid": [
+        -72.9637254375,
+        42.200204500000005
+      ],
+      "median_sold": 420000,
+      "sold_count": 10,
+      "median_dom": 36,
+      "sold_psf": 224.055,
+      "median_household_income": 67000,
+      "price_to_income": 6.27,
+      "coastal": false,
+      "sq_mi": 53.44070849
+    },
+    {
+      "town": "CONCORD",
+      "centroid": [
+        -71.33231947619046,
+        42.45672134523811
+      ],
+      "median_sold": 1568250,
+      "sold_count": 225,
+      "median_dom": 21,
+      "sold_psf": 532.79,
+      "median_household_income": 138661,
+      "price_to_income": 11.31,
+      "coastal": false,
+      "sq_mi": 25.83219845
+    },
+    {
+      "town": "ROYALSTON",
+      "centroid": [
+        -72.18726729166666,
+        42.65543375000001
+      ],
+      "median_sold": 410000,
+      "sold_count": 17,
+      "median_dom": 20,
+      "sold_psf": 228.37,
+      "median_household_income": 68068,
+      "price_to_income": 6.02,
+      "coastal": false,
+      "sq_mi": 42.54604128
+    },
+    {
+      "town": "SHREWSBURY",
+      "centroid": [
+        -71.71202138235292,
+        42.29690138235294
+      ],
+      "median_sold": 641000,
+      "sold_count": 289,
+      "median_dom": 21,
+      "sold_psf": 320.29,
+      "median_household_income": 98790,
+      "price_to_income": 6.49,
+      "coastal": false,
+      "sq_mi": 21.75639304
+    },
+    {
+      "town": "NAHANT",
+      "centroid": [
+        -70.92234354790789,
+        42.4276834751365
+      ],
+      "median_sold": 847500,
+      "sold_count": 28,
+      "median_dom": 26,
+      "sold_psf": 531.52,
+      "median_household_income": 72625,
+      "price_to_income": 11.67,
+      "coastal": true,
+      "sq_mi": 1.2545767
+    },
+    {
+      "town": "BARNSTABLE",
+      "centroid": [
+        -70.37477410541285,
+        41.652723463772936
+      ],
+      "median_sold": 710000,
+      "sold_count": 449,
+      "median_dom": 32,
+      "sold_psf": 432.84,
+      "median_household_income": 63549,
+      "price_to_income": 11.17,
+      "coastal": true,
+      "sq_mi": 62.62209368
+    },
+    {
+      "town": "WHATELY",
+      "centroid": [
+        -72.60363187272726,
+        42.442760254545455
+      ],
+      "median_sold": 410000,
+      "sold_count": 12,
+      "median_dom": 22.5,
+      "sold_psf": 217.91,
+      "median_household_income": 71927,
+      "price_to_income": 5.7,
+      "coastal": false,
+      "sq_mi": 20.66582243
+    },
+    {
+      "town": "METHUEN",
+      "centroid": [
+        -71.17467362307691,
+        42.7184412
+      ],
+      "median_sold": 595000,
+      "sold_count": 396,
+      "median_dom": 21,
+      "sold_psf": 329.475,
+      "median_household_income": 72631,
+      "price_to_income": 8.19,
+      "coastal": true,
+      "sq_mi": 22.99557479
+    },
+    {
+      "town": "WEST SPRINGFIELD",
+      "centroid": [
+        -72.63789240239053,
+        42.10300937251002
+      ],
+      "median_sold": 345000,
+      "sold_count": 217,
+      "median_dom": 21,
+      "sold_psf": 245.42,
+      "median_household_income": 50649,
+      "price_to_income": 6.81,
+      "coastal": false,
+      "sq_mi": 17.53362391
+    },
+    {
+      "town": "DEDHAM",
+      "centroid": [
+        -71.18137016480446,
+        42.251593946927365
+      ],
+      "median_sold": 775000,
+      "sold_count": 263,
+      "median_dom": 20,
+      "sold_psf": 460.29,
+      "median_household_income": 87108,
+      "price_to_income": 8.9,
+      "coastal": false,
+      "sq_mi": 10.68350284
+    },
+    {
+      "town": "NEW BRAINTREE",
+      "centroid": [
+        -72.16370266315789,
+        42.33044264631577
+      ],
+      "median_sold": 580000,
+      "sold_count": 3,
+      "median_dom": 83,
+      "sold_psf": 250,
+      "median_household_income": 81389,
+      "price_to_income": 7.13,
+      "coastal": false,
+      "sq_mi": 20.91763318
+    },
+    {
+      "town": "FAIRHAVEN",
+      "centroid": [
+        -70.86142552032092,
+        41.6229006932263
+      ],
+      "median_sold": 498700,
+      "sold_count": 134,
+      "median_dom": 28,
+      "sold_psf": 360.32500000000005,
+      "median_household_income": 60407,
+      "price_to_income": 8.26,
+      "coastal": true,
+      "sq_mi": 12.40887067
+    },
+    {
+      "town": "SOUTHBRIDGE",
+      "centroid": [
+        -72.04147099056601,
+        42.0779005754717
+      ],
+      "median_sold": 372500,
+      "sold_count": 126,
+      "median_dom": 23,
+      "sold_psf": 232.595,
+      "median_household_income": 48762,
+      "price_to_income": 7.64,
+      "coastal": false,
+      "sq_mi": 20.85990573
+    },
+    {
+      "town": "BRAINTREE",
+      "centroid": [
+        -70.98795385968184,
+        42.21389157811039
+      ],
+      "median_sold": 677500,
+      "sold_count": 298,
+      "median_dom": 20,
+      "sold_psf": 415.33500000000004,
+      "median_household_income": 85863,
+      "price_to_income": 7.89,
+      "coastal": true,
+      "sq_mi": 14.42867697
+    },
+    {
+      "town": "HOLLAND",
+      "centroid": [
+        -72.19502015384616,
+        42.062983186813156
+      ],
+      "median_sold": 400000,
+      "sold_count": 43,
+      "median_dom": 20,
+      "sold_psf": 313.75,
+      "median_household_income": 75658,
+      "price_to_income": 5.29,
+      "coastal": false,
+      "sq_mi": 13.05912558
+    },
+    {
+      "town": "ADAMS",
+      "centroid": [
+        -73.107202875,
+        42.629432875
+      ],
+      "median_sold": 250000,
+      "sold_count": 18,
+      "median_dom": 31,
+      "sold_psf": 157.375,
+      "median_household_income": 48422,
+      "price_to_income": 5.16,
+      "coastal": false,
+      "sq_mi": 22.96033164
+    },
+    {
+      "town": "GREENFIELD",
+      "centroid": [
+        -72.57088465662643,
+        42.60623300200797
+      ],
+      "median_sold": 329093,
+      "sold_count": 124,
+      "median_dom": 23,
+      "sold_psf": 216.52,
+      "median_household_income": 48724,
+      "price_to_income": 6.75,
+      "coastal": false,
+      "sq_mi": 21.87267447
+    },
+    {
+      "town": "BOLTON",
+      "centroid": [
+        -71.617564,
+        42.43930772727273
+      ],
+      "median_sold": 882500,
+      "sold_count": 80,
+      "median_dom": 23.5,
+      "sold_psf": 306.71000000000004,
+      "median_household_income": 151023,
+      "price_to_income": 5.84,
+      "coastal": false,
+      "sq_mi": 20.07901969
+    },
+    {
+      "town": "WESTBOROUGH",
+      "centroid": [
+        -71.59189971363632,
+        42.27677411818185
+      ],
+      "median_sold": 651650,
+      "sold_count": 247,
+      "median_dom": 23,
+      "sold_psf": 377.08,
+      "median_household_income": 106915,
+      "price_to_income": 6.1,
+      "coastal": false,
+      "sq_mi": 21.45274231
+    },
+    {
+      "town": "SWAMPSCOTT",
+      "centroid": [
+        -70.90301418615533,
+        42.46553765575306
+      ],
+      "median_sold": 772950,
+      "sold_count": 152,
+      "median_dom": 23,
+      "sold_psf": 426.635,
+      "median_household_income": 103244,
+      "price_to_income": 7.49,
+      "coastal": true,
+      "sq_mi": 3.10076819
+    },
+    {
+      "town": "MATTAPOISETT",
+      "centroid": [
+        -70.80590253470132,
+        41.64963316098367
+      ],
+      "median_sold": 810000,
+      "sold_count": 90,
+      "median_dom": 40,
+      "sold_psf": 419.7,
+      "median_household_income": 84489,
+      "price_to_income": 9.59,
+      "coastal": true,
+      "sq_mi": 17.49338974
+    },
+    {
+      "town": "MELROSE",
+      "centroid": [
+        -71.0619404,
+        42.4602374
+      ],
+      "median_sold": 880000,
+      "sold_count": 262,
+      "median_dom": 15,
+      "sold_psf": 481.945,
+      "median_household_income": 87712,
+      "price_to_income": 10.03,
+      "coastal": false,
+      "sq_mi": 4.7678579
+    },
+    {
+      "town": "DALTON",
+      "centroid": [
+        -73.15499831249998,
+        42.475862125000006
+      ],
+      "median_sold": 311000,
+      "sold_count": 25,
+      "median_dom": 25,
+      "sold_psf": 190.82,
+      "median_household_income": 55774,
+      "price_to_income": 5.58,
+      "coastal": false,
+      "sq_mi": 21.86916414
+    },
+    {
+      "town": "NORTH ATTLEBOROUGH",
+      "centroid": [
+        -71.32698242857144,
+        41.973587
+      ],
+      "median_household_income": 83735,
+      "coastal": false,
+      "sq_mi": 19.37917402
+    },
+    {
+      "town": "CANTON",
+      "centroid": [
+        -71.15170797516936,
+        42.187804918735914
+      ],
+      "median_sold": 750000,
+      "sold_count": 229,
+      "median_dom": 21,
+      "sold_psf": 400.53,
+      "median_household_income": 93672,
+      "price_to_income": 8.01,
+      "coastal": false,
+      "sq_mi": 19.51435848
+    },
+    {
+      "town": "WESTHAMPTON",
+      "centroid": [
+        -72.7742779,
+        42.31195809999999
+      ],
+      "median_sold": 543250,
+      "sold_count": 20,
+      "median_dom": 23,
+      "sold_psf": 261.79,
+      "median_household_income": 82788,
+      "price_to_income": 6.56,
+      "coastal": false,
+      "sq_mi": 27.35903814
+    },
+    {
+      "town": "WAKEFIELD",
+      "centroid": [
+        -71.04478422884891,
+        42.509801549237174
+      ],
+      "median_sold": 792500,
+      "sold_count": 302,
+      "median_dom": 19,
+      "sold_psf": 456.845,
+      "median_household_income": 90911,
+      "price_to_income": 8.72,
+      "coastal": false,
+      "sq_mi": 7.99416755
+    },
+    {
+      "town": "LEOMINSTER",
+      "centroid": [
+        -71.7889815730337,
+        42.54551838202247
+      ],
+      "median_sold": 414000,
+      "sold_count": 332,
+      "median_dom": 21,
+      "sold_psf": 274.105,
+      "median_household_income": 56510,
+      "price_to_income": 7.33,
+      "coastal": false,
+      "sq_mi": 29.67847108
+    },
+    {
+      "town": "LEVERETT",
+      "centroid": [
+        -72.48678023076923,
+        42.47642376923078
+      ],
+      "median_sold": 599250,
+      "sold_count": 14,
+      "median_dom": 48.5,
+      "sold_psf": 264.495,
+      "median_household_income": 86771,
+      "price_to_income": 6.91,
+      "coastal": false,
+      "sq_mi": 22.95794531
+    },
+    {
+      "town": "CARLISLE",
+      "centroid": [
+        -71.31700956122451,
+        42.52060136734695
+      ],
+      "median_sold": 1425000,
+      "sold_count": 67,
+      "median_dom": 24,
+      "sold_psf": 391,
+      "median_household_income": 167400,
+      "price_to_income": 8.51,
+      "coastal": false,
+      "sq_mi": 15.52414462
+    },
+    {
+      "town": "ROCKLAND",
+      "centroid": [
+        -70.90259915384617,
+        42.13734746153846
+      ],
+      "median_sold": 537000,
+      "sold_count": 205,
+      "median_dom": 21,
+      "sold_psf": 330.42,
+      "median_household_income": 70750,
+      "price_to_income": 7.59,
+      "coastal": false,
+      "sq_mi": 10.11953106
+    },
+    {
+      "town": "HOLLISTON",
+      "centroid": [
+        -71.4093524091904,
+        42.22009698030637
+      ],
+      "median_sold": 725000,
+      "sold_count": 165,
+      "median_dom": 19,
+      "sold_psf": 350.83,
+      "median_household_income": 110295,
+      "price_to_income": 6.57,
+      "coastal": false,
+      "sq_mi": 19.05228205
+    },
+    {
+      "town": "MASHPEE",
+      "centroid": [
+        -70.48549458583571,
+        41.58154565741475
+      ],
+      "median_sold": 685000,
+      "sold_count": 299,
+      "median_dom": 45,
+      "sold_psf": 406.22,
+      "median_household_income": 70995,
+      "price_to_income": 9.65,
+      "coastal": true,
+      "sq_mi": 25.60167776
+    },
+    {
+      "town": "LEE",
+      "centroid": [
+        -73.24093734459461,
+        42.349768898648634
+      ],
+      "median_household_income": 61507,
+      "coastal": false,
+      "sq_mi": 27.01327014
+    },
+    {
+      "town": "LANESBOROUGH",
+      "centroid": [
+        -73.20854766666665,
+        42.541509866666665
+      ],
+      "median_sold": 350000,
+      "sold_count": 12,
+      "median_dom": 31,
+      "sold_psf": 215.445,
+      "median_household_income": 74519,
+      "price_to_income": 4.7,
+      "coastal": false,
+      "sq_mi": 29.58491817
+    },
+    {
+      "town": "WOBURN",
+      "centroid": [
+        -71.16380319607842,
+        42.48682496078432
+      ],
+      "median_sold": 741000,
+      "sold_count": 312,
+      "median_dom": 21,
+      "sold_psf": 445.485,
+      "median_household_income": 83872,
+      "price_to_income": 8.83,
+      "coastal": false,
+      "sq_mi": 12.94312925
+    },
+    {
+      "town": "GOSNOLD",
+      "centroid": [
+        -70.80103527664103,
+        41.467521222786075
+      ],
+      "median_household_income": 38750,
+      "coastal": true,
+      "sq_mi": 13.44385525
+    },
+    {
+      "town": "ASHBY",
+      "centroid": [
+        -71.83763718749998,
+        42.679506437499995
+      ],
+      "median_sold": 495000,
+      "sold_count": 41,
+      "median_dom": 26,
+      "sold_psf": 250.48,
+      "median_household_income": 89934,
+      "price_to_income": 5.5,
+      "coastal": false,
+      "sq_mi": 24.0732648
+    },
+    {
+      "town": "WEST TISBURY",
+      "centroid": [
+        -70.6719718017566,
+        41.41263690840652
+      ],
+      "median_sold": 1850000,
+      "sold_count": 11,
+      "median_dom": 71,
+      "sold_psf": 947.29,
+      "median_household_income": 85469,
+      "price_to_income": 21.65,
+      "coastal": true,
+      "sq_mi": 26.28637966
+    },
+    {
+      "town": "MEDWAY",
+      "centroid": [
+        -71.4134556741345,
+        42.13666774541757
+      ],
+      "median_sold": 685000,
+      "sold_count": 141,
+      "median_dom": 20,
+      "sold_psf": 316.97,
+      "median_household_income": 109865,
+      "price_to_income": 6.23,
+      "coastal": false,
+      "sq_mi": 11.66678866
+    },
+    {
+      "town": "ATTLEBORO",
+      "centroid": [
+        -71.29563820000001,
+        41.930830300000004
+      ],
+      "median_sold": 488950,
+      "sold_count": 400,
+      "median_dom": 25,
+      "sold_psf": 307.5,
+      "median_household_income": 69732,
+      "price_to_income": 7.01,
+      "coastal": false,
+      "sq_mi": 27.77078865
+    },
+    {
+      "town": "SUDBURY",
+      "centroid": [
+        -71.3783391032609,
+        42.38370786413041
+      ],
+      "median_sold": 1150000,
+      "sold_count": 214,
+      "median_dom": 25.5,
+      "sold_psf": 396.78999999999996,
+      "median_household_income": 164013,
+      "price_to_income": 7.01,
+      "coastal": false,
+      "sq_mi": 24.74631344
+    },
+    {
+      "town": "BROOKLINE",
+      "centroid": [
+        -71.12281644444445,
+        42.33368427999999
+      ],
+      "median_sold": 1320000,
+      "sold_count": 553,
+      "median_dom": 23,
+      "sold_psf": 805.4449999999999,
+      "median_household_income": 102175,
+      "price_to_income": 12.92,
+      "coastal": false,
+      "sq_mi": 6.82181127
+    },
+    {
+      "town": "GRANVILLE",
+      "centroid": [
+        -72.8791219,
+        42.08136484999999
+      ],
+      "median_sold": 407000,
+      "sold_count": 12,
+      "median_dom": 21,
+      "sold_psf": 190.89,
+      "median_household_income": 78958,
+      "price_to_income": 5.15,
+      "coastal": false,
+      "sq_mi": 43.11401521
+    },
+    {
+      "town": "SCITUATE",
+      "centroid": [
+        -70.74722255879104,
+        42.204902312724386
+      ],
+      "median_sold": 1014500,
+      "sold_count": 222,
+      "median_dom": 21,
+      "sold_psf": 494.485,
+      "median_household_income": 107807,
+      "price_to_income": 9.41,
+      "coastal": true,
+      "sq_mi": 17.32161897
+    },
+    {
+      "town": "WILBRAHAM",
+      "centroid": [
+        -72.4291930769231,
+        42.160637098901084
+      ],
+      "median_sold": 492000,
+      "sold_count": 199,
+      "median_dom": 25,
+      "sold_psf": 250,
+      "median_household_income": 96076,
+      "price_to_income": 5.12,
+      "coastal": false,
+      "sq_mi": 22.33303138
+    },
+    {
+      "town": "HANOVER",
+      "centroid": [
+        -70.83048417325213,
+        42.12354577659573
+      ],
+      "median_sold": 815000,
+      "sold_count": 125,
+      "median_dom": 21,
+      "sold_psf": 388.38,
+      "median_household_income": 105635,
+      "price_to_income": 7.72,
+      "coastal": true,
+      "sq_mi": 15.62880086
+    },
+    {
+      "town": "SHIRLEY",
+      "centroid": [
+        -71.63043623638966,
+        42.594255237822345
+      ],
+      "median_sold": 449900,
+      "sold_count": 71,
+      "median_dom": 20,
+      "sold_psf": 273.41,
+      "median_household_income": 68864,
+      "price_to_income": 6.53,
+      "coastal": false,
+      "sq_mi": 15.89899957
+    },
+    {
+      "town": "ROCHESTER",
+      "centroid": [
+        -70.80485124855493,
+        41.75336131213873
+      ],
+      "median_sold": 675000,
+      "sold_count": 53,
+      "median_dom": 25,
+      "sold_psf": 353.98,
+      "median_household_income": 103081,
+      "price_to_income": 6.55,
+      "coastal": true,
+      "sq_mi": 36.03413184
+    },
+    {
+      "town": "ACUSHNET",
+      "centroid": [
+        -70.917159009324,
+        41.6931593053613
+      ],
+      "median_sold": 540000,
+      "sold_count": 81,
+      "median_dom": 23,
+      "sold_psf": 306.12,
+      "median_household_income": 70375,
+      "price_to_income": 7.67,
+      "coastal": true,
+      "sq_mi": 18.8779959
+    },
+    {
+      "town": "GILL",
+      "centroid": [
+        -72.5226883979797,
+        42.62681554141413
+      ],
+      "median_sold": 387500,
+      "sold_count": 7,
+      "median_dom": 21,
+      "sold_psf": 263.16,
+      "median_household_income": 74167,
+      "price_to_income": 5.22,
+      "coastal": false,
+      "sq_mi": 14.80334615
+    },
+    {
+      "town": "WEST BOYLSTON",
+      "centroid": [
+        -71.77684372222224,
+        42.36337044444444
+      ],
+      "median_sold": 513750,
+      "sold_count": 78,
+      "median_dom": 20,
+      "sold_psf": 308.44,
+      "median_household_income": 74005,
+      "price_to_income": 6.94,
+      "coastal": false,
+      "sq_mi": 13.86331689
+    },
+    {
+      "town": "GLOUCESTER",
+      "centroid": [
+        -70.68526465739357,
+        42.63364171698858
+      ],
+      "median_sold": 725000,
+      "sold_count": 210,
+      "median_dom": 27,
+      "sold_psf": 445.83000000000004,
+      "median_household_income": 63917,
+      "price_to_income": 11.34,
+      "coastal": true,
+      "sq_mi": 26.70110893
+    },
+    {
+      "town": "CLARKSBURG",
+      "centroid": [
+        -73.09718000000001,
+        42.7295036
+      ],
+      "median_sold": 318500,
+      "sold_count": 4,
+      "median_dom": 40,
+      "sold_psf": 162.11,
+      "median_household_income": 60404,
+      "price_to_income": 5.27,
+      "coastal": false,
+      "sq_mi": 12.79172738
+    },
+    {
+      "town": "FREETOWN",
+      "centroid": [
+        -71.0832369075399,
+        41.789886734177244
+      ],
+      "median_sold": 597500,
+      "sold_count": 64,
+      "median_dom": 26,
+      "sold_psf": 313.005,
+      "median_household_income": 91618,
+      "price_to_income": 6.52,
+      "coastal": true,
+      "sq_mi": 35.46744148
+    },
+    {
+      "town": "SANDWICH",
+      "centroid": [
+        -70.47835978322583,
+        41.74762175419359
+      ],
+      "median_sold": 705000,
+      "sold_count": 221,
+      "median_dom": 29,
+      "sold_psf": 416.82,
+      "median_household_income": 89461,
+      "price_to_income": 7.88,
+      "coastal": true,
+      "sq_mi": 43.92143529
+    },
+    {
+      "town": "OAK BLUFFS",
+      "centroid": [
+        -70.56905944516775,
+        41.44005823234851
+      ],
+      "median_sold": 1633000,
+      "sold_count": 15,
+      "median_dom": 81,
+      "sold_psf": 750,
+      "median_household_income": 57773,
+      "price_to_income": 28.27,
+      "coastal": true,
+      "sq_mi": 7.40557828
+    },
+    {
+      "town": "AMHERST",
+      "centroid": [
+        -72.50963110526315,
+        42.33845386842105
+      ],
+      "median_sold": 489500,
+      "sold_count": 140,
+      "median_dom": 22,
+      "sold_psf": 297.945,
+      "median_household_income": 45999,
+      "price_to_income": 10.64,
+      "coastal": false,
+      "sq_mi": 27.75429947
+    },
+    {
+      "town": "WILLIAMSBURG",
+      "centroid": [
+        -72.723563,
+        42.40624179999999
+      ],
+      "median_sold": 452500,
+      "sold_count": 22,
+      "median_dom": 27.5,
+      "sold_psf": 262.95000000000005,
+      "median_household_income": 71705,
+      "price_to_income": 6.31,
+      "coastal": false,
+      "sq_mi": 25.67230511
+    },
+    {
+      "town": "EAST LONGMEADOW",
+      "centroid": [
+        -72.50080130769231,
+        42.060378538461535
+      ],
+      "median_sold": 440000,
+      "sold_count": 160,
+      "median_dom": 21.5,
+      "sold_psf": 249.815,
+      "median_household_income": 83003,
+      "price_to_income": 5.3,
+      "coastal": false,
+      "sq_mi": 13.00747718
+    },
+    {
+      "town": "PALMER",
+      "centroid": [
+        -72.31585687736906,
+        42.17436238684502
+      ],
+      "median_sold": 327125,
+      "sold_count": 112,
+      "median_dom": 22,
+      "sold_psf": 231.12,
+      "median_household_income": 55343,
+      "price_to_income": 5.91,
+      "coastal": false,
+      "sq_mi": 32.00233116
+    },
+    {
+      "town": "MIDDLEFIELD",
+      "centroid": [
+        -73.0002209857904,
+        42.33986341740678
+      ],
+      "median_sold": 339000,
+      "sold_count": 5,
+      "median_dom": 101,
+      "sold_psf": 289.86,
+      "median_household_income": 78750,
+      "price_to_income": 4.3,
+      "coastal": false,
+      "sq_mi": 24.12540761
+    },
+    {
+      "town": "SALISBURY",
+      "centroid": [
+        -70.85026483976574,
+        42.829906215024195
+      ],
+      "median_sold": 617450,
+      "sold_count": 110,
+      "median_dom": 30,
+      "sold_psf": 389.90999999999997,
+      "median_household_income": 65347,
+      "price_to_income": 9.45,
+      "coastal": true,
+      "sq_mi": 15.80174769
+    },
+    {
+      "town": "MARSHFIELD",
+      "centroid": [
+        -70.70483129838283,
+        42.12843678115062
+      ],
+      "median_sold": 810000,
+      "sold_count": 247,
+      "median_dom": 20,
+      "sold_psf": 404.56,
+      "median_household_income": 85918,
+      "price_to_income": 9.43,
+      "coastal": true,
+      "sq_mi": 28.55491749
+    },
+    {
+      "town": "LEYDEN",
+      "centroid": [
+        -72.64948359719787,
+        42.68286812259195
+      ],
+      "median_sold": 535000,
+      "sold_count": 7,
+      "median_dom": 47,
+      "sold_psf": 218.62,
+      "median_household_income": 73942,
+      "price_to_income": 7.24,
+      "coastal": false,
+      "sq_mi": 18.05654562
+    },
+    {
+      "town": "WESTMINSTER",
+      "centroid": [
+        -71.87971610169494,
+        42.55935145762711
+      ],
+      "median_sold": 597450,
+      "sold_count": 98,
+      "median_dom": 26,
+      "sold_psf": 307.745,
+      "median_household_income": 96953,
+      "price_to_income": 6.16,
+      "coastal": false,
+      "sq_mi": 37.25428732
+    },
+    {
+      "town": "CHELSEA",
+      "centroid": [
+        -71.03497152848568,
+        42.3914008905547
+      ],
+      "median_sold": 475000,
+      "sold_count": 122,
+      "median_dom": 28.5,
+      "sold_psf": 443.94,
+      "median_household_income": 49614,
+      "price_to_income": 9.57,
+      "coastal": true,
+      "sq_mi": 2.2123957
+    },
+    {
+      "town": "MAYNARD",
+      "centroid": [
+        -71.45259449999999,
+        42.428484000000005
+      ],
+      "median_sold": 561500,
+      "sold_count": 128,
+      "median_dom": 19,
+      "sold_psf": 373.87,
+      "median_household_income": 90134,
+      "price_to_income": 6.23,
+      "coastal": false,
+      "sq_mi": 5.36817612
+    },
+    {
+      "town": "HEATH",
+      "centroid": [
+        -72.8353156,
+        42.671960733333336
+      ],
+      "median_sold": 345000,
+      "sold_count": 7,
+      "median_dom": 61,
+      "sold_psf": 207.37,
+      "median_household_income": 52875,
+      "price_to_income": 6.52,
+      "coastal": false,
+      "sq_mi": 24.91318385
+    },
+    {
+      "town": "IPSWICH",
+      "centroid": [
+        -70.81121395459867,
+        42.695461939725895
+      ],
+      "median_sold": 792500,
+      "sold_count": 160,
+      "median_dom": 22,
+      "sold_psf": 431.985,
+      "median_household_income": 77788,
+      "price_to_income": 10.19,
+      "coastal": true,
+      "sq_mi": 33.09168774
+    },
+    {
+      "town": "LENOX",
+      "centroid": [
+        -73.24738872258064,
+        42.35565730322581
+      ],
+      "median_sold": 265000,
+      "sold_count": 5,
+      "median_dom": 102,
+      "sold_psf": 331.25,
+      "median_household_income": 55777,
+      "price_to_income": 4.75,
+      "coastal": false,
+      "sq_mi": 21.66718226
+    },
+    {
+      "town": "FALL RIVER",
+      "centroid": [
+        -71.15432497390503,
+        41.71632219291711
+      ],
+      "median_sold": 424900,
+      "sold_count": 352,
+      "median_dom": 30,
+      "sold_psf": 281.745,
+      "median_household_income": 36798,
+      "price_to_income": 11.55,
+      "coastal": true,
+      "sq_mi": 38.54420515
+    },
+    {
+      "town": "OAKHAM",
+      "centroid": [
+        -72.02761716666667,
+        42.33633283333334
+      ],
+      "median_sold": 447000,
+      "sold_count": 13,
+      "median_dom": 38,
+      "sold_psf": 251.1,
+      "median_household_income": 85052,
+      "price_to_income": 5.26,
+      "coastal": false,
+      "sq_mi": 21.21798237
+    },
+    {
+      "town": "CARVER",
+      "centroid": [
+        -70.74833496875006,
+        41.83106767113093
+      ],
+      "median_sold": 516500,
+      "sold_count": 124,
+      "median_dom": 26,
+      "sold_psf": 333.52,
+      "median_household_income": 75260,
+      "price_to_income": 6.86,
+      "coastal": false,
+      "sq_mi": 39.72276945
+    },
+    {
+      "town": "WILMINGTON",
+      "centroid": [
+        -71.20653660236219,
+        42.56229439370079
+      ],
+      "median_sold": 735000,
+      "sold_count": 178,
+      "median_dom": 20,
+      "sold_psf": 422.46500000000003,
+      "median_household_income": 102301,
+      "price_to_income": 7.18,
+      "coastal": false,
+      "sq_mi": 17.1427537
+    },
+    {
+      "town": "NEW ASHFORD",
+      "centroid": [
+        -73.213015,
+        42.604670777777784
+      ],
+      "median_household_income": 82917,
+      "coastal": false,
+      "sq_mi": 13.47514412
+    },
+    {
+      "town": "MILLIS",
+      "centroid": [
+        -71.33752370891365,
+        42.16898560445689
+      ],
+      "median_sold": 732500,
+      "sold_count": 118,
+      "median_dom": 21,
+      "sold_psf": 346.97,
+      "median_household_income": 97591,
+      "price_to_income": 7.51,
+      "coastal": false,
+      "sq_mi": 12.26294144
+    },
+    {
+      "town": "OTIS",
+      "centroid": [
+        -73.10380393006997,
+        42.21384301398601
+      ],
+      "median_sold": 395000,
+      "sold_count": 15,
+      "median_dom": 63,
+      "sold_psf": 274.75,
+      "median_household_income": 69485,
+      "price_to_income": 5.68,
+      "coastal": false,
+      "sq_mi": 38.05203942
+    },
+    {
+      "town": "STOCKBRIDGE",
+      "centroid": [
+        -73.33815423076922,
+        42.30797930769231
+      ],
+      "median_sold": 840000,
+      "sold_count": 1,
+      "median_dom": 21,
+      "sold_psf": 649.15,
+      "median_household_income": 56554,
+      "price_to_income": 14.85,
+      "coastal": false,
+      "sq_mi": 23.67989591
+    },
+    {
+      "town": "WESTFIELD",
+      "centroid": [
+        -72.81477699397591,
+        42.13073049999999
+      ],
+      "median_sold": 367000,
+      "sold_count": 300,
+      "median_dom": 21,
+      "sold_psf": 226.845,
+      "median_household_income": 62969,
+      "price_to_income": 5.83,
+      "coastal": false,
+      "sq_mi": 47.31278695
+    },
+    {
+      "town": "HOLYOKE",
+      "centroid": [
+        -72.61408469999992,
+        42.22204485937503
+      ],
+      "median_sold": 315000,
+      "sold_count": 188,
+      "median_dom": 22,
+      "sold_psf": 198.76,
+      "median_household_income": 38829,
+      "price_to_income": 8.11,
+      "coastal": false,
+      "sq_mi": 22.79894569
+    },
+    {
+      "town": "WINDSOR",
+      "centroid": [
+        -73.04880342857143,
+        42.51456257142856
+      ],
+      "median_sold": 397250,
+      "sold_count": 6,
+      "median_dom": 31.5,
+      "sold_psf": 235.78,
+      "median_household_income": 76563,
+      "price_to_income": 5.19,
+      "coastal": false,
+      "sq_mi": 35.16200029
+    },
+    {
+      "town": "MARLBOROUGH",
+      "centroid": [
+        -71.57988214285714,
+        42.338379499999995
+      ],
+      "median_sold": 542000,
+      "sold_count": 344,
+      "median_dom": 24,
+      "sold_psf": 317.04,
+      "median_household_income": 72222,
+      "price_to_income": 7.5,
+      "coastal": false,
+      "sq_mi": 22.10111656
+    },
+    {
+      "town": "SOMERVILLE",
+      "centroid": [
+        -71.0916469178357,
+        42.396936603206434
+      ],
+      "median_sold": 915000,
+      "sold_count": 452,
+      "median_dom": 22,
+      "sold_psf": 723.6099999999999,
+      "median_household_income": 78673,
+      "price_to_income": 11.63,
+      "coastal": true,
+      "sq_mi": 4.13061877
+    },
+    {
+      "town": "LAWRENCE",
+      "centroid": [
+        -71.14103602395204,
+        42.69332935928143
+      ],
+      "median_sold": 490000,
+      "sold_count": 167,
+      "median_dom": 22,
+      "sold_psf": 350.55,
+      "median_household_income": 36754,
+      "price_to_income": 13.33,
+      "coastal": true,
+      "sq_mi": 7.42723713
+    },
+    {
+      "town": "MERRIMAC",
+      "centroid": [
+        -70.99512184130016,
+        42.819430108986616
+      ],
+      "median_sold": 590000,
+      "sold_count": 71,
+      "median_dom": 19,
+      "sold_psf": 332.04,
+      "median_household_income": 77481,
+      "price_to_income": 7.61,
+      "coastal": true,
+      "sq_mi": 8.69864202
+    },
+    {
+      "town": "CLINTON",
+      "centroid": [
+        -71.68660200000001,
+        42.409308
+      ],
+      "median_sold": 437500,
+      "sold_count": 127,
+      "median_dom": 27,
+      "sold_psf": 275.6,
+      "median_household_income": 60755,
+      "price_to_income": 7.2,
+      "coastal": false,
+      "sq_mi": 7.26089407
+    },
+    {
+      "town": "BARRE",
+      "centroid": [
+        -72.09057366666667,
+        42.412895222222225
+      ],
+      "median_sold": 410000,
+      "sold_count": 53,
+      "median_dom": 41,
+      "sold_psf": 219.88,
+      "median_household_income": 67500,
+      "price_to_income": 6.07,
+      "coastal": false,
+      "sq_mi": 44.63075303
+    },
+    {
+      "town": "GRANBY",
+      "centroid": [
+        -72.5308693917526,
+        42.29000013402064
+      ],
+      "median_sold": 399900,
+      "sold_count": 43,
+      "median_dom": 33,
+      "sold_psf": 247.19,
+      "median_household_income": 86692,
+      "price_to_income": 4.61,
+      "coastal": false,
+      "sq_mi": 28.07286488
+    },
+    {
+      "town": "PEPPERELL",
+      "centroid": [
+        -71.58144764193561,
+        42.65251328709674
+      ],
+      "median_sold": 583000,
+      "sold_count": 136,
+      "median_dom": 25,
+      "sold_psf": 271.29,
+      "median_household_income": 84980,
+      "price_to_income": 6.86,
+      "coastal": false,
+      "sq_mi": 23.19262433
+    },
+    {
+      "town": "GREAT BARRINGTON",
+      "centroid": [
+        -73.3562346923077,
+        42.21429207692308
+      ],
+      "median_sold": 460000,
+      "sold_count": 3,
+      "median_dom": 102,
+      "sold_psf": 277.78,
+      "median_household_income": 56431,
+      "price_to_income": 8.15,
+      "coastal": false,
+      "sq_mi": 45.76934924
+    },
+    {
+      "town": "PITTSFIELD",
+      "centroid": [
+        -73.23877807142857,
+        42.450129000000004
+      ],
+      "median_sold": 300000,
+      "sold_count": 88,
+      "median_dom": 31,
+      "sold_psf": 213.16,
+      "median_household_income": 45206,
+      "price_to_income": 6.64,
+      "coastal": false,
+      "sq_mi": 42.46751384
+    },
+    {
+      "town": "LONGMEADOW",
+      "centroid": [
+        -72.58989090909091,
+        42.04907087878787
+      ],
+      "median_sold": 525000,
+      "sold_count": 175,
+      "median_dom": 20,
+      "sold_psf": 249.53,
+      "median_household_income": 107976,
+      "price_to_income": 4.86,
+      "coastal": false,
+      "sq_mi": 9.59470593
+    },
+    {
+      "town": "LYNNFIELD",
+      "centroid": [
+        -71.04294636478882,
+        42.53584228309867
+      ],
+      "median_sold": 1000000,
+      "sold_count": 125,
+      "median_dom": 20,
+      "sold_psf": 401.19,
+      "median_household_income": 117250,
+      "price_to_income": 8.53,
+      "coastal": false,
+      "sq_mi": 10.44284752
+    },
+    {
+      "town": "NORTH BROOKFIELD",
+      "centroid": [
+        -72.07952432258064,
+        42.24528803225806
+      ],
+      "median_sold": 400000,
+      "sold_count": 37,
+      "median_dom": 24,
+      "sold_psf": 250.87,
+      "median_household_income": 70873,
+      "price_to_income": 5.64,
+      "coastal": false,
+      "sq_mi": 21.94744775
+    },
+    {
+      "town": "HINSDALE",
+      "centroid": [
+        -73.08141375177308,
+        42.428931999999996
+      ],
+      "median_sold": 482575,
+      "sold_count": 5,
+      "median_dom": 57,
+      "sold_psf": 209.39,
+      "median_household_income": 60511,
+      "price_to_income": 7.97,
+      "coastal": false,
+      "sq_mi": 21.6937535
+    },
+    {
+      "town": "WENHAM",
+      "centroid": [
+        -70.9107224109589,
+        42.617366438356164
+      ],
+      "median_sold": 1049000,
+      "sold_count": 39,
+      "median_dom": 22,
+      "sold_psf": 399.12,
+      "median_household_income": 99375,
+      "price_to_income": 10.56,
+      "coastal": true,
+      "sq_mi": 8.14134618
+    },
+    {
+      "town": "SOMERSET",
+      "centroid": [
+        -71.1594836407186,
+        41.74214296733802
+      ],
+      "median_sold": 510000,
+      "sold_count": 155,
+      "median_dom": 21,
+      "sold_psf": 335.37,
+      "median_household_income": 68900,
+      "price_to_income": 7.4,
+      "coastal": true,
+      "sq_mi": 8.16993761
+    },
+    {
+      "town": "CHESHIRE",
+      "centroid": [
+        -73.16171295652175,
+        42.55756256521739
+      ],
+      "median_sold": 304000,
+      "sold_count": 7,
+      "median_dom": 38,
+      "sold_psf": 184.78,
+      "median_household_income": 58145,
+      "price_to_income": 5.23,
+      "coastal": false,
+      "sq_mi": 27.51685104
+    },
+    {
+      "town": "WARWICK",
+      "centroid": [
+        -72.31440805882353,
+        42.66308252941177
+      ],
+      "median_sold": 489000,
+      "sold_count": 3,
+      "median_dom": 210,
+      "sold_psf": 190.32,
+      "median_household_income": 56838,
+      "price_to_income": 8.6,
+      "coastal": false,
+      "sq_mi": 37.64126348
+    },
+    {
+      "town": "MARBLEHEAD",
+      "centroid": [
+        -70.85194487004533,
+        42.502407474518705
+      ],
+      "median_sold": 910000,
+      "sold_count": 229,
+      "median_dom": 21,
+      "sold_psf": 506.1,
+      "median_household_income": 103148,
+      "price_to_income": 8.82,
+      "coastal": true,
+      "sq_mi": 4.3733444
+    },
+    {
+      "town": "LOWELL",
+      "centroid": [
+        -71.31732541095894,
+        42.64285306849313
+      ],
+      "median_sold": 455900,
+      "sold_count": 583,
+      "median_dom": 22,
+      "sold_psf": 320.74,
+      "median_household_income": 46972,
+      "price_to_income": 9.71,
+      "coastal": false,
+      "sq_mi": 14.52946192
+    },
+    {
+      "town": "RUTLAND",
+      "centroid": [
+        -71.95192627272726,
+        42.373388818181816
+      ],
+      "median_sold": 524900,
+      "sold_count": 109,
+      "median_dom": 27,
+      "sold_psf": 291.31,
+      "median_household_income": 95347,
+      "price_to_income": 5.51,
+      "coastal": false,
+      "sq_mi": 36.26120362
+    },
+    {
+      "town": "HOLBROOK",
+      "centroid": [
+        -71.01360768181816,
+        42.14417590909091
+      ],
+      "median_sold": 538000,
+      "sold_count": 119,
+      "median_dom": 21,
+      "sold_psf": 389.03,
+      "median_household_income": 67508,
+      "price_to_income": 7.97,
+      "coastal": false,
+      "sq_mi": 7.36320183
+    },
+    {
+      "town": "WHITMAN",
+      "centroid": [
+        -70.93305308333333,
+        42.07741616666666
+      ],
+      "median_sold": 518000,
+      "sold_count": 113,
+      "median_dom": 19,
+      "sold_psf": 344.97,
+      "median_household_income": 75898,
+      "price_to_income": 6.82,
+      "coastal": false,
+      "sq_mi": 6.95848344
+    },
+    {
+      "town": "MONROE",
+      "centroid": [
+        -72.94493241258742,
+        42.72080381118882
+      ],
+      "median_household_income": 31750,
+      "coastal": false,
+      "sq_mi": 10.78785126
+    },
+    {
+      "town": "WESTON",
+      "centroid": [
+        -71.26964353416153,
+        42.3564348478261
+      ],
+      "median_sold": 2437500,
+      "sold_count": 144,
+      "median_dom": 34.5,
+      "sold_psf": 584.07,
+      "median_household_income": 191744,
+      "price_to_income": 12.71,
+      "coastal": false,
+      "sq_mi": 17.33070424
+    },
+    {
+      "town": "WEST BROOKFIELD",
+      "centroid": [
+        -72.17054099029124,
+        42.24150830582527
+      ],
+      "median_sold": 462450,
+      "sold_count": 38,
+      "median_dom": 31.5,
+      "sold_psf": 260.71500000000003,
+      "median_household_income": 62969,
+      "price_to_income": 7.34,
+      "coastal": false,
+      "sq_mi": 21.10746007
+    },
+    {
+      "town": "HALIFAX",
+      "centroid": [
+        -70.86342005263161,
+        41.994251535885184
+      ],
+      "median_sold": 470000,
+      "sold_count": 113,
+      "median_dom": 20,
+      "sold_psf": 343.75,
+      "median_household_income": 73119,
+      "price_to_income": 6.43,
+      "coastal": false,
+      "sq_mi": 17.38577303
+    },
+    {
+      "town": "NEW SALEM",
+      "centroid": [
+        -72.34050910869568,
+        42.37616955706523
+      ],
+      "median_sold": 421060,
+      "sold_count": 9,
+      "median_dom": 39,
+      "sold_psf": 255.1,
+      "median_household_income": 71375,
+      "price_to_income": 5.9,
+      "coastal": false,
+      "sq_mi": 58.68890348
+    },
+    {
+      "town": "BRIDGEWATER",
+      "centroid": [
+        -70.94060138128258,
+        41.95834709012132
+      ],
+      "median_sold": 584000,
+      "sold_count": 211,
+      "median_dom": 22,
+      "sold_psf": 316.52,
+      "median_household_income": 85992,
+      "price_to_income": 6.79,
+      "coastal": false,
+      "sq_mi": 28.36006388
+    },
+    {
+      "town": "BEDFORD",
+      "centroid": [
+        -71.30453520467836,
+        42.4996770643275
+      ],
+      "median_sold": 1007500,
+      "sold_count": 134,
+      "median_dom": 20,
+      "sold_psf": 465.85,
+      "median_household_income": 117688,
+      "price_to_income": 8.56,
+      "coastal": false,
+      "sq_mi": 13.83837315
+    },
+    {
+      "town": "NORFOLK",
+      "centroid": [
+        -71.33935698251746,
+        42.13697054895108
+      ],
+      "median_sold": 865000,
+      "sold_count": 135,
+      "median_dom": 23,
+      "sold_psf": 347.74,
+      "median_household_income": 138452,
+      "price_to_income": 6.25,
+      "coastal": false,
+      "sq_mi": 15.39601892
+    },
+    {
+      "town": "BOURNE",
+      "centroid": [
+        -70.62253992749172,
+        41.69674397367144
+      ],
+      "median_sold": 616700,
+      "sold_count": 212,
+      "median_dom": 30.5,
+      "sold_psf": 367.20500000000004,
+      "median_household_income": 70304,
+      "price_to_income": 8.77,
+      "coastal": true,
+      "sq_mi": 41.08351619
+    },
+    {
+      "town": "WALPOLE",
+      "centroid": [
+        -71.26211839408099,
+        42.146506362928314
+      ],
+      "median_sold": 767000,
+      "sold_count": 206,
+      "median_dom": 20,
+      "sold_psf": 379.045,
+      "median_household_income": 99102,
+      "price_to_income": 7.74,
+      "coastal": false,
+      "sq_mi": 21.09290642
+    },
+    {
+      "town": "WAREHAM",
+      "centroid": [
+        -70.68711356755531,
+        41.74229897738313
+      ],
+      "median_sold": 450000,
+      "sold_count": 351,
+      "median_dom": 26,
+      "sold_psf": 356.87,
+      "median_household_income": 65641,
+      "price_to_income": 6.86,
+      "coastal": true,
+      "sq_mi": 37.14416033
+    },
+    {
+      "town": "PLAINFIELD",
+      "centroid": [
+        -72.90899850000001,
+        42.522681416666664
+      ],
+      "median_sold": 291500,
+      "sold_count": 6,
+      "median_dom": 29,
+      "sold_psf": 184.68,
+      "median_household_income": 54886,
+      "price_to_income": 5.31,
+      "coastal": false,
+      "sq_mi": 21.32029926
+    },
+    {
+      "town": "PAXTON",
+      "centroid": [
+        -71.9115276923077,
+        42.31218826923077
+      ],
+      "median_sold": 567500,
+      "sold_count": 44,
+      "median_dom": 26.5,
+      "sold_psf": 269.17999999999995,
+      "median_household_income": 93654,
+      "price_to_income": 6.06,
+      "coastal": false,
+      "sq_mi": 15.45159715
+    },
+    {
+      "town": "NORTH ADAMS",
+      "centroid": [
+        -73.14647366666667,
+        42.691068
+      ],
+      "median_sold": 246500,
+      "sold_count": 26,
+      "median_dom": 29,
+      "sold_psf": 141.025,
+      "median_household_income": 32804,
+      "price_to_income": 7.51,
+      "coastal": false,
+      "sq_mi": 20.61517388
+    },
+    {
+      "town": "EAST BRIDGEWATER",
+      "centroid": [
+        -70.9247713932584,
+        42.011150505618
+      ],
+      "median_sold": 565000,
+      "sold_count": 123,
+      "median_dom": 25,
+      "sold_psf": 337.3,
+      "median_household_income": 82823,
+      "price_to_income": 6.82,
+      "coastal": false,
+      "sq_mi": 17.5401107
+    },
+    {
+      "town": "HOPEDALE",
+      "centroid": [
+        -71.51566445928344,
+        42.11855245276868
+      ],
+      "median_sold": 555000,
+      "sold_count": 67,
+      "median_dom": 22,
+      "sold_psf": 271.77,
+      "median_household_income": 99792,
+      "price_to_income": 5.56,
+      "coastal": false,
+      "sq_mi": 5.34222463
+    },
+    {
+      "town": "RUSSELL",
+      "centroid": [
+        -72.84927863673468,
+        42.16834819183676
+      ],
+      "median_sold": 342155,
+      "sold_count": 16,
+      "median_dom": 26,
+      "sold_psf": 222.04,
+      "median_household_income": 70045,
+      "price_to_income": 4.88,
+      "coastal": false,
+      "sq_mi": 17.90399749
+    },
+    {
+      "town": "CHARLEMONT",
+      "centroid": [
+        -72.80760324567466,
+        42.63092904844289
+      ],
+      "median_sold": 400000,
+      "sold_count": 10,
+      "median_dom": 36.5,
+      "sold_psf": 266.19,
+      "median_household_income": 50625,
+      "price_to_income": 7.9,
+      "coastal": false,
+      "sq_mi": 26.35588667
+    },
+    {
+      "town": "BOYLSTON",
+      "centroid": [
+        -71.71374292,
+        42.34760272
+      ],
+      "median_sold": 602500,
+      "sold_count": 64,
+      "median_dom": 21.5,
+      "sold_psf": 304.11,
+      "median_household_income": 93197,
+      "price_to_income": 6.46,
+      "coastal": false,
+      "sq_mi": 19.7501388
+    },
+    {
+      "town": "AYER",
+      "centroid": [
+        -71.57557464444449,
+        42.56424324074077
+      ],
+      "median_sold": 566000,
+      "sold_count": 94,
+      "median_dom": 21,
+      "sold_psf": 316.84000000000003,
+      "median_household_income": 77112,
+      "price_to_income": 7.34,
+      "coastal": false,
+      "sq_mi": 9.50334293
+    },
+    {
+      "town": "PROVINCETOWN",
+      "centroid": [
+        -70.20526304162458,
+        42.04447509238574
+      ],
+      "median_sold": 1147500,
+      "sold_count": 104,
+      "median_dom": 49,
+      "sold_psf": 1349.695,
+      "median_household_income": 42228,
+      "price_to_income": 27.17,
+      "coastal": true,
+      "sq_mi": 10.4424858
+    },
+    {
+      "town": "BOSTON",
+      "centroid": [
+        -71.01430666071629,
+        42.34842495553182
+      ],
+      "median_sold": 785000,
+      "sold_count": 4215,
+      "median_dom": 28,
+      "sold_psf": 725.2249999999999,
+      "median_household_income": 58516,
+      "price_to_income": 13.42,
+      "coastal": true,
+      "sq_mi": 49.68955783
+    },
+    {
+      "town": "BELMONT",
+      "centroid": [
+        -71.18265418768327,
+        42.39265386510266
+      ],
+      "median_sold": 1457500,
+      "sold_count": 180,
+      "median_dom": 19,
+      "sold_psf": 663.7,
+      "median_household_income": 114141,
+      "price_to_income": 12.77,
+      "coastal": false,
+      "sq_mi": 4.7146431
+    },
+    {
+      "town": "BOXBOROUGH",
+      "centroid": [
+        -71.51448607142858,
+        42.501075285714286
+      ],
+      "median_sold": 792500,
+      "sold_count": 62,
+      "median_dom": 20.5,
+      "sold_psf": 307.71000000000004,
+      "median_household_income": 103556,
+      "price_to_income": 7.65,
+      "coastal": false,
+      "sq_mi": 10.40614717
+    },
+    {
+      "town": "FITCHBURG",
+      "centroid": [
+        -71.80803845370372,
+        42.55675833333333
+      ],
+      "median_sold": 400000,
+      "sold_count": 306,
+      "median_dom": 25,
+      "sold_psf": 260.8,
+      "median_household_income": 50617,
+      "price_to_income": 7.9,
+      "coastal": false,
+      "sq_mi": 28.11683697
+    },
+    {
+      "town": "FALMOUTH",
+      "centroid": [
+        -70.57597989017775,
+        41.574894194355124
+      ],
+      "median_sold": 846250,
+      "sold_count": 448,
+      "median_dom": 32,
+      "sold_psf": 483.56,
+      "median_household_income": 68444,
+      "price_to_income": 12.36,
+      "coastal": true,
+      "sq_mi": 45.5473377
+    },
+    {
+      "town": "ACTON",
+      "centroid": [
+        -71.4274623846154,
+        42.50104999999999
+      ],
+      "median_sold": 852500,
+      "sold_count": 290,
+      "median_dom": 20,
+      "sold_psf": 365.85,
+      "median_household_income": 131099,
+      "price_to_income": 6.5,
+      "coastal": false,
+      "sq_mi": 20.29546005
+    },
+    {
+      "town": "YARMOUTH",
+      "centroid": [
+        -70.22797507413907,
+        41.671420588010314
+      ],
+      "median_sold": 586775,
+      "sold_count": 340,
+      "median_dom": 30,
+      "sold_psf": 456.545,
+      "median_household_income": 59630,
+      "price_to_income": 9.84,
+      "coastal": true,
+      "sq_mi": 24.91778499
+    },
+    {
+      "town": "OXFORD",
+      "centroid": [
+        -71.8524337857143,
+        42.13408078571428
+      ],
+      "median_sold": 405000,
+      "sold_count": 159,
+      "median_dom": 21,
+      "sold_psf": 281.53,
+      "median_household_income": 64616,
+      "price_to_income": 6.27,
+      "coastal": false,
+      "sq_mi": 27.42283532
+    },
+    {
+      "town": "MILFORD",
+      "centroid": [
+        -71.54988133988763,
+        42.16530597752811
+      ],
+      "median_sold": 530000,
+      "sold_count": 259,
+      "median_dom": 21,
+      "sold_psf": 294.65,
+      "median_household_income": 72750,
+      "price_to_income": 7.29,
+      "coastal": false,
+      "sq_mi": 15.02323757
+    },
+    {
+      "town": "BERKLEY",
+      "centroid": [
+        -71.10658459263959,
+        41.813784246827424
+      ],
+      "median_sold": 689500,
+      "sold_count": 62,
+      "median_dom": 25.5,
+      "sold_psf": 333.945,
+      "median_household_income": 95186,
+      "price_to_income": 7.24,
+      "coastal": true,
+      "sq_mi": 16.58095613
+    },
+    {
+      "town": "BERLIN",
+      "centroid": [
+        -71.637952375,
+        42.3818993125
+      ],
+      "median_sold": 735000,
+      "sold_count": 27,
+      "median_dom": 31,
+      "sold_psf": 316.12,
+      "median_household_income": 97614,
+      "price_to_income": 7.53,
+      "coastal": false,
+      "sq_mi": 13.17287091
+    },
+    {
+      "town": "TEMPLETON",
+      "centroid": [
+        -72.08575335483872,
+        42.57322995295697
+      ],
+      "median_sold": 416000,
+      "sold_count": 73,
+      "median_dom": 20,
+      "sold_psf": 285.22,
+      "median_household_income": 67515,
+      "price_to_income": 6.16,
+      "coastal": false,
+      "sq_mi": 32.38103956
+    },
+    {
+      "town": "ROWLEY",
+      "centroid": [
+        -70.83254041572788,
+        42.738585521631435
+      ],
+      "median_sold": 860000,
+      "sold_count": 47,
+      "median_dom": 21,
+      "sold_psf": 361.39,
+      "median_household_income": 85496,
+      "price_to_income": 10.06,
+      "coastal": true,
+      "sq_mi": 18.5391845
+    },
+    {
+      "town": "CHILMARK",
+      "centroid": [
+        -70.74713702411714,
+        41.341212651593366
+      ],
+      "median_sold": 3710000,
+      "sold_count": 3,
+      "median_dom": 112,
+      "sold_psf": 1169.98,
+      "median_household_income": 78542,
+      "price_to_income": 47.24,
+      "coastal": true,
+      "sq_mi": 20.271762
+    },
+    {
+      "town": "HARDWICK",
+      "centroid": [
+        -72.20612613221152,
+        42.34519582091348
+      ],
+      "median_sold": 386000,
+      "sold_count": 28,
+      "median_dom": 24,
+      "sold_psf": 240.315,
+      "median_household_income": 56216,
+      "price_to_income": 6.87,
+      "coastal": false,
+      "sq_mi": 40.85665293
+    },
+    {
+      "town": "MEDFIELD",
+      "centroid": [
+        -71.33311309587025,
+        42.18104777138645
+      ],
+      "median_sold": 1100000,
+      "sold_count": 123,
+      "median_dom": 19,
+      "sold_psf": 411.6,
+      "median_household_income": 147630,
+      "price_to_income": 7.45,
+      "coastal": false,
+      "sq_mi": 14.65492311
+    },
+    {
+      "town": "GEORGETOWN",
+      "centroid": [
+        -70.9885310909091,
+        42.722057424242436
+      ],
+      "median_sold": 749000,
+      "sold_count": 95,
+      "median_dom": 20,
+      "sold_psf": 348.56,
+      "median_household_income": 106016,
+      "price_to_income": 7.06,
+      "coastal": true,
+      "sq_mi": 13.14855481
+    },
+    {
+      "town": "SHEFFIELD",
+      "centroid": [
+        -73.38107894999999,
+        42.11361960000001
+      ],
+      "median_sold": 930000,
+      "sold_count": 1,
+      "median_dom": 165,
+      "sold_psf": 323.14,
+      "median_household_income": 68603,
+      "price_to_income": 13.56,
+      "coastal": false,
+      "sq_mi": 48.53977628
+    },
+    {
+      "town": "HOPKINTON",
+      "centroid": [
+        -71.54689189978667,
+        42.25016656076754
+      ],
+      "median_sold": 1025000,
+      "sold_count": 193,
+      "median_dom": 22,
+      "sold_psf": 363.01,
+      "median_household_income": 143190,
+      "price_to_income": 7.16,
+      "coastal": false,
+      "sq_mi": 27.85251794
+    },
+    {
+      "town": "PHILLIPSTON",
+      "centroid": [
+        -72.11702488509876,
+        42.57410065350091
+      ],
+      "median_sold": 574000,
+      "sold_count": 28,
+      "median_dom": 47,
+      "sold_psf": 274.505,
+      "median_household_income": 73750,
+      "price_to_income": 7.78,
+      "coastal": false,
+      "sq_mi": 24.6349242
+    },
+    {
+      "town": "WARREN",
+      "centroid": [
+        -72.2024316127659,
+        42.22586128936172
+      ],
+      "median_sold": 363000,
+      "sold_count": 51,
+      "median_dom": 23,
+      "sold_psf": 224.18,
+      "median_household_income": 51882,
+      "price_to_income": 7,
+      "coastal": false,
+      "sq_mi": 27.63385194
+    },
+    {
+      "town": "BURLINGTON",
+      "centroid": [
+        -71.19993047674419,
+        42.48392861627906
+      ],
+      "median_sold": 851000,
+      "sold_count": 179,
+      "median_dom": 21,
+      "sold_psf": 416.67,
+      "median_household_income": 92141,
+      "price_to_income": 9.24,
+      "coastal": false,
+      "sq_mi": 11.86247934
+    },
+    {
+      "town": "MONSON",
+      "centroid": [
+        -72.32539418904108,
+        42.149289698630156
+      ],
+      "median_sold": 416750,
+      "sold_count": 72,
+      "median_dom": 27.5,
+      "sold_psf": 232.055,
+      "median_household_income": 74031,
+      "price_to_income": 5.63,
+      "coastal": false,
+      "sq_mi": 44.77692482
+    },
+    {
+      "town": "BERNARDSTON",
+      "centroid": [
+        -72.54463357142858,
+        42.66872385714286
+      ],
+      "median_sold": 380000,
+      "sold_count": 24,
+      "median_dom": 22,
+      "sold_psf": 249.82,
+      "median_household_income": 63625,
+      "price_to_income": 5.97,
+      "coastal": false,
+      "sq_mi": 23.39611025
+    },
+    {
+      "town": "WELLFLEET",
+      "centroid": [
+        -70.0201623716648,
+        41.90836175635983
+      ],
+      "median_sold": 950000,
+      "sold_count": 35,
+      "median_dom": 75,
+      "sold_psf": 650.87,
+      "median_household_income": 48452,
+      "price_to_income": 19.61,
+      "coastal": true,
+      "sq_mi": 21.00355229
+    },
+    {
+      "town": "HOLDEN",
+      "centroid": [
+        -71.87539237499999,
+        42.33762829166667
+      ],
+      "median_sold": 550000,
+      "sold_count": 224,
+      "median_dom": 21,
+      "sold_psf": 299.46000000000004,
+      "median_household_income": 100599,
+      "price_to_income": 5.47,
+      "coastal": false,
+      "sq_mi": 36.32050329
+    },
+    {
+      "town": "GRAFTON",
+      "centroid": [
+        -71.67660473913043,
+        42.207027739130424
+      ],
+      "median_sold": 576000,
+      "sold_count": 240,
+      "median_dom": 23,
+      "sold_psf": 310.68,
+      "median_household_income": 96277,
+      "price_to_income": 5.98,
+      "coastal": false,
+      "sq_mi": 23.30947473
+    },
+    {
+      "town": "MONTAGUE",
+      "centroid": [
+        -72.5231855988024,
+        42.576484911676644
+      ],
+      "median_sold": 326000,
+      "sold_count": 66,
+      "median_dom": 20,
+      "sold_psf": 259.255,
+      "median_household_income": 53178,
+      "price_to_income": 6.13,
+      "coastal": false,
+      "sq_mi": 31.44171291
+    },
+    {
+      "town": "DUXBURY",
+      "centroid": [
+        -70.66578564510483,
+        42.04304562626266
+      ],
+      "median_sold": 1075000,
+      "sold_count": 193,
+      "median_dom": 21,
+      "sold_psf": 469.58,
+      "median_household_income": 119428,
+      "price_to_income": 9,
+      "coastal": true,
+      "sq_mi": 24.07013955
+    },
+    {
+      "town": "ABINGTON",
+      "centroid": [
+        -70.97637991610736,
+        42.10016398322145
+      ],
+      "median_sold": 600000,
+      "sold_count": 134,
+      "median_dom": 20,
+      "sold_psf": 346.07500000000005,
+      "median_household_income": 76989,
+      "price_to_income": 7.79,
+      "coastal": false,
+      "sq_mi": 10.18966948
+    },
+    {
+      "town": "LEICESTER",
+      "centroid": [
+        -71.89645629999998,
+        42.2368809
+      ],
+      "median_sold": 425000,
+      "sold_count": 93,
+      "median_dom": 23,
+      "sold_psf": 269.68,
+      "median_household_income": 72637,
+      "price_to_income": 5.85,
+      "coastal": false,
+      "sq_mi": 24.6332999
+    },
+    {
+      "town": "EASTON",
+      "centroid": [
+        -71.11121836363635,
+        42.03495381818182
+      ],
+      "median_sold": 652000,
+      "sold_count": 239,
+      "median_dom": 29,
+      "sold_psf": 327.95,
+      "median_household_income": 100028,
+      "price_to_income": 6.52,
+      "coastal": false,
+      "sq_mi": 29.23352004
+    },
+    {
+      "town": "STOW",
+      "centroid": [
+        -71.50216049999999,
+        42.41169241666667
+      ],
+      "median_sold": 792500,
+      "sold_count": 64,
+      "median_dom": 21,
+      "sold_psf": 342.67,
+      "median_household_income": 146799,
+      "price_to_income": 5.4,
+      "coastal": false,
+      "sq_mi": 17.99570325
+    },
+    {
+      "town": "ATHOL",
+      "centroid": [
+        -72.23078586945171,
+        42.60874584073105
+      ],
+      "median_sold": 340000,
+      "sold_count": 157,
+      "median_dom": 28,
+      "sold_psf": 230.28,
+      "median_household_income": 47642,
+      "price_to_income": 7.14,
+      "coastal": false,
+      "sq_mi": 33.36293847
+    },
+    {
+      "town": "NEW BEDFORD",
+      "centroid": [
+        -70.91521499572656,
+        41.631246137179474
+      ],
+      "median_sold": 426500,
+      "sold_count": 382,
+      "median_dom": 25,
+      "sold_psf": 309.57,
+      "median_household_income": 38178,
+      "price_to_income": 11.17,
+      "coastal": true,
+      "sq_mi": 20.27940617
+    },
+    {
+      "town": "WINCHESTER",
+      "centroid": [
+        -71.15536968571428,
+        42.44906691428572
+      ],
+      "median_sold": 1475000,
+      "sold_count": 260,
+      "median_dom": 19.5,
+      "sold_psf": 560.29,
+      "median_household_income": 149321,
+      "price_to_income": 9.88,
+      "coastal": false,
+      "sq_mi": 6.34717438
+    },
+    {
+      "town": "PERU",
+      "centroid": [
+        -73.07583570921986,
+        42.42771484397161
+      ],
+      "median_sold": 309000,
+      "sold_count": 1,
+      "median_dom": 64,
+      "sold_psf": 207.66,
+      "median_household_income": 67250,
+      "price_to_income": 4.59,
+      "coastal": false,
+      "sq_mi": 26.03628106
+    },
+    {
+      "town": "HUDSON",
+      "centroid": [
+        -71.5181782,
+        42.393186639999996
+      ],
+      "median_sold": 600000,
+      "sold_count": 213,
+      "median_dom": 21,
+      "sold_psf": 345.53,
+      "median_household_income": 80574,
+      "price_to_income": 7.45,
+      "coastal": false,
+      "sq_mi": 11.86361154
+    },
+    {
+      "town": "PELHAM",
+      "centroid": [
+        -72.36483499166665,
+        42.37813140416666
+      ],
+      "median_sold": 512500,
+      "sold_count": 16,
+      "median_dom": 25.5,
+      "sold_psf": 276.41999999999996,
+      "median_household_income": 91518,
+      "price_to_income": 5.6,
+      "coastal": false,
+      "sq_mi": 26.54899654
+    },
+    {
+      "town": "ASHFIELD",
+      "centroid": [
+        -72.81204371428572,
+        42.5195560952381
+      ],
+      "median_sold": 547788,
+      "sold_count": 8,
+      "median_dom": 23,
+      "sold_psf": 181.06,
+      "median_household_income": 77031,
+      "price_to_income": 7.11,
+      "coastal": false,
+      "sq_mi": 40.27593306
+    },
+    {
+      "town": "NEEDHAM",
+      "centroid": [
+        -71.24334582442752,
+        42.27269196641225
+      ],
+      "median_sold": 1684500,
+      "sold_count": 288,
+      "median_dom": 19,
+      "sold_psf": 537.8199999999999,
+      "median_household_income": 139477,
+      "price_to_income": 12.08,
+      "coastal": false,
+      "sq_mi": 12.70352217
+    },
+    {
+      "town": "TEWKSBURY",
+      "centroid": [
+        -71.20988751724143,
+        42.623843077586194
+      ],
+      "median_sold": 657500,
+      "sold_count": 304,
+      "median_dom": 20,
+      "sold_psf": 380.3,
+      "median_household_income": 92897,
+      "price_to_income": 7.08,
+      "coastal": false,
+      "sq_mi": 21.14758149
+    },
+    {
+      "town": "WILLIAMSTOWN",
+      "centroid": [
+        -73.19685,
+        42.68926058333333
+      ],
+      "median_sold": 495000,
+      "sold_count": 13,
+      "median_dom": 23,
+      "sold_psf": 349.65,
+      "median_household_income": 72739,
+      "price_to_income": 6.81,
+      "coastal": false,
+      "sq_mi": 46.85432005
+    },
+    {
+      "town": "ASHLAND",
+      "centroid": [
+        -71.50985801408447,
+        42.265077528168995
+      ],
+      "median_sold": 645000,
+      "sold_count": 173,
+      "median_dom": 19,
+      "sold_psf": 334.53,
+      "median_household_income": 103700,
+      "price_to_income": 6.22,
+      "coastal": false,
+      "sq_mi": 12.87379004
+    },
+    {
+      "town": "WESTFORD",
+      "centroid": [
+        -71.43392020000002,
+        42.577479499999995
+      ],
+      "median_sold": 840000,
+      "sold_count": 235,
+      "median_dom": 22,
+      "sold_psf": 374.6,
+      "median_household_income": 130739,
+      "price_to_income": 6.43,
+      "coastal": false,
+      "sq_mi": 31.36205267
+    },
+    {
+      "town": "SHERBORN",
+      "centroid": [
+        -71.37829590865952,
+        42.22886414472129
+      ],
+      "median_sold": 1188250,
+      "sold_count": 54,
+      "median_dom": 21.5,
+      "sold_psf": 420.015,
+      "median_household_income": 158250,
+      "price_to_income": 7.51,
+      "coastal": false,
+      "sq_mi": 16.15512354
+    },
+    {
+      "town": "CHESTERFIELD",
+      "centroid": [
+        -72.83471353793104,
+        42.3477893862069
+      ],
+      "median_sold": 430000,
+      "sold_count": 15,
+      "median_dom": 34,
+      "sold_psf": 278.46,
+      "median_household_income": 66500,
+      "price_to_income": 6.47,
+      "coastal": false,
+      "sq_mi": 31.2443961
+    },
+    {
+      "town": "ANDOVER",
+      "centroid": [
+        -71.19388813307982,
+        42.63603162737643
+      ],
+      "median_sold": 986500,
+      "sold_count": 359,
+      "median_dom": 20,
+      "sold_psf": 402.68,
+      "median_household_income": 134627,
+      "price_to_income": 7.33,
+      "coastal": false,
+      "sq_mi": 32.15278074
+    },
+    {
+      "town": "PLYMPTON",
+      "centroid": [
+        -70.80729726190475,
+        41.99525999999999
+      ],
+      "median_sold": 670000,
+      "sold_count": 27,
+      "median_dom": 27,
+      "sold_psf": 328.95,
+      "median_household_income": 84602,
+      "price_to_income": 7.92,
+      "coastal": false,
+      "sq_mi": 15.10482944
+    },
+    {
+      "town": "BROCKTON",
+      "centroid": [
+        -70.97881328947372,
+        42.09824596710527
+      ],
+      "median_sold": 485000,
+      "sold_count": 597,
+      "median_dom": 24,
+      "sold_psf": 331.86,
+      "median_household_income": 49956,
+      "price_to_income": 9.71,
+      "coastal": false,
+      "sq_mi": 21.51537087
+    },
+    {
+      "town": "SANDISFIELD",
+      "centroid": [
+        -73.06818467235497,
+        42.103347071672395
+      ],
+      "median_sold": 324500,
+      "sold_count": 2,
+      "median_dom": 68.5,
+      "sold_psf": 213.835,
+      "median_household_income": 67333,
+      "price_to_income": 4.82,
+      "coastal": false,
+      "sq_mi": 52.95242066
+    },
+    {
+      "town": "SPENCER",
+      "centroid": [
+        -71.988568375,
+        42.26383825
+      ],
+      "median_sold": 425000,
+      "sold_count": 98,
+      "median_dom": 25.5,
+      "sold_psf": 270.48,
+      "median_household_income": 65858,
+      "price_to_income": 6.45,
+      "coastal": false,
+      "sq_mi": 34.00651711
+    },
+    {
+      "town": "AGAWAM",
+      "centroid": [
+        -72.63829570905172,
+        42.09008627370692
+      ],
+      "median_sold": 356500,
+      "sold_count": 260,
+      "median_dom": 21,
+      "sold_psf": 240.945,
+      "median_household_income": 60201,
+      "price_to_income": 5.92,
+      "coastal": false,
+      "sq_mi": 24.3350933
+    },
+    {
+      "town": "WEST BRIDGEWATER",
+      "centroid": [
+        -71.01027233333335,
+        42.02606146666667
+      ],
+      "median_sold": 561000,
+      "sold_count": 74,
+      "median_dom": 25.5,
+      "sold_psf": 328.26,
+      "median_household_income": 80709,
+      "price_to_income": 6.95,
+      "coastal": false,
+      "sq_mi": 15.67354645
+    },
+    {
+      "town": "CHELMSFORD",
+      "centroid": [
+        -71.35983490697674,
+        42.629245186046525
+      ],
+      "median_sold": 649500,
+      "sold_count": 344,
+      "median_dom": 20,
+      "sold_psf": 370.55999999999995,
+      "median_household_income": 102160,
+      "price_to_income": 6.36,
+      "coastal": false,
+      "sq_mi": 23.08428865
+    },
+    {
+      "town": "ORLEANS",
+      "centroid": [
+        -69.96131968280163,
+        41.77298736629154
+      ],
+      "median_sold": 862500,
+      "sold_count": 64,
+      "median_dom": 50.5,
+      "sold_psf": 537.97,
+      "median_household_income": 50884,
+      "price_to_income": 16.95,
+      "coastal": true,
+      "sq_mi": 14.56760574
+    },
+    {
+      "town": "HARWICH",
+      "centroid": [
+        -70.06177162306078,
+        41.68378586036676
+      ],
+      "median_sold": 750000,
+      "sold_count": 178,
+      "median_dom": 30,
+      "sold_psf": 456.935,
+      "median_household_income": 69730,
+      "price_to_income": 10.76,
+      "coastal": true,
+      "sq_mi": 22.50165645
+    },
+    {
+      "town": "HAMPDEN",
+      "centroid": [
+        -72.40708000000001,
+        42.06038144444445
+      ],
+      "median_sold": 432500,
+      "sold_count": 46,
+      "median_dom": 26.5,
+      "sold_psf": 219.26999999999998,
+      "median_household_income": 80375,
+      "price_to_income": 5.38,
+      "coastal": false,
+      "sq_mi": 19.63907385
+    },
+    {
+      "town": "EGREMONT",
+      "centroid": [
+        -73.42112147826087,
+        42.16680495652173
+      ],
+      "median_household_income": 66081,
+      "coastal": false,
+      "sq_mi": 18.88504238
+    },
+    {
+      "town": "DEERFIELD",
+      "centroid": [
+        -72.59304620041756,
+        42.543229081419646
+      ],
+      "median_sold": 410000,
+      "sold_count": 38,
+      "median_dom": 28.5,
+      "sold_psf": 252.91,
+      "median_household_income": 80000,
+      "price_to_income": 5.13,
+      "coastal": false,
+      "sq_mi": 33.45149453
+    },
+    {
+      "town": "EASTHAMPTON",
+      "centroid": [
+        -72.69153483296704,
+        42.26702844615384
+      ],
+      "median_sold": 440000,
+      "sold_count": 115,
+      "median_dom": 22,
+      "sold_psf": 290.97,
+      "median_household_income": 58552,
+      "price_to_income": 7.51,
+      "coastal": false,
+      "sq_mi": 13.60532552
+    },
+    {
+      "town": "AQUINNAH",
+      "centroid": [
+        -70.79714619190756,
+        41.34275598497114
+      ],
+      "median_sold": 1575000,
+      "sold_count": 1,
+      "median_dom": 186,
+      "sold_psf": 682.41,
+      "median_household_income": 62500,
+      "price_to_income": 25.2,
+      "coastal": true,
+      "sq_mi": 5.77680078
+    },
+    {
+      "town": "WENDELL",
+      "centroid": [
+        -72.4228786242038,
+        42.588552569002104
+      ],
+      "median_sold": 399000,
+      "sold_count": 5,
+      "median_dom": 38,
+      "sold_psf": 257.59,
+      "median_household_income": 43036,
+      "price_to_income": 9.27,
+      "coastal": false,
+      "sq_mi": 32.22417002
+    },
+    {
+      "town": "BOXFORD",
+      "centroid": [
+        -70.98142867223073,
+        42.634403535660105
+      ],
+      "median_sold": 1089773,
+      "sold_count": 98,
+      "median_dom": 21,
+      "sold_psf": 359.855,
+      "median_household_income": 153578,
+      "price_to_income": 7.1,
+      "coastal": false,
+      "sq_mi": 24.40459703
+    },
+    {
+      "town": "MANSFIELD",
+      "centroid": [
+        -71.20729899999999,
+        42.01310766666666
+      ],
+      "median_sold": 650000,
+      "sold_count": 153,
+      "median_dom": 19,
+      "sold_psf": 356.8,
+      "median_household_income": 102090,
+      "price_to_income": 6.37,
+      "coastal": false,
+      "sq_mi": 20.42578746
+    },
+    {
+      "town": "ERVING",
+      "centroid": [
+        -72.44359756716416,
+        42.59166382276118
+      ],
+      "median_sold": 335950,
+      "sold_count": 14,
+      "median_dom": 16.5,
+      "sold_psf": 244.43,
+      "median_household_income": 62171,
+      "price_to_income": 5.4,
+      "coastal": false,
+      "sq_mi": 14.38591555
+    },
+    {
+      "town": "MONTGOMERY",
+      "centroid": [
+        -72.85138857600005,
+        42.21169423999999
+      ],
+      "median_sold": 569900,
+      "sold_count": 5,
+      "median_dom": 25,
+      "sold_psf": 182.51,
+      "median_household_income": 75500,
+      "price_to_income": 7.55,
+      "coastal": false,
+      "sq_mi": 15.06710015
+    },
+    {
+      "town": "ROCKPORT",
+      "centroid": [
+        -70.6025555125545,
+        42.65606855240183
+      ],
+      "median_sold": 845000,
+      "sold_count": 72,
+      "median_dom": 21.5,
+      "sold_psf": 554.6199999999999,
+      "median_household_income": 68448,
+      "price_to_income": 12.35,
+      "coastal": true,
+      "sq_mi": 7.0169341
+    },
+    {
+      "town": "LANCASTER",
+      "centroid": [
+        -71.6336040353698,
+        42.49963069453374
+      ],
+      "median_sold": 594000,
+      "sold_count": 59,
+      "median_dom": 21,
+      "sold_psf": 295.82,
+      "median_household_income": 93750,
+      "price_to_income": 6.34,
+      "coastal": false,
+      "sq_mi": 27.9839718
+    },
+    {
+      "town": "MIDDLEBOROUGH",
+      "centroid": [
+        -70.90974862686559,
+        41.893522191044774
+      ],
+      "median_household_income": 76961,
+      "coastal": false,
+      "sq_mi": 72.20213169
+    },
+    {
+      "town": "MILTON",
+      "centroid": [
+        -71.06512578996278,
+        42.26499529135694
+      ],
+      "median_sold": 1000000,
+      "sold_count": 259,
+      "median_dom": 20,
+      "sold_psf": 543.54,
+      "median_household_income": 122516,
+      "price_to_income": 8.16,
+      "coastal": true,
+      "sq_mi": 13.17796808
+    },
+    {
+      "town": "CHARLTON",
+      "centroid": [
+        -71.99539776470587,
+        42.113181147058825
+      ],
+      "median_sold": 540000,
+      "sold_count": 123,
+      "median_dom": 30,
+      "sold_psf": 276.32,
+      "median_household_income": 92227,
+      "price_to_income": 5.86,
+      "coastal": false,
+      "sq_mi": 43.78916678
+    },
+    {
+      "town": "PETERSHAM",
+      "centroid": [
+        -72.29542796727625,
+        42.386719473532175
+      ],
+      "median_sold": 475950,
+      "sold_count": 14,
+      "median_dom": 40.5,
+      "sold_psf": 269.595,
+      "median_household_income": 65774,
+      "price_to_income": 7.24,
+      "coastal": false,
+      "sq_mi": 68.24368404
+    },
+    {
+      "town": "WRENTHAM",
+      "centroid": [
+        -71.33874064285715,
+        42.061637142857144
+      ],
+      "median_sold": 712000,
+      "sold_count": 101,
+      "median_dom": 21,
+      "sold_psf": 348.24,
+      "median_household_income": 99924,
+      "price_to_income": 7.13,
+      "coastal": false,
+      "sq_mi": 22.60205261
+    },
+    {
+      "town": "WINCHENDON",
+      "centroid": [
+        -72.045816,
+        42.66141544444444
+      ],
+      "median_sold": 410000,
+      "sold_count": 116,
+      "median_dom": 25,
+      "sold_psf": 245.575,
+      "median_household_income": 61998,
+      "price_to_income": 6.61,
+      "coastal": false,
+      "sq_mi": 44.11076579
+    },
+    {
+      "town": "NORWELL",
+      "centroid": [
+        -70.80318770486497,
+        42.137920563243256
+      ],
+      "median_sold": 1132500,
+      "sold_count": 120,
+      "median_dom": 19,
+      "sold_psf": 404.27,
+      "median_household_income": 114560,
+      "price_to_income": 9.89,
+      "coastal": true,
+      "sq_mi": 21.12243567
+    },
+    {
+      "town": "SALEM",
+      "centroid": [
+        -70.85912608059259,
+        42.52796069925926
+      ],
+      "median_sold": 579500,
+      "sold_count": 402,
+      "median_dom": 22,
+      "sold_psf": 421.43,
+      "median_household_income": 61093,
+      "price_to_income": 9.49,
+      "coastal": true,
+      "sq_mi": 8.3306881
+    },
+    {
+      "town": "RANDOLPH",
+      "centroid": [
+        -71.05265351834132,
+        42.1938253859649
+      ],
+      "median_sold": 565000,
+      "sold_count": 227,
+      "median_dom": 21,
+      "sold_psf": 352.01,
+      "median_household_income": 65316,
+      "price_to_income": 8.65,
+      "coastal": false,
+      "sq_mi": 10.41403218
+    },
+    {
+      "town": "WORCESTER",
+      "centroid": [
+        -71.7922575,
+        42.27277383333333
+      ],
+      "median_sold": 415000,
+      "sold_count": 1047,
+      "median_dom": 22,
+      "sold_psf": 285.06,
+      "median_household_income": 45599,
+      "price_to_income": 9.1,
+      "coastal": false,
+      "sq_mi": 38.44170038
+    },
+    {
+      "town": "WEST STOCKBRIDGE",
+      "centroid": [
+        -73.38652326666666,
+        42.30678673333334
+      ],
+      "median_household_income": 69167,
+      "coastal": false,
+      "sq_mi": 18.67916491
+    },
+    {
+      "town": "ARLINGTON",
+      "centroid": [
+        -71.14907186160715,
+        42.409624080357126
+      ],
+      "median_sold": 1075250,
+      "sold_count": 427,
+      "median_dom": 15,
+      "sold_psf": 614.23,
+      "median_household_income": 98103,
+      "price_to_income": 10.96,
+      "coastal": false,
+      "sq_mi": 5.48421953
+    },
+    {
+      "town": "STURBRIDGE",
+      "centroid": [
+        -72.06407130588235,
+        42.08794615294116
+      ],
+      "median_sold": 497500,
+      "sold_count": 118,
+      "median_dom": 22,
+      "sold_psf": 266.37,
+      "median_household_income": 85000,
+      "price_to_income": 5.85,
+      "coastal": false,
+      "sq_mi": 38.96589078
+    },
+    {
+      "town": "CHESTER",
+      "centroid": [
+        -72.94034423076924,
+        42.296579692307695
+      ],
+      "median_sold": 327500,
+      "sold_count": 20,
+      "median_dom": 28.5,
+      "sold_psf": 205.48000000000002,
+      "median_household_income": 77917,
+      "price_to_income": 4.2,
+      "coastal": false,
+      "sq_mi": 37.1642495
+    },
+    {
+      "town": "ALFORD",
+      "centroid": [
+        -73.41773118181818,
+        42.25474963636364
+      ],
+      "median_household_income": 98056,
+      "coastal": false,
+      "sq_mi": 11.53340377
+    },
+    {
+      "town": "MENDON",
+      "centroid": [
+        -71.51200178947364,
+        42.10344108421052
+      ],
+      "median_sold": 707000,
+      "sold_count": 67,
+      "median_dom": 20,
+      "sold_psf": 289.13,
+      "median_household_income": 121298,
+      "price_to_income": 5.83,
+      "coastal": false,
+      "sq_mi": 17.98728416
+    },
+    {
+      "town": "SUTTON",
+      "centroid": [
+        -71.7363479333333,
+        42.13387473333332
+      ],
+      "median_sold": 592500,
+      "sold_count": 82,
+      "median_dom": 29,
+      "sold_psf": 289.185,
+      "median_household_income": 99580,
+      "price_to_income": 5.95,
+      "coastal": false,
+      "sq_mi": 34.02579603
+    },
+    {
+      "town": "BELCHERTOWN",
+      "centroid": [
+        -72.34841045995888,
+        42.26370312114984
+      ],
+      "median_sold": 450000,
+      "sold_count": 139,
+      "median_dom": 22,
+      "sold_psf": 234.84,
+      "median_household_income": 80502,
+      "price_to_income": 5.59,
+      "coastal": false,
+      "sq_mi": 55.27639719
+    },
+    {
+      "town": "HARVARD",
+      "centroid": [
+        -71.62891958684217,
+        42.50758558684209
+      ],
+      "median_sold": 805000,
+      "sold_count": 64,
+      "median_dom": 25,
+      "sold_psf": 328.28499999999997,
+      "median_household_income": 131719,
+      "price_to_income": 6.11,
+      "coastal": false,
+      "sq_mi": 27.15382569
+    },
+    {
+      "town": "CHICOPEE",
+      "centroid": [
+        -72.58292822957193,
+        42.16936373151751
+      ],
+      "median_sold": 300000,
+      "sold_count": 419,
+      "median_dom": 22,
+      "sold_psf": 241.075,
+      "median_household_income": 49005,
+      "price_to_income": 6.12,
+      "coastal": false,
+      "sq_mi": 23.871431
+    },
+    {
+      "town": "NORTON",
+      "centroid": [
+        -71.16767818181819,
+        41.972463
+      ],
+      "median_sold": 600000,
+      "sold_count": 207,
+      "median_dom": 21,
+      "sold_psf": 323.97,
+      "median_household_income": 95221,
+      "price_to_income": 6.3,
+      "coastal": false,
+      "sq_mi": 29.31256532
+    },
+    {
+      "town": "LITTLETON",
+      "centroid": [
+        -71.52156562595418,
+        42.553667229007615
+      ],
+      "median_sold": 800000,
+      "sold_count": 82,
+      "median_dom": 21,
+      "sold_psf": 377.32000000000005,
+      "median_household_income": 108704,
+      "price_to_income": 7.36,
+      "coastal": false,
+      "sq_mi": 17.51032621
+    },
+    {
+      "town": "NORWOOD",
+      "centroid": [
+        -71.18067509198816,
+        42.17690547477746
+      ],
+      "median_sold": 699000,
+      "sold_count": 201,
+      "median_dom": 19,
+      "sold_psf": 428.34,
+      "median_household_income": 83883,
+      "price_to_income": 8.33,
+      "coastal": false,
+      "sq_mi": 10.50086935
+    },
+    {
+      "town": "DRACUT",
+      "centroid": [
+        -71.27724637209302,
+        42.66666920930233
+      ],
+      "median_sold": 547750,
+      "sold_count": 318,
+      "median_dom": 19,
+      "sold_psf": 325.14,
+      "median_household_income": 86716,
+      "price_to_income": 6.32,
+      "coastal": false,
+      "sq_mi": 21.43737319
+    },
+    {
+      "town": "TYNGSBOROUGH",
+      "centroid": [
+        -71.41280756140348,
+        42.66071821929827
+      ],
+      "median_sold": 672500,
+      "sold_count": 124,
+      "median_dom": 21,
+      "sold_psf": 331.14,
+      "median_household_income": 99325,
+      "price_to_income": 6.77,
+      "coastal": false,
+      "sq_mi": 18.06994281
+    },
+    {
+      "town": "NATICK",
+      "centroid": [
+        -71.35460316190478,
+        42.26667449047619
+      ],
+      "median_sold": 936000,
+      "sold_count": 417,
+      "median_dom": 19,
+      "sold_psf": 453.35,
+      "median_household_income": 104372,
+      "price_to_income": 8.97,
+      "coastal": false,
+      "sq_mi": 15.960812
+    },
+    {
+      "town": "SUNDERLAND",
+      "centroid": [
+        -72.57330719166671,
+        42.47093008333335
+      ],
+      "median_sold": 474230,
+      "sold_count": 21,
+      "median_dom": 26,
+      "sold_psf": 273.5,
+      "median_household_income": 53934,
+      "price_to_income": 8.79,
+      "coastal": false,
+      "sq_mi": 14.7363142
+    },
+    {
+      "town": "SOUTHBOROUGH",
+      "centroid": [
+        -71.5317483514212,
+        42.26704509819122
+      ],
+      "median_sold": 865000,
+      "sold_count": 105,
+      "median_dom": 23,
+      "sold_psf": 351.78,
+      "median_household_income": 145455,
+      "price_to_income": 5.95,
+      "coastal": false,
+      "sq_mi": 15.52349331
+    },
+    {
+      "town": "HAVERHILL",
+      "centroid": [
+        -71.03064357981386,
+        42.775384254116
+      ],
+      "median_sold": 515000,
+      "sold_count": 644,
+      "median_dom": 21,
+      "sold_psf": 326.38,
+      "median_household_income": 62751,
+      "price_to_income": 8.21,
+      "coastal": true,
+      "sq_mi": 35.28711445
+    },
+    {
+      "town": "TOWNSEND",
+      "centroid": [
+        -71.68474309999999,
+        42.669059399999995
+      ],
+      "median_sold": 515000,
+      "sold_count": 83,
+      "median_dom": 22,
+      "sold_psf": 269.47,
+      "median_household_income": 82519,
+      "price_to_income": 6.24,
+      "coastal": false,
+      "sq_mi": 32.97536031
+    },
+    {
+      "town": "MIDDLETON",
+      "centroid": [
+        -70.99232443884222,
+        42.58993684967323
+      ],
+      "median_sold": 825000,
+      "sold_count": 94,
+      "median_dom": 21,
+      "sold_psf": 384.6,
+      "median_household_income": 106326,
+      "price_to_income": 7.76,
+      "coastal": false,
+      "sq_mi": 14.48696643
+    },
+    {
+      "town": "CONWAY",
+      "centroid": [
+        -72.69063259057965,
+        42.555597173913036
+      ],
+      "median_sold": 488000,
+      "sold_count": 14,
+      "median_dom": 44.5,
+      "sold_psf": 276.03999999999996,
+      "median_household_income": 89297,
+      "price_to_income": 5.46,
+      "coastal": false,
+      "sq_mi": 37.8770628
+    },
+    {
+      "town": "WAYLAND",
+      "centroid": [
+        -71.37808210109894,
+        42.37298761978024
+      ],
+      "median_sold": 1100000,
+      "sold_count": 175,
+      "median_dom": 21,
+      "sold_psf": 436,
+      "median_household_income": 157500,
+      "price_to_income": 6.98,
+      "coastal": false,
+      "sq_mi": 15.85468076
+    },
+    {
+      "town": "QUINCY",
+      "centroid": [
+        -70.99043581336664,
+        42.268510530793385
+      ],
+      "median_sold": 650000,
+      "sold_count": 657,
+      "median_dom": 21,
+      "sold_psf": 466.47,
+      "median_household_income": 64890,
+      "price_to_income": 10.02,
+      "coastal": true,
+      "sq_mi": 17.39173796
+    },
+    {
+      "town": "WEST NEWBURY",
+      "centroid": [
+        -70.9742845906433,
+        42.812406928229656
+      ],
+      "median_sold": 920000,
+      "sold_count": 36,
+      "median_dom": 23,
+      "sold_psf": 355.19500000000005,
+      "median_household_income": 138947,
+      "price_to_income": 6.62,
+      "coastal": true,
+      "sq_mi": 13.97188439
+    },
+    {
+      "town": "COLRAIN",
+      "centroid": [
+        -72.65118484816749,
+        42.682615061082025
+      ],
+      "median_sold": 370000,
+      "sold_count": 9,
+      "median_dom": 33,
+      "sold_psf": 200.87,
+      "median_household_income": 54500,
+      "price_to_income": 6.79,
+      "coastal": false,
+      "sq_mi": 43.36505469
+    },
+    {
+      "town": "HANCOCK",
+      "centroid": [
+        -73.3031764,
+        42.5409853
+      ],
+      "median_household_income": 72778,
+      "coastal": false,
+      "sq_mi": 35.74036068
+    },
+    {
+      "town": "DARTMOUTH",
+      "centroid": [
+        -70.97990073930262,
+        41.54743559138562
+      ],
+      "median_sold": 625000,
+      "sold_count": 212,
+      "median_dom": 23.5,
+      "sold_psf": 356.845,
+      "median_household_income": 69460,
+      "price_to_income": 9,
+      "coastal": true,
+      "sq_mi": 61.95846789
+    },
+    {
+      "town": "WALTHAM",
+      "centroid": [
+        -71.23690155240799,
+        42.381146490084994
+      ],
+      "median_sold": 802000,
+      "sold_count": 367,
+      "median_dom": 21,
+      "sold_psf": 476.64,
+      "median_household_income": 82188,
+      "price_to_income": 9.76,
+      "coastal": false,
+      "sq_mi": 13.76443637
+    },
+    {
+      "town": "BUCKLAND",
+      "centroid": [
+        -72.75537011351352,
+        42.613143467567596
+      ],
+      "median_sold": 350000,
+      "sold_count": 15,
+      "median_dom": 30,
+      "sold_psf": 244.76,
+      "median_household_income": 50407,
+      "price_to_income": 6.94,
+      "coastal": false,
+      "sq_mi": 19.87729552
+    },
+    {
+      "town": "BREWSTER",
+      "centroid": [
+        -70.0661831197411,
+        41.7710619528947
+      ],
+      "median_sold": 700000,
+      "sold_count": 158,
+      "median_dom": 32,
+      "sold_psf": 467.885,
+      "median_household_income": 67340,
+      "price_to_income": 10.4,
+      "coastal": true,
+      "sq_mi": 25.51687906
+    },
+    {
+      "town": "MANCHESTER BY THE SEA",
+      "centroid": [
+        -70.76427236275364,
+        42.56841379140928
+      ],
+      "median_household_income": null,
+      "coastal": true,
+      "sq_mi": 7.78562374
+    },
+    {
+      "town": "NEWTON",
+      "centroid": [
+        -71.22662192556639,
+        42.33019004530742
+      ],
+      "median_sold": 1610000,
+      "sold_count": 843,
+      "median_dom": 23,
+      "sold_psf": 602.07,
+      "median_household_income": 127402,
+      "price_to_income": 12.64,
+      "coastal": false,
+      "sq_mi": 18.15448932
+    },
+    {
+      "town": "LYNN",
+      "centroid": [
+        -70.96461389055808,
+        42.45561036829396
+      ],
+      "median_sold": 550000,
+      "sold_count": 515,
+      "median_dom": 24,
+      "sold_psf": 395.48,
+      "median_household_income": 50774,
+      "price_to_income": 10.83,
+      "coastal": true,
+      "sq_mi": 11.54843266
+    },
+    {
+      "town": "PEABODY",
+      "centroid": [
+        -70.96857419527902,
+        42.55311267596567
+      ],
+      "median_sold": 645000,
+      "sold_count": 346,
+      "median_dom": 21,
+      "sold_psf": 384.62,
+      "median_household_income": 64071,
+      "price_to_income": 10.07,
+      "coastal": true,
+      "sq_mi": 16.77663844
+    },
+    {
+      "town": "AVON",
+      "centroid": [
+        -71.04050555555554,
+        42.12925938888889
+      ],
+      "median_sold": 565000,
+      "sold_count": 29,
+      "median_dom": 25,
+      "sold_psf": 366.46,
+      "median_household_income": 68021,
+      "price_to_income": 8.31,
+      "coastal": false,
+      "sq_mi": 4.5383476
+    },
+    {
+      "town": "LUDLOW",
+      "centroid": [
+        -72.44809864247317,
+        42.162267395161265
+      ],
+      "median_sold": 358500,
+      "sold_count": 202,
+      "median_dom": 24,
+      "sold_psf": 239.91000000000003,
+      "median_household_income": 64537,
+      "price_to_income": 5.55,
+      "coastal": false,
+      "sq_mi": 28.33593222
+    },
+    {
+      "town": "NORTHAMPTON",
+      "centroid": [
+        -72.62417217937221,
+        42.31990873542601
+      ],
+      "median_sold": 496500,
+      "sold_count": 236,
+      "median_dom": 22,
+      "sold_psf": 332.11,
+      "median_household_income": 61813,
+      "price_to_income": 8.03,
+      "coastal": false,
+      "sq_mi": 35.74847064
+    },
+    {
+      "town": "PLAINVILLE",
+      "centroid": [
+        -71.33211483333334,
+        42.01055266666667
+      ],
+      "median_sold": 525000,
+      "sold_count": 86,
+      "median_dom": 20,
+      "sold_psf": 293.15,
+      "median_household_income": 92014,
+      "price_to_income": 5.71,
+      "coastal": false,
+      "sq_mi": 11.49670715
+    },
+    {
+      "town": "NORTHBRIDGE",
+      "centroid": [
+        -71.60785142857144,
+        42.122390706766915
+      ],
+      "median_sold": 567500,
+      "sold_count": 148,
+      "median_dom": 21,
+      "sold_psf": 295.06,
+      "median_household_income": 73464,
+      "price_to_income": 7.72,
+      "coastal": false,
+      "sq_mi": 18.05055583
+    },
+    {
+      "town": "DANVERS",
+      "centroid": [
+        -70.9263978405887,
+        42.556245264366076
+      ],
+      "median_sold": 654000,
+      "sold_count": 248,
+      "median_dom": 21,
+      "sold_psf": 394.61,
+      "median_household_income": 79913,
+      "price_to_income": 8.18,
+      "coastal": true,
+      "sq_mi": 13.78589203
+    },
+    {
+      "town": "UXBRIDGE",
+      "centroid": [
+        -71.61597622500001,
+        42.09837092499999
+      ],
+      "median_sold": 549966,
+      "sold_count": 208,
+      "median_dom": 25,
+      "sold_psf": 289.38,
+      "median_household_income": 88750,
+      "price_to_income": 6.2,
+      "coastal": false,
+      "sq_mi": 29.96703339
+    },
+    {
+      "town": "GROVELAND",
+      "centroid": [
+        -71.03389984386968,
+        42.76189424425288
+      ],
+      "median_sold": 695000,
+      "sold_count": 75,
+      "median_dom": 24,
+      "sold_psf": 351.86,
+      "median_household_income": 96512,
+      "price_to_income": 7.2,
+      "coastal": true,
+      "sq_mi": 9.1918636
+    },
+    {
+      "town": "DOUGLAS",
+      "centroid": [
+        -71.76645473684209,
+        42.067678578947366
+      ],
+      "median_sold": 538500,
+      "sold_count": 78,
+      "median_dom": 20,
+      "sold_psf": 292.03999999999996,
+      "median_household_income": 90020,
+      "price_to_income": 5.98,
+      "coastal": false,
+      "sq_mi": 38.19721002
+    },
+    {
+      "town": "SHARON",
+      "centroid": [
+        -71.19277698812354,
+        42.11816777197152
+      ],
+      "median_sold": 802000,
+      "sold_count": 162,
+      "median_dom": 21,
+      "sold_psf": 377.37,
+      "median_household_income": 127500,
+      "price_to_income": 6.29,
+      "coastal": false,
+      "sq_mi": 24.45314554
+    },
+    {
+      "town": "SWANSEA",
+      "centroid": [
+        -71.2254459034131,
+        41.737573001452446
+      ],
+      "median_sold": 500000,
+      "sold_count": 143,
+      "median_dom": 20,
+      "sold_psf": 345.28,
+      "median_household_income": 77531,
+      "price_to_income": 6.45,
+      "coastal": true,
+      "sq_mi": 22.9588237
+    },
+    {
+      "town": "DOVER",
+      "centroid": [
+        -71.29163635757575,
+        42.25313761818178
+      ],
+      "median_sold": 1952500,
+      "sold_count": 66,
+      "median_dom": 41,
+      "sold_psf": 428.76,
+      "median_household_income": 189265,
+      "price_to_income": 10.32,
+      "coastal": false,
+      "sq_mi": 15.41758086
+    },
+    {
+      "town": "WORTHINGTON",
+      "centroid": [
+        -72.96611652941176,
+        42.36875733823531
+      ],
+      "median_sold": 391000,
+      "sold_count": 20,
+      "median_dom": 39.5,
+      "sold_psf": 229.10500000000002,
+      "median_household_income": 74500,
+      "price_to_income": 5.25,
+      "coastal": false,
+      "sq_mi": 32.10330225
+    },
+    {
+      "town": "EVERETT",
+      "centroid": [
+        -71.06780469401852,
+        42.39770064493863
+      ],
+      "median_sold": 615000,
+      "sold_count": 124,
+      "median_dom": 20,
+      "sold_psf": 437.875,
+      "median_household_income": 52457,
+      "price_to_income": 11.72,
+      "coastal": true,
+      "sq_mi": 3.4382123
+    },
+    {
+      "town": "PEMBROKE",
+      "centroid": [
+        -70.80390681858404,
+        42.07751264011796
+      ],
+      "median_sold": 630000,
+      "sold_count": 174,
+      "median_dom": 20,
+      "sold_psf": 361.23,
+      "median_household_income": 93075,
+      "price_to_income": 6.77,
+      "coastal": true,
+      "sq_mi": 23.55002151
+    },
+    {
+      "town": "MARION",
+      "centroid": [
+        -70.7478866034417,
+        41.70030322727858
+      ],
+      "median_sold": 785000,
+      "sold_count": 63,
+      "median_dom": 34,
+      "sold_psf": 407.91,
+      "median_household_income": 75449,
+      "price_to_income": 10.4,
+      "coastal": true,
+      "sq_mi": 14.1196009
+    },
+    {
+      "town": "WATERTOWN",
+      "centroid": [
+        -71.1666226784141,
+        42.36589253964757
+      ],
+      "median_sold": 815000,
+      "sold_count": 305,
+      "median_dom": 20,
+      "sold_psf": 532.13,
+      "median_household_income": 92050,
+      "price_to_income": 8.85,
+      "coastal": false,
+      "sq_mi": 4.08728032
+    },
+    {
+      "town": "SOUTH HADLEY",
+      "centroid": [
+        -72.5866402481203,
+        42.257043184210524
+      ],
+      "median_sold": 396500,
+      "sold_count": 182,
+      "median_dom": 21,
+      "sold_psf": 257.93,
+      "median_household_income": 62004,
+      "price_to_income": 6.39,
+      "coastal": false,
+      "sq_mi": 18.43364907
+    },
+    {
+      "town": "WESTWOOD",
+      "centroid": [
+        -71.19170692352941,
+        42.203038888235284
+      ],
+      "median_sold": 1235000,
+      "sold_count": 135,
+      "median_dom": 20,
+      "sold_psf": 502.13,
+      "median_household_income": 140355,
+      "price_to_income": 8.8,
+      "coastal": false,
+      "sq_mi": 11.15432183
+    },
+    {
+      "town": "ORANGE",
+      "centroid": [
+        -72.25527241066663,
+        42.610261717333344
+      ],
+      "median_sold": 315000,
+      "sold_count": 85,
+      "median_dom": 23,
+      "sold_psf": 209.14,
+      "median_household_income": 37183,
+      "price_to_income": 8.47,
+      "coastal": false,
+      "sq_mi": 36.01570544
+    },
+    {
+      "town": "FRAMINGHAM",
+      "centroid": [
+        -71.39947558139536,
+        42.3297958372093
+      ],
+      "median_sold": 670000,
+      "sold_count": 525,
+      "median_dom": 19,
+      "sold_psf": 370.93,
+      "median_household_income": 70706,
+      "price_to_income": 9.48,
+      "coastal": false,
+      "sq_mi": 26.50306796
+    },
+    {
+      "town": "HADLEY",
+      "centroid": [
+        -72.5997947609756,
+        42.35542069268295
+      ],
+      "median_sold": 570768,
+      "sold_count": 40,
+      "median_dom": 25.5,
+      "sold_psf": 322.16999999999996,
+      "median_household_income": 62634,
+      "price_to_income": 9.11,
+      "coastal": false,
+      "sq_mi": 24.61289014
+    },
+    {
+      "town": "MILLVILLE",
+      "centroid": [
+        -71.5746356,
+        42.0340038
+      ],
+      "median_sold": 504950,
+      "sold_count": 26,
+      "median_dom": 29,
+      "sold_psf": 256.69,
+      "median_household_income": 91250,
+      "price_to_income": 5.53,
+      "coastal": false,
+      "sq_mi": 4.96676841
+    },
+    {
+      "town": "SAVOY",
+      "centroid": [
+        -72.98591831103678,
+        42.63633866220737
+      ],
+      "median_sold": 392000,
+      "sold_count": 5,
+      "median_dom": 106,
+      "sold_psf": 197.03,
+      "median_household_income": 49000,
+      "price_to_income": 8,
+      "coastal": false,
+      "sq_mi": 36.02763916
+    },
+    {
+      "town": "WEBSTER",
+      "centroid": [
+        -71.88316328930817,
+        42.046663981132085
+      ],
+      "median_sold": 431000,
+      "sold_count": 147,
+      "median_dom": 22,
+      "sold_psf": 278.29,
+      "median_household_income": 51229,
+      "price_to_income": 8.41,
+      "coastal": false,
+      "sq_mi": 14.59638278
+    },
+    {
+      "town": "COHASSET",
+      "centroid": [
+        -70.80144173333309,
+        42.25009704027213
+      ],
+      "median_sold": 1410000,
+      "sold_count": 111,
+      "median_dom": 23,
+      "sold_psf": 540.91,
+      "median_household_income": 128224,
+      "price_to_income": 11,
+      "coastal": true,
+      "sq_mi": 10.05733886
+    },
+    {
+      "town": "HUNTINGTON",
+      "centroid": [
+        -72.83812388194443,
+        42.33408603472223
+      ],
+      "median_sold": 271000,
+      "sold_count": 17,
+      "median_dom": 27,
+      "sold_psf": 194.4,
+      "median_household_income": 68958,
+      "price_to_income": 3.93,
+      "coastal": false,
+      "sq_mi": 26.79298324
+    },
+    {
+      "town": "PRINCETON",
+      "centroid": [
+        -71.82653146153845,
+        42.460791634615376
+      ],
+      "median_sold": 647000,
+      "sold_count": 37,
+      "median_dom": 38,
+      "sold_psf": 270.53,
+      "median_household_income": 121500,
+      "price_to_income": 5.33,
+      "coastal": false,
+      "sq_mi": 35.84243226
+    },
+    {
+      "town": "WINTHROP",
+      "centroid": [
+        -70.97802594376529,
+        42.37414033793217
+      ],
+      "median_sold": 640000,
+      "sold_count": 159,
+      "median_dom": 30,
+      "sold_psf": 450.53,
+      "median_household_income": 62997,
+      "price_to_income": 10.16,
+      "coastal": true,
+      "sq_mi": 2.27708109
+    },
+    {
+      "town": "DUNSTABLE",
+      "centroid": [
+        -71.52570084615382,
+        42.68439404273506
+      ],
+      "median_sold": 775000,
+      "sold_count": 27,
+      "median_dom": 24,
+      "sold_psf": 306.54,
+      "median_household_income": 118984,
+      "price_to_income": 6.51,
+      "coastal": false,
+      "sq_mi": 16.75219436
+    },
+    {
+      "town": "TISBURY",
+      "centroid": [
+        -70.61066225901652,
+        41.458746301639415
+      ],
+      "median_sold": 1300000,
+      "sold_count": 13,
+      "median_dom": 97,
+      "sold_psf": 718.63,
+      "median_household_income": 46816,
+      "price_to_income": 27.77,
+      "coastal": true,
+      "sq_mi": 6.57171228
+    },
+    {
+      "town": "TYRINGHAM",
+      "centroid": [
+        -73.196229625,
+        42.246233375
+      ],
+      "median_household_income": 79375,
+      "coastal": false,
+      "sq_mi": 18.85699004
+    },
+    {
+      "town": "ASHBURNHAM",
+      "centroid": [
+        -71.91069280555557,
+        42.63768708333334
+      ],
+      "median_sold": 450000,
+      "sold_count": 93,
+      "median_dom": 25,
+      "sold_psf": 290.13,
+      "median_household_income": 86219,
+      "price_to_income": 5.22,
+      "coastal": false,
+      "sq_mi": 40.9517768
+    },
+    {
+      "town": "RAYNHAM",
+      "centroid": [
+        -71.02456770329668,
+        41.90387976263736
+      ],
+      "median_sold": 585000,
+      "sold_count": 162,
+      "median_dom": 25,
+      "sold_psf": 304.46000000000004,
+      "median_household_income": 85998,
+      "price_to_income": 6.8,
+      "coastal": true,
+      "sq_mi": 20.76275147
+    },
+    {
+      "town": "KINGSTON",
+      "centroid": [
+        -70.71591767310667,
+        41.99424089644507
+      ],
+      "median_sold": 685000,
+      "sold_count": 137,
+      "median_dom": 22,
+      "sold_psf": 345.03,
+      "median_household_income": 88694,
+      "price_to_income": 7.72,
+      "coastal": true,
+      "sq_mi": 19.00033871
+    },
+    {
+      "town": "BRIMFIELD",
+      "centroid": [
+        -72.2626697931035,
+        42.161059773399046
+      ],
+      "median_sold": 425000,
+      "sold_count": 50,
+      "median_dom": 28,
+      "sold_psf": 240.57,
+      "median_household_income": 83273,
+      "price_to_income": 5.1,
+      "coastal": false,
+      "sq_mi": 35.31757261
+    },
+    {
+      "town": "EASTHAM",
+      "centroid": [
+        -69.96686759511572,
+        41.82502765407852
+      ],
+      "median_sold": 800000,
+      "sold_count": 61,
+      "median_dom": 43,
+      "sold_psf": 505.13,
+      "median_household_income": 57989,
+      "price_to_income": 13.8,
+      "coastal": true,
+      "sq_mi": 14.35450155
+    },
+    {
+      "town": "WARE",
+      "centroid": [
+        -72.31897799691357,
+        42.2930724938271
+      ],
+      "median_sold": 350000,
+      "sold_count": 86,
+      "median_dom": 24,
+      "sold_psf": 214.66500000000002,
+      "median_household_income": 49678,
+      "price_to_income": 7.05,
+      "coastal": false,
+      "sq_mi": 39.97726405
+    },
+    {
+      "town": "HUBBARDSTON",
+      "centroid": [
+        -71.9888593,
+        42.4908008
+      ],
+      "median_sold": 447500,
+      "sold_count": 36,
+      "median_dom": 26.5,
+      "sold_psf": 255.49,
+      "median_household_income": 84803,
+      "price_to_income": 5.28,
+      "coastal": false,
+      "sq_mi": 41.98608834
+    },
+    {
+      "town": "TAUNTON",
+      "centroid": [
+        -71.07606018087058,
+        41.88749880993253
+      ],
+      "median_sold": 469500,
+      "sold_count": 504,
+      "median_dom": 23,
+      "sold_psf": 300.07,
+      "median_household_income": 54785,
+      "price_to_income": 8.57,
+      "coastal": true,
+      "sq_mi": 48.29859323
+    },
+    {
+      "town": "MOUNT WASHINGTON",
+      "centroid": [
+        -73.46133357142857,
+        42.09567942857143
+      ],
+      "median_household_income": 65417,
+      "coastal": false,
+      "sq_mi": 22.38978351
+    },
+    {
+      "town": "STERLING",
+      "centroid": [
+        -71.81743036180904,
+        42.454220909547736
+      ],
+      "median_sold": 567500,
+      "sold_count": 68,
+      "median_dom": 20.5,
+      "sold_psf": 300.78999999999996,
+      "median_household_income": 104187,
+      "price_to_income": 5.45,
+      "coastal": false,
+      "sq_mi": 31.66280906
+    },
+    {
+      "town": "BILLERICA",
+      "centroid": [
+        -71.23593904731865,
+        42.55703474132489
+      ],
+      "median_sold": 690000,
+      "sold_count": 316,
+      "median_dom": 20,
+      "sold_psf": 368.125,
+      "median_household_income": 100484,
+      "price_to_income": 6.87,
+      "coastal": false,
+      "sq_mi": 26.31650623
+    },
+    {
+      "town": "DIGHTON",
+      "centroid": [
+        -71.1211149992006,
+        41.81942044364514
+      ],
+      "median_sold": 630000,
+      "sold_count": 85,
+      "median_dom": 25,
+      "sold_psf": 324.51,
+      "median_household_income": 92818,
+      "price_to_income": 6.79,
+      "coastal": true,
+      "sq_mi": 22.16942874
+    },
+    {
+      "town": "SHELBURNE",
+      "centroid": [
+        -72.71389441145836,
+        42.587459447916686
+      ],
+      "median_sold": 445000,
+      "sold_count": 9,
+      "median_dom": 31,
+      "sold_psf": 261.99,
+      "median_household_income": 58287,
+      "price_to_income": 7.63,
+      "coastal": false,
+      "sq_mi": 23.4111058
+    },
+    {
+      "town": "STONEHAM",
+      "centroid": [
+        -71.0951724736842,
+        42.47513173684211
+      ],
+      "median_sold": 725000,
+      "sold_count": 211,
+      "median_dom": 19,
+      "sold_psf": 437.88,
+      "median_household_income": 83783,
+      "price_to_income": 8.65,
+      "coastal": false,
+      "sq_mi": 6.64630523
+    },
+    {
+      "town": "ESSEX",
+      "centroid": [
+        -70.76534330557172,
+        42.650366804689476
+      ],
+      "median_sold": 875000,
+      "sold_count": 26,
+      "median_dom": 21,
+      "sold_psf": 470.07,
+      "median_household_income": 103750,
+      "price_to_income": 8.43,
+      "coastal": true,
+      "sq_mi": 14.25672988
+    },
+    {
+      "town": "NEW MARLBOROUGH",
+      "centroid": [
+        -73.27469098809527,
+        42.16063520238095
+      ],
+      "median_household_income": 72321,
+      "coastal": false,
+      "sq_mi": 47.89741862
+    },
+    {
+      "town": "NORTHBOROUGH",
+      "centroid": [
+        -71.63513881981982,
+        42.30311301801801
+      ],
+      "median_sold": 687500,
+      "sold_count": 148,
+      "median_dom": 21,
+      "sold_psf": 332.53499999999997,
+      "median_household_income": 110147,
+      "price_to_income": 6.24,
+      "coastal": false,
+      "sq_mi": 18.74347709
+    },
+    {
+      "town": "GOSHEN",
+      "centroid": [
+        -72.79239199999999,
+        42.44544760869565
+      ],
+      "median_sold": 415500,
+      "sold_count": 11,
+      "median_dom": 32,
+      "sold_psf": 311,
+      "median_household_income": 74432,
+      "price_to_income": 5.58,
+      "coastal": false,
+      "sq_mi": 17.69888554
+    },
+    {
+      "town": "READING",
+      "centroid": [
+        -71.1196880737914,
+        42.556625639949175
+      ],
+      "median_sold": 857500,
+      "sold_count": 240,
+      "median_dom": 16,
+      "sold_psf": 475.515,
+      "median_household_income": 108894,
+      "price_to_income": 7.87,
+      "coastal": false,
+      "sq_mi": 9.99028101
+    },
+    {
+      "town": "HATFIELD",
+      "centroid": [
+        -72.59473102916662,
+        42.3775686083333
+      ],
+      "median_sold": 497450,
+      "sold_count": 28,
+      "median_dom": 23.5,
+      "sold_psf": 319.755,
+      "median_household_income": 64427,
+      "price_to_income": 7.72,
+      "coastal": false,
+      "sq_mi": 16.82241071
+    },
+    {
+      "town": "PLYMOUTH",
+      "centroid": [
+        -70.61526477096157,
+        41.926042302937006
+      ],
+      "median_sold": 675000,
+      "sold_count": 947,
+      "median_dom": 31,
+      "sold_psf": 357.08,
+      "median_household_income": 80905,
+      "price_to_income": 8.34,
+      "coastal": true,
+      "sq_mi": 102.774206
+    },
+    {
+      "town": "FRANKLIN",
+      "centroid": [
+        -71.40831912159985,
+        42.133151617600014
+      ],
+      "median_sold": 656000,
+      "sold_count": 326,
+      "median_dom": 19,
+      "sold_psf": 335.74,
+      "median_household_income": 108815,
+      "price_to_income": 6.03,
+      "coastal": false,
+      "sq_mi": 27.02664667
+    },
+    {
+      "town": "BECKET",
+      "centroid": [
+        -73.05113663797465,
+        42.29769035949369
+      ],
+      "median_sold": 300000,
+      "sold_count": 9,
+      "median_dom": 47,
+      "sold_psf": 226.74,
+      "median_household_income": 70750,
+      "price_to_income": 4.24,
+      "coastal": false,
+      "sq_mi": 47.79274523
+    },
+    {
+      "town": "FLORIDA",
+      "centroid": [
+        -72.9755312777778,
+        42.660695521021
+      ],
+      "median_sold": 438750,
+      "sold_count": 2,
+      "median_dom": 125.5,
+      "sold_psf": 289.775,
+      "median_household_income": 61000,
+      "price_to_income": 7.19,
+      "coastal": false,
+      "sq_mi": 24.59801563
+    },
+    {
+      "town": "WELLESLEY",
+      "centroid": [
+        -71.27185797719874,
+        42.30156393811073
+      ],
+      "median_sold": 2050000,
+      "sold_count": 307,
+      "median_dom": 16,
+      "sold_psf": 671.12,
+      "median_household_income": 171719,
+      "price_to_income": 11.94,
+      "coastal": false,
+      "sq_mi": 10.5467313
+    },
+    {
+      "town": "REHOBOTH",
+      "centroid": [
+        -71.24560466666667,
+        41.828054599999994
+      ],
+      "median_sold": 695000,
+      "sold_count": 120,
+      "median_dom": 26.5,
+      "sold_psf": 325.11,
+      "median_household_income": 90394,
+      "price_to_income": 7.69,
+      "coastal": true,
+      "sq_mi": 47.46946964
+    },
+    {
+      "town": "NORTHFIELD",
+      "centroid": [
+        -72.47845714482759,
+        42.64202541379309
+      ],
+      "median_sold": 380000,
+      "sold_count": 30,
+      "median_dom": 35.5,
+      "sold_psf": 215.085,
+      "median_household_income": 63963,
+      "price_to_income": 5.94,
+      "coastal": false,
+      "sq_mi": 35.37271386
+    },
+    {
+      "town": "MONTEREY",
+      "centroid": [
+        -73.2672278,
+        42.17041892941177
+      ],
+      "median_household_income": 56146,
+      "coastal": false,
+      "sq_mi": 27.40441306
+    },
+    {
+      "town": "AMESBURY",
+      "centroid": [
+        -70.93048988393488,
+        42.8380589660297
+      ],
+      "median_sold": 622500,
+      "sold_count": 238,
+      "median_dom": 21.5,
+      "sold_psf": 375.59000000000003,
+      "median_household_income": 75861,
+      "price_to_income": 8.21,
+      "coastal": true,
+      "sq_mi": 13.1872471
+    },
+    {
+      "town": "SEEKONK",
+      "centroid": [
+        -71.33494964611263,
+        41.79558268632708
+      ],
+      "median_sold": 600000,
+      "sold_count": 109,
+      "median_dom": 32,
+      "sold_psf": 323.33,
+      "median_household_income": 82094,
+      "price_to_income": 7.31,
+      "coastal": true,
+      "sq_mi": 18.64481087
+    },
+    {
+      "town": "SHUTESBURY",
+      "centroid": [
+        -72.38074058962269,
+        42.445129919811315
+      ],
+      "median_sold": 425000,
+      "sold_count": 13,
+      "median_dom": 28,
+      "sold_psf": 279.08,
+      "median_household_income": 81406,
+      "price_to_income": 5.22,
+      "coastal": false,
+      "sq_mi": 27.10918253
+    },
+    {
+      "town": "LUNENBURG",
+      "centroid": [
+        -71.73073286666667,
+        42.57896973333334
+      ],
+      "median_sold": 525000,
+      "sold_count": 122,
+      "median_dom": 23.5,
+      "sold_psf": 281.58500000000004,
+      "median_household_income": 89706,
+      "price_to_income": 5.85,
+      "coastal": false,
+      "sq_mi": 27.74673183
+    },
+    {
+      "town": "NORTH READING",
+      "centroid": [
+        -71.10232614484136,
+        42.56236871428576
+      ],
+      "median_sold": 749975,
+      "sold_count": 185,
+      "median_dom": 18,
+      "sold_psf": 432.84,
+      "median_household_income": 119933,
+      "price_to_income": 6.25,
+      "coastal": false,
+      "sq_mi": 13.48924037
+    },
+    {
+      "town": "CHATHAM",
+      "centroid": [
+        -69.97010421205108,
+        41.675849512270034
+      ],
+      "median_sold": 1497500,
+      "sold_count": 134,
+      "median_dom": 32.5,
+      "sold_psf": 720.4000000000001,
+      "median_household_income": 65750,
+      "price_to_income": 22.78,
+      "coastal": true,
+      "sq_mi": 17.04160948
+    },
+    {
+      "town": "DENNIS",
+      "centroid": [
+        -70.16729532927646,
+        41.69762962335537
+      ],
+      "median_sold": 625000,
+      "sold_count": 243,
+      "median_dom": 26,
+      "sold_psf": 502.27,
+      "median_household_income": 55506,
+      "price_to_income": 11.26,
+      "coastal": true,
+      "sq_mi": 20.87484957
+    },
+    {
+      "town": "WASHINGTON",
+      "centroid": [
+        -73.16851464705883,
+        42.372823705882354
+      ],
+      "median_sold": 275000,
+      "sold_count": 3,
+      "median_dom": 21,
+      "sold_psf": 224.28,
+      "median_household_income": 76094,
+      "price_to_income": 3.61,
+      "coastal": false,
+      "sq_mi": 38.8156511
+    },
+    {
+      "town": "TOLLAND",
+      "centroid": [
+        -73.06443130000001,
+        42.10686802727275
+      ],
+      "median_sold": 431000,
+      "sold_count": 12,
+      "median_dom": 59,
+      "sold_psf": 268.355,
+      "median_household_income": 84500,
+      "price_to_income": 5.1,
+      "coastal": false,
+      "sq_mi": 32.81271691
+    },
+    {
+      "town": "CAMBRIDGE",
+      "centroid": [
+        -71.1079263523239,
+        42.36606913268361
+      ],
+      "median_sold": 1155000,
+      "sold_count": 586,
+      "median_dom": 22,
+      "sold_psf": 924.7950000000001,
+      "median_household_income": 83122,
+      "price_to_income": 13.9,
+      "coastal": true,
+      "sq_mi": 6.6622029
+    },
+    {
+      "town": "ROWE",
+      "centroid": [
+        -72.9578509776537,
+        42.6886518286778
+      ],
+      "median_sold": 415000,
+      "sold_count": 1,
+      "median_dom": 199,
+      "sold_psf": 244.12,
+      "median_household_income": 52143,
+      "price_to_income": 7.96,
+      "coastal": false,
+      "sq_mi": 24.00166668
+    },
+    {
+      "town": "LINCOLN",
+      "centroid": [
+        -71.3279187265625,
+        42.429138539062514
+      ],
+      "median_sold": 1450000,
+      "sold_count": 65,
+      "median_dom": 23,
+      "sold_psf": 492.47,
+      "median_household_income": 130870,
+      "price_to_income": 11.08,
+      "coastal": false,
+      "sq_mi": 14.98125522
+    },
+    {
+      "town": "SOUTHAMPTON",
+      "centroid": [
+        -72.70347801466993,
+        42.25907461613689
+      ],
+      "median_sold": 590750,
+      "sold_count": 48,
+      "median_dom": 21,
+      "sold_psf": 272.95000000000005,
+      "median_household_income": 90318,
+      "price_to_income": 6.54,
+      "coastal": false,
+      "sq_mi": 28.94693358
+    },
+    {
+      "town": "TRURO",
+      "centroid": [
+        -70.07419008381056,
+        42.00918230609061
+      ],
+      "median_sold": 946000,
+      "sold_count": 30,
+      "median_dom": 91.5,
+      "sold_psf": 618.265,
+      "median_household_income": 62051,
+      "price_to_income": 15.25,
+      "coastal": true,
+      "sq_mi": 22.00328266
+    },
+    {
+      "town": "EDGARTOWN",
+      "centroid": [
+        -70.51206908457283,
+        41.37885794910882
+      ],
+      "median_sold": 2325000,
+      "sold_count": 33,
+      "median_dom": 78,
+      "sold_psf": 910.34,
+      "median_household_income": 70556,
+      "price_to_income": 32.95,
+      "coastal": true,
+      "sq_mi": 26.7104911
+    },
+    {
+      "town": "FOXBOROUGH",
+      "centroid": [
+        -71.25356873684211,
+        42.07962963157895
+      ],
+      "median_household_income": 95665,
+      "coastal": false,
+      "sq_mi": 20.84488068
+    },
+    {
+      "town": "WEYMOUTH",
+      "centroid": [
+        -70.93488269270163,
+        42.245261593789984
+      ],
+      "median_sold": 610000,
+      "sold_count": 530,
+      "median_dom": 21,
+      "sold_psf": 400.28,
+      "median_household_income": 69744,
+      "price_to_income": 8.75,
+      "coastal": true,
+      "sq_mi": 17.83172592
+    },
+    {
+      "town": "NORTH ANDOVER",
+      "centroid": [
+        -71.13592877467417,
+        42.69538300744876
+      ],
+      "median_sold": 750000,
+      "sold_count": 337,
+      "median_dom": 21,
+      "sold_psf": 363.56,
+      "median_household_income": 102008,
+      "price_to_income": 7.35,
+      "coastal": true,
+      "sq_mi": 27.71730429
+    },
+    {
+      "town": "SPRINGFIELD",
+      "centroid": [
+        -72.53878081818179,
+        42.13890766181819
+      ],
+      "median_sold": 299450,
+      "sold_count": 1002,
+      "median_dom": 25,
+      "sold_psf": 218.68,
+      "median_household_income": 35742,
+      "price_to_income": 8.38,
+      "coastal": false,
+      "sq_mi": 33.07746383
+    },
+    {
+      "town": "NEWBURYPORT",
+      "centroid": [
+        -70.85434083364059,
+        42.81253111751152
+      ],
+      "median_sold": 907500,
+      "sold_count": 248,
+      "median_dom": 22,
+      "sold_psf": 555.75,
+      "median_household_income": 87162,
+      "price_to_income": 10.41,
+      "coastal": true,
+      "sq_mi": 8.74524995
+    },
+    {
+      "town": "WALES",
+      "centroid": [
+        -72.1971597967033,
+        42.063008901098904
+      ],
+      "median_sold": 390000,
+      "sold_count": 20,
+      "median_dom": 30.5,
+      "sold_psf": 257.7,
+      "median_household_income": 51351,
+      "price_to_income": 7.59,
+      "coastal": false,
+      "sq_mi": 15.97375634
+    },
+    {
+      "town": "TOPSFIELD",
+      "centroid": [
+        -70.95569845283026,
+        42.62354116652994
+      ],
+      "median_sold": 968500,
+      "sold_count": 62,
+      "median_dom": 21,
+      "sold_psf": 377.82000000000005,
+      "median_household_income": 128283,
+      "price_to_income": 7.55,
+      "coastal": true,
+      "sq_mi": 12.80497262
+    },
+    {
+      "town": "RICHMOND",
+      "centroid": [
+        -73.33712825,
+        42.387184500000004
+      ],
+      "median_sold": 775000,
+      "sold_count": 3,
+      "median_dom": 21,
+      "sold_psf": 314.02,
+      "median_household_income": 93750,
+      "price_to_income": 8.27,
+      "coastal": false,
+      "sq_mi": 19.02812968
+    },
+    {
+      "town": "HULL",
+      "centroid": [
+        -70.87628044255325,
+        42.27738587684601
+      ],
+      "median_sold": 635000,
+      "sold_count": 135,
+      "median_dom": 35,
+      "sold_psf": 452.85,
+      "median_household_income": 78114,
+      "price_to_income": 8.13,
+      "coastal": true,
+      "sq_mi": 2.98318476
+    },
+    {
+      "town": "BROOKFIELD",
+      "centroid": [
+        -72.07861319811323,
+        42.21422991509435
+      ],
+      "median_sold": 350000,
+      "sold_count": 33,
+      "median_dom": 27,
+      "sold_psf": 218.04,
+      "median_household_income": 63906,
+      "price_to_income": 5.48,
+      "coastal": false,
+      "sq_mi": 16.58086092
+    },
+    {
+      "town": "MILLBURY",
+      "centroid": [
+        -71.78605047058824,
+        42.178281588235286
+      ],
+      "median_sold": 490000,
+      "sold_count": 136,
+      "median_dom": 22,
+      "sold_psf": 291.76,
+      "median_household_income": 72566,
+      "price_to_income": 6.75,
+      "coastal": false,
+      "sq_mi": 16.44425791
+    },
+    {
+      "town": "STOUGHTON",
+      "centroid": [
+        -71.13499920982149,
+        42.112679040178556
+      ],
+      "median_sold": 550000,
+      "sold_count": 287,
+      "median_dom": 22,
+      "sold_psf": 329.37,
+      "median_household_income": 75109,
+      "price_to_income": 7.32,
+      "coastal": false,
+      "sq_mi": 16.46553636
+    },
+    {
+      "town": "BELLINGHAM",
+      "centroid": [
+        -71.48399152469138,
+        42.10457502469132
+      ],
+      "median_sold": 528750,
+      "sold_count": 182,
+      "median_dom": 21,
+      "sold_psf": 317.115,
+      "median_household_income": 90630,
+      "price_to_income": 5.83,
+      "coastal": false,
+      "sq_mi": 18.8879353
+    },
+    {
+      "town": "WESTPORT",
+      "centroid": [
+        -71.06940792265337,
+        41.540762787835256
+      ],
+      "median_sold": 685000,
+      "sold_count": 118,
+      "median_dom": 32.5,
+      "sold_psf": 389.955,
+      "median_household_income": 79905,
+      "price_to_income": 8.57,
+      "coastal": true,
+      "sq_mi": 52.11099058
+    },
+    {
+      "town": "BEVERLY",
+      "centroid": [
+        -70.86645855071177,
+        42.55053781895009
+      ],
+      "median_sold": 739000,
+      "sold_count": 296,
+      "median_dom": 20,
+      "sold_psf": 457.33500000000004,
+      "median_household_income": 73839,
+      "price_to_income": 10.01,
+      "coastal": true,
+      "sq_mi": 15.41147364
+    },
+    {
+      "town": "HAWLEY",
+      "centroid": [
+        -72.88559942857144,
+        42.58040057142858
+      ],
+      "median_sold": 395000,
+      "sold_count": 7,
+      "median_dom": 47,
+      "sold_psf": 279,
+      "median_household_income": 65417,
+      "price_to_income": 6.04,
+      "coastal": false,
+      "sq_mi": 30.82459971
+    },
+    {
+      "town": "AUBURN",
+      "centroid": [
+        -71.83610835714286,
+        42.20146714285714
+      ],
+      "median_sold": 465000,
+      "sold_count": 201,
+      "median_dom": 22,
+      "sold_psf": 294.91,
+      "median_household_income": 71522,
+      "price_to_income": 6.5,
+      "coastal": false,
+      "sq_mi": 16.41446254
+    },
+    {
+      "town": "LAKEVILLE",
+      "centroid": [
+        -70.9493362757111,
+        41.87940862144421
+      ],
+      "median_sold": 587500,
+      "sold_count": 138,
+      "median_dom": 37.5,
+      "sold_psf": 346.74,
+      "median_household_income": 93691,
+      "price_to_income": 6.27,
+      "coastal": false,
+      "sq_mi": 36.11942016
+    },
+    {
+      "town": "NANTUCKET",
+      "centroid": [
+        -70.11192530174274,
+        41.30181749546433
+      ],
+      "median_sold": 2294250,
+      "sold_count": 11,
+      "median_dom": 29,
+      "sold_psf": 698.87,
+      "median_household_income": 89428,
+      "price_to_income": 25.65,
+      "coastal": true,
+      "sq_mi": 48.91162825
+    }
+  ]
+}

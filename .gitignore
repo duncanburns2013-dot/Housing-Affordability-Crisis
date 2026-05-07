@@ -25,3 +25,4 @@ data/raw/.cache/
 *.secret
 data/raw/mlspin_*.json
 data/raw/bridge_*.json
+data/raw/ma-towns-raw.geojson
