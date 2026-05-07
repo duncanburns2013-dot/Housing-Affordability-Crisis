@@ -96,6 +96,42 @@
           smooth: 0.2,
           lineStyle: { width: 3, color: '#00e676', shadowBlur: 14, shadowColor: 'rgba(0,230,118,0.6)' },
           areaStyle: { color: 'transparent' },
+          // monetary-regime context bands — visible always
+          markArea: {
+            silent: true,
+            label: {
+              color: '#c8d2e6', fontSize: 10, fontWeight: 600,
+              fontFamily: 'JetBrains Mono, monospace',
+              position: 'insideTop', distance: 6,
+              textShadowColor: 'rgba(0,0,0,0.7)', textShadowBlur: 4
+            },
+            data: [
+              [
+                {
+                  xAxis: '2008', name: 'QE  +  ZIRP',
+                  itemStyle: {
+                    color: 'rgba(0,184,255,0.07)',
+                    borderColor: 'rgba(0,184,255,0.30)',
+                    borderWidth: 1
+                  },
+                  label: { color: '#00b8ff', textShadowColor: 'rgba(0,184,255,0.5)' }
+                },
+                { xAxis: '2015' }
+              ],
+              [
+                {
+                  xAxis: '2020', name: 'ZIRP  +  COVID',
+                  itemStyle: {
+                    color: 'rgba(255,23,68,0.10)',
+                    borderColor: 'rgba(255,23,68,0.35)',
+                    borderWidth: 1
+                  },
+                  label: { color: '#ff1744', textShadowColor: 'rgba(255,23,68,0.5)' }
+                },
+                { xAxis: '2022' }
+              ]
+            ]
+          },
           z: 4
         },
         // gap series stacked on top → top edge of stack equals MA price line
@@ -152,7 +188,9 @@
   function applyStep(n) {
     if (!chart) return;
     const { years, priceIdx, incomeIdx } = chart._series;
-    const opt = { series: [{}, {}, {}], graphic: { elements: [] } };
+    // empty graphic[] always; we replaceMerge it on every step so callouts
+    // from one step can never bleed into another.
+    const opt = { series: [{}, {}, {}], graphic: [] };
 
     // === markPoints stack onto the visible top line (MA home price = stacked area top) ===
     // Coordinates need to be on the displayed stack value, which is priceIdx itself.
@@ -171,50 +209,43 @@
     }
     opt.series[1] = { markPoint: { symbol: 'circle', data: markPoints } };
 
-    // === step 5: alternative-history line + gap callout ===
-    if (n >= 5) {
-      // dim the gap area so the alt line is visible against it
+    // === step 5: gap callout in cinematic typography ===
+    if (n === 5) {
+      // dim the gap area so the typography reads cleanly over it
       opt.series[1].areaStyle = {
         color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1, colorStops: [
           { offset: 0, color: 'rgba(255,23,68,0.30)' },
           { offset: 1, color: 'rgba(255,23,68,0.03)' }
         ]}
       };
-      opt.graphic = {
-        elements: [
-          // big gap callout
-          { type: 'group', left: 'center', top: '20%',
-            children: [
-              { type: 'text', left: 'center', top: 0,
-                style: { text: '$130K', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
-                         fontSize: 90, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 26 } },
-              { type: 'text', left: 'center', top: 96,
-                style: { text: 'the gap, per home', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
-                         fontSize: 22, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 12 } },
-              { type: 'text', left: 'center', top: 130,
-                style: { text: 'between today’s actual MA price and what 2000’s ratio would imply',
-                         fontFamily: 'Inter, sans-serif', fontSize: 12, fill: '#d6deef', opacity: 0.92 } }
-            ]
-          }
-        ]
-      };
+      opt.graphic = [
+        { id: 'gap-num', type: 'text', left: 'center', top: '22%',
+          style: { text: '$130K', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
+                   fontSize: 96, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
+        { id: 'gap-sub', type: 'text', left: 'center', top: '42%',
+          style: { text: 'the gap, per home', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
+                   fontSize: 24, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 12 } },
+        { id: 'gap-cap', type: 'text', left: 'center', top: '50%',
+          style: { text: 'between today’s actual MA price and what 2000’s ratio would imply',
+                   fontFamily: 'Inter, sans-serif', fontSize: 12, fill: '#d6deef', opacity: 0.92 } }
+      ];
     }
 
-    // === step 6: verdict reveal ===
+    // === step 6: verdict at the bottom — and importantly, NO step-5 callout ===
     if (n >= 6) {
-      opt.graphic = {
-        elements: [{
-          type: 'text', left: 'center', bottom: 14,
-          style: {
-            text: 'Prices grew. Incomes did not keep pace. The wedge between them is the crisis.',
-            fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 600,
-            fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 14
-          }
-        }]
-      };
+      opt.graphic = [{
+        id: 'verdict', type: 'text', left: 'center', bottom: 12,
+        style: {
+          text: 'Prices grew. Incomes did not keep pace. The wedge between them is the crisis.',
+          fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 600,
+          fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 14
+        }
+      }];
     }
 
-    chart.setOption(opt);
+    // replaceMerge: ['graphic'] forces ECharts to fully replace graphic each step,
+    // preventing the $130K from bleeding into step 6 (the bug Duncan caught).
+    chart.setOption(opt, { replaceMerge: ['graphic'] });
   }
 
   section.addEventListener('step:enter', (e) => {
