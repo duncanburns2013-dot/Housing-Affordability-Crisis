@@ -196,17 +196,16 @@
     const opt = { series: [{}, {}, {}, {}], graphic: [] };
     const maMarks = [], nhMarks = [];
 
-    if (n >= 2) {
-      // Mark 2000 baseline gap
+    // Steps 2 & 3 establish history; step 4 emphasizes "shape but not level".
+    // Avoid putting too many markers on the chart at once.
+    if (n >= 2 && n <= 3) {
       maMarks.push(annotation(['2000', ma[yrIdx(2000)]], '2000  4.42×  MA', '#ff1744'));
       nhMarks.push(annotation(['2000', nh[yrIdx(2000)]], '2000  2.74×  NH', '#00e676', 'bottom', 16));
     }
-    if (n >= 3) {
-      // 2007 bubble peak — show all three rising
+    if (n >= 4 && n < 5) {
       maMarks.push(annotation(['2007', ma[yrIdx(2007)]], '2007 peak  6.05×', '#ff1744'));
     }
     if (n >= 5) {
-      // 2024 current state
       maMarks.push(annotation(['2024', ma[yrIdx(2024)]], '2024  5.53×', '#ff1744'));
       nhMarks.push(annotation(['2024', nh[yrIdx(2024)]], '2024  4.28×', '#00e676', 'bottom', 16));
     }
@@ -216,17 +215,17 @@
     opt.series[2] = { markPoint: { symbol: 'circle', data: nhMarks } };
 
     if (n === 5) {
-      // cinematic moment: the persistent MA premium
+      // cinematic moment: the persistent MA premium, framed as $ not just ratio
       opt.graphic = [
-        { id: 's3-num', type: 'text', left: 'center', top: '20%',
-          style: { text: '+1.25×', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
-                   fontSize: 96, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
+        { id: 's3-num', type: 'text', left: 'center', top: '18%',
+          style: { text: '+$151,000', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
+                   fontSize: 88, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
         { id: 's3-sub', type: 'text', left: 'center', top: '40%',
-          style: { text: 'the MA premium over NH', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
+          style: { text: 'the MA home-price premium over NH', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
                    fontSize: 24, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 12 } },
         { id: 's3-cap', type: 'text', left: 'center', top: '48%',
-          style: { text: '~14 additional months of income, per home, just for crossing the state line',
-                   fontFamily: 'Inter, sans-serif', fontSize: 12, fill: '#d6deef', opacity: 0.92 } }
+          style: { text: 'with median household incomes essentially tied — $114K (MA) vs $112K (NH)',
+                   fontFamily: 'Inter, sans-serif', fontSize: 13, fill: '#d6deef', opacity: 0.94 } }
       ];
     } else if (n >= 6) {
       opt.graphic = [{
