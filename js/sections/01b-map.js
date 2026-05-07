@@ -123,15 +123,27 @@
         const town = t.TOWN;
         const row = byTown.get(town);
         if (!row || row.median_sold == null) {
-          return { html: `<div class="tt-title">${town}</div><div class="tt-row"><span>data</span><b>insufficient sales</b></div>`, style: tooltipStyle() };
+          // 11 towns truly have no MLSPIN data — Berkshire towns are mostly
+          // covered by Berkshire County MLS rather than MLSPIN, plus Gosnold
+          // (Cuttyhunk) is too small. Median household income is still shown.
+          const inc = t.Median_Household_Income;
+          return {
+            html: `
+              <div class="tt-title">${town}</div>
+              <div class="tt-row"><span>Median income</span><b style="color:#00b8ff">${METRICS.median_household_income.format(inc)}</b></div>
+              <div class="tt-row" style="margin-top:6px"><span style="color:#95a0bb">no MLSPIN sales recorded — likely Berkshire MLS coverage</span></div>
+            `,
+            style: tooltipStyle()
+          };
         }
+        const smallSample = row.sold_count != null && row.sold_count < 5;
         const html = `
-          <div class="tt-title">${town}</div>
+          <div class="tt-title">${town}${smallSample ? ' <span style="font-size:0.62rem;letter-spacing:0.1em;color:#ffd600;font-family:JetBrains Mono,monospace;text-transform:uppercase">· small sample</span>' : ''}</div>
           <div class="tt-row"><span>Price ÷ Income</span><b style="color:#ff1744">${row.price_to_income ? row.price_to_income.toFixed(1)+'×' : '—'}</b></div>
           <div class="tt-row"><span>Median sold</span><b style="color:#ffd600">${METRICS.median_sold.format(row.median_sold)}</b></div>
           <div class="tt-row"><span>Median income</span><b style="color:#00b8ff">${METRICS.median_household_income.format(row.median_household_income)}</b></div>
           <div class="tt-row"><span>Days on market</span><b>${METRICS.median_dom.format(row.median_dom)}</b></div>
-          <div class="tt-row"><span>Sales (12 mo)</span><b>${row.sold_count || '—'}</b></div>
+          <div class="tt-row"><span>Sales (12 mo)</span><b style="${smallSample ? 'color:#ffd600' : ''}">${row.sold_count || '—'}</b></div>
         `;
         return { html, style: tooltipStyle() };
       },
@@ -179,6 +191,18 @@
         getLineWidth: f => f.properties.TOWN === hoveredTown ? 2.5 : 0.6,
         getFillColor: f => {
           const v = readMetric(f.properties, activeMetric);
+          const n = f.properties.sold_count;
+          // Dim towns with no data OR small sample (n<5) — visual honesty:
+          // we don't claim a price-to-income ratio off 1-3 sales.
+          // Income metric uses MassDOT-attached values, so it's still valid
+          // even where MLSPIN sales are missing.
+          const isLowConfidence = activeMetric !== 'median_household_income'
+            && (v == null || (n != null && n < 5));
+          if (isLowConfidence) {
+            const dim = [40, 50, 75, 180];
+            if (f.properties.TOWN === hoveredTown) return [dim[0]+30, dim[1]+30, dim[2]+30, 220];
+            return dim;
+          }
           if (v == null) return [22, 30, 50, 200];
           const c = metricColor(v, cfg);
           // brighter on hover
@@ -188,7 +212,7 @@
         pickable: true,
         updateTriggers: {
           getFillColor: [activeMetric, hoveredTown],
-          getLineColor: [hoveredTown],
+          getLineColor: [hoveredTown, activeMetric],
           getLineWidth: [hoveredTown]
         },
         transitions: {

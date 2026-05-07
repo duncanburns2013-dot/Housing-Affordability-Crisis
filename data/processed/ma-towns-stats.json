@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated": "2026-05-07T17:32:31.782Z",
+    "generated": "2026-05-07T18:56:00.572Z",
     "towns": 351,
-    "matched": 335,
-    "missing": 16
+    "matched": 340,
+    "missing": 11
   },
   "rows": [
     {
@@ -612,7 +612,12 @@
         -71.32698242857144,
         41.973587
       ],
+      "median_sold": 557000,
+      "sold_count": 262,
+      "median_dom": 24,
+      "sold_psf": 312.5,
       "median_household_income": 83735,
+      "price_to_income": 6.65,
       "coastal": false,
       "sq_mi": 19.37917402
     },
@@ -3162,7 +3167,12 @@
         -70.90974862686559,
         41.893522191044774
       ],
+      "median_sold": 583000,
+      "sold_count": 219,
+      "median_dom": 23,
+      "sold_psf": 319.65,
       "median_household_income": 76961,
+      "price_to_income": 7.58,
       "coastal": false,
       "sq_mi": 72.20213169
     },
@@ -3757,6 +3767,10 @@
         -70.76427236275364,
         42.56841379140928
       ],
+      "median_sold": 1312500,
+      "sold_count": 58,
+      "median_dom": 43,
+      "sold_psf": 528.2950000000001,
       "median_household_income": null,
       "coastal": true,
       "sq_mi": 7.78562374
@@ -4507,7 +4521,12 @@
         -73.27469098809527,
         42.16063520238095
       ],
+      "median_sold": 3100000,
+      "sold_count": 1,
+      "median_dom": 179,
+      "sold_psf": 662.25,
       "median_household_income": 72321,
+      "price_to_income": 42.86,
       "coastal": false,
       "sq_mi": 47.89741862
     },
@@ -4917,7 +4936,12 @@
         -71.25356873684211,
         42.07962963157895
       ],
+      "median_sold": 661750,
+      "sold_count": 130,
+      "median_dom": 21,
+      "sold_psf": 348.105,
       "median_household_income": 95665,
+      "price_to_income": 6.92,
       "coastal": false,
       "sq_mi": 20.84488068
     },

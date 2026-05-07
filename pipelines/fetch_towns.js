@@ -93,6 +93,16 @@ const norm = (s) => (s || '').toString().trim().toUpperCase()
   .replace(/[\.\,]/g, '')
   .replace(/\s+/g, ' ');
 
+// MassDOT publishes towns under their official long-form names; MLSPIN listings
+// almost always use the short colloquial form. Map official → MLSPIN.
+const TOWN_ALIASES = {
+  'FOXBOROUGH':           'FOXBORO',
+  'MIDDLEBOROUGH':        'MIDDLEBORO',
+  'NORTH ATTLEBOROUGH':   'NORTH ATTLEBORO',
+  'MANCHESTER BY THE SEA':'MANCHESTER',
+  'NEW MARLBOROUGH':      'NEW MARLBORO'
+};
+
 // ---- main ----
 (async () => {
   let geojson;
@@ -118,8 +128,9 @@ const norm = (s) => (s || '').toString().trim().toUpperCase()
   for (const f of geojson.features) {
     const town = f.properties.TOWN;
     const key = norm(town);
-    const c = closedByName.get(key);
-    const a = activeByName.get(key);
+    const lookupKey = TOWN_ALIASES[key] || key;
+    const c = closedByName.get(lookupKey);
+    const a = activeByName.get(lookupKey);
 
     f.properties.centroid = polygonCentroid(f.geometry);
 
