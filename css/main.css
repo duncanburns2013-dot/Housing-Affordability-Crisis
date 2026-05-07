@@ -30,7 +30,8 @@
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 
-  --max-w: 1180px;
+  --max-w: 1180px;          /* narrow contexts (ledes, conclusions) */
+  --max-w-wide: 1640px;     /* scrollytelling + chart-bearing sections */
   --gap: clamp(1rem, 2vw, 2rem);
 }
 
@@ -186,11 +187,11 @@ b { font-weight: 600; }
 .hero-title {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2.5rem, 6.5vw, 6rem);
+  font-size: clamp(2.5rem, 7vw, 7.5rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin: 0 auto 1.5rem;
-  max-width: 18ch;
+  max-width: 20ch;
 }
 .hero-title .strike {
   position: relative;
@@ -215,11 +216,11 @@ b { font-weight: 600; }
 .hero-sub {
   font-family: var(--serif);
   font-style: italic;
-  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-size: clamp(1.05rem, 1.7vw, 1.55rem);
   color: var(--ink-soft);
-  max-width: 56ch;
+  max-width: 60ch;
   margin: 0 auto 3rem;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 .scroll-cue {
   display: inline-flex;
@@ -250,25 +251,25 @@ b { font-weight: 600; }
   border-top: 1px solid var(--rule);
 }
 .section-header {
-  max-width: var(--max-w);
-  margin: 0 auto 4rem;
+  max-width: 1380px;
+  margin: 0 auto 4.5rem;
   padding: 0 1rem;
 }
 .section-num {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.3em;
   color: var(--crisis);
   text-shadow: 0 0 14px var(--crisis-glow);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 .section-question {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2rem, 4.5vw, 3.8rem);
-  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 4.6rem);
+  line-height: 1.08;
   letter-spacing: -0.02em;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.6rem;
   max-width: 22ch;
 }
 .section-question em {
@@ -279,9 +280,9 @@ b { font-weight: 600; }
 .section-lede {
   font-family: var(--serif);
   font-style: italic;
-  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.55vw, 1.5rem);
   color: var(--ink-soft);
-  max-width: 60ch;
+  max-width: 64ch;
   line-height: 1.55;
 }
 
@@ -305,7 +306,7 @@ b { font-weight: 600; }
 }
 .chart {
   width: 100%;
-  height: 460px;
+  height: clamp(480px, 66vh, 780px);
 }
 .chart-source {
   font-size: 0.72rem;
