@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/sections.css" />
 <link rel="stylesheet" href="css/map.css" />
+<link rel="stylesheet" href="css/section4.css" />
 </head>
 <body>
 
@@ -336,17 +337,94 @@
 <section id="s4" class="story-section" data-section="4">
   <header class="section-header">
     <div class="section-num">04</div>
-    <h2 class="section-question">Is public spending<br/><em>relieving</em> prices &mdash; or inflating them?</h2>
+    <h2 class="section-question">Is public spending <em>relieving</em><br/>the crisis &mdash; or inflating it?</h2>
     <p class="section-lede">
-      Demand subsidies in a constrained market raise the clearing price. We measure the spending,
-      then let you derive the implied recipient population from a cost-per-recipient slider you control.
+      A subsidy paid <i>to</i> a renter or shelter operator becomes the same dollar landlords or hotels
+      can ask for. In a market where supply doesn't grow, every dollar of demand-side subsidy raises the
+      clearing price for everyone &mdash; subsidized and unsubsidized alike. We measure the spending here.
+      Then you derive the implied caseload, with assumptions you control.
     </p>
   </header>
-  <div class="placeholder-card">
-    <div class="placeholder-title">CTHRU Spending + Derived Caseload &mdash; coming next turn</div>
-    <p>Will plot: stacked spending FY19 &rarr; FY26 across EA family shelter, RAFT, MRVP, MassHealth Limited,
-      HSN, in-state tuition, refugee/resettlement, ESL grants. Slider lets the reader pick avg cost-per-recipient
-      and see implied population. Data: CTHRU exports + state budget books.</p>
+
+  <div class="s4-grid">
+    <div class="s4-chart-frame chart-frame">
+      <div class="chart-eyebrow">Massachusetts demand-side spending, FY14&ndash;FY25 (CTHRU paid amounts)</div>
+      <div id="chart-s4-spending" class="chart"></div>
+      <div class="chart-source">
+        Source: <a href="https://cthru.data.socrata.com/" target="_blank" rel="noopener">CTHRU</a> Comptroller payments
+        dataset (pegc-naaa), summed across program-specific appropriation codes. Paid amounts &mdash; conservative floor.
+        Enacted-budget figures and federal pass-throughs are higher.
+      </div>
+    </div>
+
+    <div class="s4-slider-frame chart-frame">
+      <div class="chart-eyebrow">If the average annual state cost per beneficiary is&hellip;</div>
+      <div class="s4-slider-block">
+        <div class="s4-cost-display">
+          <span class="s4-prefix">$</span>
+          <span id="s4-cost-value">25,000</span>
+          <span class="s4-suffix">per beneficiary, per year</span>
+        </div>
+        <input type="range" id="s4-cost-slider" min="5000" max="60000" step="500" value="25000" />
+        <div class="s4-slider-marks">
+          <span>$5K</span><span>$15K</span><span>$25K</span><span>$40K</span><span>$60K</span>
+        </div>
+      </div>
+
+      <div class="s4-derive-block">
+        <div class="s4-derive-row">
+          <span class="s4-derive-label">FY25 total spending</span>
+          <span class="s4-derive-val" id="s4-total-spend">&mdash;</span>
+        </div>
+        <div class="s4-derive-row s4-derive-result">
+          <span class="s4-derive-label">Implied caseload</span>
+          <span class="s4-derive-val s4-big" id="s4-caseload">&mdash;</span>
+        </div>
+        <div class="s4-derive-row">
+          <span class="s4-derive-label">As % of MA population (7.0M)</span>
+          <span class="s4-derive-val" id="s4-pct-pop">&mdash;</span>
+        </div>
+        <div class="s4-derive-row">
+          <span class="s4-derive-label">Equivalent to MA towns of size</span>
+          <span class="s4-derive-val" id="s4-town-equiv">&mdash;</span>
+        </div>
+      </div>
+
+      <div class="s4-note">
+        The slider is yours. CTHRU spending is the unmovable input. Argue the per-beneficiary cost as low or
+        as high as you like &mdash; the math runs in real time. State your answer publicly.
+      </div>
+    </div>
+  </div>
+
+  <div class="s4-narrative">
+    <div class="s4-narrative-col">
+      <p class="step-q">Why this measures what it measures.</p>
+      <p>
+        The chart sums payments under program-specific appropriation codes:
+        EA family shelter and reserves (cranberry), state rental vouchers (gold), Health Safety Net for
+        uninsured care (vivid blue), and the Office of Refugees and Immigrants (vivid green). These are
+        <i>demand-side</i> programs &mdash; money that flows to households or to operators serving households,
+        and that competes for the same housing and rental pool unsubsidized residents do.
+      </p>
+      <p class="footnote">
+        We do <i>not</i> include supply-side spending (public-housing construction, affordable-housing trust
+        fund) because that adds units rather than bidding up rents on existing units.
+      </p>
+    </div>
+    <div class="s4-narrative-col">
+      <p class="step-q">A note on completeness.</p>
+      <p>
+        CTHRU shows <b>actually-paid amounts</b>. Enacted-budget figures and supplemental authorizations for
+        these programs run higher because federal pass-throughs (FEMA, ORR, Section 8), contracted-but-not-yet-paid
+        amounts, and operator subgrants flow through other accounting channels. The growth shape and program-mix
+        shift visible above are reliable; the absolute totals are conservative lower bounds.
+      </p>
+      <p>
+        That matters for honest accounting. If the slider implies <i>N</i> beneficiaries from
+        CTHRU-paid dollars, the true serviced population is plausibly larger.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -404,5 +482,6 @@
 <script src="js/sections/01b-map.js"></script>
 <script src="js/sections/02-divergence.js"></script>
 <script src="js/sections/03-macro.js"></script>
+<script src="js/sections/04-spending.js"></script>
 </body>
 </html>

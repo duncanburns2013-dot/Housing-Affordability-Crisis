@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "generated": "2026-05-07T20:10:55.595Z",
+    "source": "CTHRU pegc-naaa (MA Comptroller direct payments)",
+    "note": "CTHRU shows actually-paid amounts. Enacted-budget figures for these programs are higher because they include federal pass-throughs, contracted-but-not-yet-paid amounts, and subgrants flowing through other codes. Growth shape and category mix are reliable; absolute totals are conservative lower bounds."
+  },
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "categories": {
+    "ea_shelter": {
+      "label": "EA family shelter + emergency reserves",
+      "color": "#ff1744",
+      "description": "Emergency Assistance family shelter, hotel/motel overflow, shelter workforce, plus 1599-prefix supplemental \"Family Shelter and Services Reserve\" accounts and immigrant/refugee housing reserves.",
+      "codes": [
+        "70040101",
+        "70040103",
+        "70040109",
+        "15990514",
+        "15991213",
+        "15992625",
+        "15990122",
+        "15990925"
+      ],
+      "by_year": [
+        40114864,
+        3585867,
+        3821835,
+        3478716,
+        4148619,
+        3497822,
+        3301923,
+        2995831,
+        3748326,
+        24236760,
+        95937461,
+        134732785
+      ]
+    },
+    "rental_subsidy": {
+      "label": "State rental vouchers (MRVP + program reserves)",
+      "color": "#ffd600",
+      "description": "Massachusetts Rental Voucher Program (MRVP), housing stabilization, transitional rental assistance.",
+      "codes": [
+        "70049024",
+        "70040062",
+        "70049030"
+      ],
+      "by_year": [
+        0,
+        0,
+        0,
+        0,
+        49657,
+        60118,
+        504722,
+        401825,
+        691860,
+        8871944,
+        58161561,
+        4225687
+      ]
+    },
+    "health_safety_net": {
+      "label": "Health Safety Net (HSN)",
+      "color": "#00b8ff",
+      "description": "HSN reimburses hospitals and community health centers for care provided to uninsured and underinsured residents — including non-citizens. Funded by hospital/insurer assessments and state appropriation.",
+      "codes": [
+        "40000091",
+        "40000090",
+        "40000092",
+        "40000093",
+        "40001333",
+        "41000091",
+        "41000090",
+        "41000092"
+      ],
+      "by_year": [
+        133095356,
+        153041222,
+        123585206,
+        108506633,
+        102436673,
+        291215571,
+        301944999,
+        219210296,
+        303205137,
+        231051504,
+        366169118,
+        353006933
+      ]
+    },
+    "refugee_immigrant": {
+      "label": "Office of Refugees & Immigrants",
+      "color": "#00e676",
+      "description": "Office of Refugees and Immigrants administration and trust fund.",
+      "codes": [
+        "40030111",
+        "40030091"
+      ],
+      "by_year": [
+        0,
+        342427,
+        255586,
+        123968,
+        47910,
+        55776,
+        42027,
+        14901,
+        0,
+        0,
+        1198929,
+        1044439
+      ]
+    }
+  },
+  "total_by_year": [
+    173210220,
+    156969516,
+    127662627,
+    112109317,
+    106682859,
+    294829287,
+    305793671,
+    222622853,
+    307645323,
+    264160208,
+    521467069,
+    493009844
+  ]
+}
