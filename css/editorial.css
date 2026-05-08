@@ -468,26 +468,37 @@ em.glow { text-shadow: 0 0 20px var(--gold-glow); }
   margin-left: auto;
   margin-right: auto;
 }
+/* Override base .intermission::before width/height (96x1 gold rule) — */
+/* the photo backdrop needs to span the whole intermission. */
 .intermission-photo::before {
   content: '';
   position: absolute;
   inset: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  background-color: transparent;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   z-index: 0;
   filter: saturate(0.85);
+  display: block;
 }
 .intermission-photo::after {
   content: '';
   position: absolute;
   inset: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
   background: linear-gradient(180deg,
     rgba(10, 18, 24, 0.86) 0%,
     rgba(10, 18, 24, 0.72) 35%,
     rgba(10, 18, 24, 0.72) 65%,
     rgba(10, 18, 24, 0.92) 100%);
   z-index: 1;
+  display: block;
 }
 @media (max-width: 900px) {
   .intermission-photo::before { background-attachment: scroll; }
