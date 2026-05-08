@@ -38,3 +38,7 @@ assets/*-utc.jpeg
 assets/EA Shelter.PNG
 assets/Uhaul.jpg
 assets/healey-source.*
+
+# Personal/promotional assets — not part of the dashboard repo
+assets/share-collage.png
+pipelines/build_collage.js
