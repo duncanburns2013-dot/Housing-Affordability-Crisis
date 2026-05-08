@@ -1,0 +1,426 @@
+/* ===========================================================
+   Editorial pivot — NYT/WSJ professionalism
+   Restrained palette, strong serif body, cream-glass cards,
+   journalistic deck heads between sections.
+   This file LOADS LAST and overrides the more dramatic moves.
+   =========================================================== */
+
+:root {
+  /* Restrained ink + paper palette layered over MA accent colors. */
+  --ink-paper: #f3eede;       /* warm cream — primary text */
+  --ink-paper-soft: #d8d2c1;  /* muted cream — secondary text */
+  --ink-paper-mute: #918a78;  /* mute label color */
+
+  --paper-glass: rgba(243, 238, 222, 0.05);
+  --paper-glass-stroke: rgba(243, 238, 222, 0.13);
+
+  /* Knock back saturation on accents — same hues, half the punch */
+  --crisis: #e8425a;
+  --crisis-soft: #ed7a8b;
+  --crisis-glow: rgba(232, 66, 90, 0.35);
+  --cool: #4ec0e8;
+  --cool-glow: rgba(78, 192, 232, 0.35);
+  --green: #4dcb88;
+  --green-glow: rgba(77, 203, 136, 0.35);
+  --gold: #e8b833;
+  --gold-glow: rgba(232, 184, 51, 0.40);
+
+  /* New: editorial rule color — thin warm line for dividers */
+  --rule-warm: rgba(243, 238, 222, 0.18);
+
+  /* Background: deep cool ink, less saturated than before */
+  --bg-0: #0a1218;
+  --bg-1: #0e1820;
+  --bg-2: #131e28;
+}
+
+/* ----- background atmospherics: more restrained ----- */
+body { color: var(--ink-paper); }
+body::before {
+  background:
+    radial-gradient(ellipse 70% 45% at 20% 10%, rgba(78, 192, 232, 0.05), transparent 60%),
+    radial-gradient(ellipse 55% 50% at 85% 90%, rgba(232, 66, 90, 0.05), transparent 60%),
+    var(--bg-0) !important;
+}
+
+/* ----- typography pivot — serif body, sans for chart UI ----- */
+body {
+  font-family: 'Spectral', 'Source Serif Pro', 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+}
+.kicker, .footnote, .step b.hl, .lb-list, .legend-stop, .map-controls button,
+.tt-row span, .chart-eyebrow, .chart-source, .chart-frame .echarts-tooltip,
+.dot-nav a::after, .progress-bar, .scroll-cue,
+.s4-derive-label, .s4-slider-marks, .s6-build-row .s6-build-label,
+.s6-card-label, .map-source, .legend-foot, .legend-title, .lb-title {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif !important;
+}
+.lb-val, .legend-stop, .s4-cost-display, .s6-card-num, .step b.hl,
+.tt-row b, .s6-build-row a, .s6-build-row span:not(.s6-build-label) {
+  /* keep mono where it's already mono in the existing CSS */
+}
+
+em { color: var(--gold); text-shadow: none; }
+em.glow { text-shadow: 0 0 20px var(--gold-glow); }
+
+::selection { background: var(--gold); color: var(--bg-0); }
+
+/* ----- masthead — small byline above hero, NYT-style ----- */
+.masthead {
+  position: relative;
+  z-index: 30;
+  padding: 1.4rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-paper-mute);
+  border-bottom: 1px solid var(--rule-warm);
+  margin: 0 auto;
+  max-width: 1700px;
+}
+.masthead-name {
+  color: var(--ink-paper);
+  font-weight: 600;
+}
+.masthead-meta {
+  font-variant-numeric: tabular-nums;
+}
+.masthead-meta span + span::before {
+  content: '·';
+  margin: 0 0.6rem;
+  color: var(--ink-paper-mute);
+}
+
+/* ----- hero — restrain glow, more typographic gravity ----- */
+.hero { padding: 9rem 2rem 6rem; }
+.hero-grid { background-size: 80px 80px; opacity: 0.6; }
+.hero-glow {
+  background: radial-gradient(circle, rgba(232, 66, 90, 0.10), transparent 60%);
+  width: 900px; height: 900px;
+}
+.kicker {
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  font-size: 0.74rem;
+  text-shadow: none;
+  border-top: 1px solid var(--rule-warm);
+  border-bottom: 1px solid var(--rule-warm);
+  padding: 0.8rem 0;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', 'Spectral', serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: var(--ink-paper);
+}
+.hero-title .strike {
+  color: rgba(243, 238, 222, 0.40);
+  font-style: normal;
+}
+.hero-title .strike::after {
+  height: 2px;
+  background: var(--crisis);
+  box-shadow: none;
+  transform: rotate(-3deg) scaleX(1.05);
+  opacity: 0.85;
+}
+.hero-title em {
+  color: var(--gold);
+  font-style: italic;
+  text-shadow: 0 0 28px var(--gold-glow);
+}
+.hero-sub {
+  color: var(--ink-paper-soft);
+  font-style: italic;
+  max-width: 58ch;
+  font-weight: 400;
+}
+.scroll-cue {
+  border: 1px solid var(--rule-warm);
+  color: var(--ink-paper-soft);
+}
+.scroll-cue:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+/* ----- story section spacing — more breathing room ----- */
+.story-section {
+  padding: 10rem 1.5rem 7rem;
+  border-top: none;
+}
+.section-header {
+  position: relative;
+  padding-top: 3rem;
+}
+.section-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 1rem;
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+.section-num {
+  color: var(--gold);
+  text-shadow: none;
+  letter-spacing: 0.28em;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+.section-question {
+  font-family: 'Cormorant Garamond', 'Spectral', serif;
+  font-weight: 500;
+  color: var(--ink-paper);
+  letter-spacing: -0.02em;
+}
+.section-question em {
+  color: var(--gold);
+  text-shadow: none;
+  font-style: italic;
+}
+.section-lede {
+  font-family: 'Spectral', 'Source Serif Pro', Georgia, serif;
+  font-style: normal;
+  color: var(--ink-paper-soft);
+  font-weight: 400;
+  font-size: clamp(1.08rem, 1.4vw, 1.32rem);
+  line-height: 1.7;
+}
+.section-lede em { color: var(--gold); }
+
+/* ----- chart frames — cream-glass, restrained ----- */
+.chart-frame {
+  background: var(--paper-glass);
+  border: 1px solid var(--paper-glass-stroke);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
+}
+.chart-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-paper-mute);
+  letter-spacing: 0.14em;
+}
+.chart-source {
+  color: var(--ink-paper-mute);
+  font-size: 0.72rem;
+  letter-spacing: 0;
+  font-style: italic;
+  font-family: 'Spectral', Georgia, serif !important;
+}
+.chart-source a { color: var(--cool); }
+
+/* ----- step text in scrollytelling ----- */
+.step-q {
+  font-family: 'Cormorant Garamond', 'Spectral', serif;
+  font-style: italic;
+  color: var(--gold);
+  text-shadow: none;
+  font-weight: 500;
+  font-size: clamp(1.45rem, 2.2vw, 2.05rem);
+  letter-spacing: -0.01em;
+}
+.step p {
+  font-family: 'Spectral', 'Source Serif Pro', Georgia, serif;
+  color: var(--ink-paper);
+  opacity: 0.95;
+  font-weight: 400;
+}
+.step b.hl {
+  color: var(--crisis);
+  font-weight: 700;
+  text-shadow: none;
+  background: rgba(232, 66, 90, 0.10);
+  padding: 0 0.25em;
+  border-radius: 2px;
+}
+.footnote {
+  color: var(--ink-paper-mute);
+  font-style: italic;
+  font-family: 'Spectral', Georgia, serif !important;
+}
+
+/* ----- section intermission — NYT-style breathing room with deck head ----- */
+.intermission {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.intermission::before,
+.intermission::after {
+  content: '';
+  display: block;
+  width: 96px;
+  height: 1px;
+  background: var(--rule-warm);
+  margin: 0 auto 1.6rem;
+}
+.intermission::after { margin: 1.6rem auto 0; }
+.intermission-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  color: var(--gold);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.intermission-deck {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  color: var(--ink-paper);
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+  letter-spacing: -0.01em;
+}
+.intermission-lead {
+  font-family: 'Spectral', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  color: var(--ink-paper-soft);
+  max-width: 56ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ----- progress bar + dot nav refinements ----- */
+.progress-bar {
+  height: 2px;
+  background: linear-gradient(90deg, var(--cool), var(--gold), var(--crisis));
+  box-shadow: none;
+}
+.dot-nav .dot { background: rgba(243, 238, 222, 0.30); }
+.dot-nav a:hover .dot,
+.dot-nav a.active .dot {
+  background: var(--gold);
+  box-shadow: 0 0 10px var(--gold-glow);
+}
+
+/* ----- map section restraint ----- */
+.map-canvas-wrap {
+  border-color: var(--paper-glass-stroke);
+  box-shadow:
+    0 30px 90px -30px rgba(0, 0, 0, 0.85),
+    inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
+.map-controls {
+  background: var(--paper-glass);
+  border: 1px solid var(--paper-glass-stroke);
+}
+.map-controls button.active {
+  background: linear-gradient(135deg, var(--gold), var(--crisis-soft));
+  color: #0a1218;
+  font-weight: 600;
+  box-shadow: 0 4px 18px var(--gold-glow);
+}
+.map-legend {
+  background: rgba(8, 14, 24, 0.85);
+  border: 1px solid var(--paper-glass-stroke);
+}
+
+/* ----- section 4 slider restraint ----- */
+.s4-cost-display #s4-cost-value {
+  color: var(--gold);
+  text-shadow: 0 0 26px var(--gold-glow);
+}
+.s4-derive-result .s4-derive-label {
+  text-shadow: none;
+}
+.s4-big {
+  color: var(--crisis) !important;
+  text-shadow: 0 0 12px var(--crisis-glow);
+}
+#s4-cost-slider::-webkit-slider-thumb {
+  border-color: var(--gold);
+  box-shadow: 0 0 14px var(--gold-glow), 0 4px 10px rgba(0,0,0,0.5);
+}
+#s4-cost-slider::-moz-range-thumb {
+  border-color: var(--gold);
+  box-shadow: 0 0 14px var(--gold-glow);
+}
+
+/* ----- section 6 verdict — restrained tally cards ----- */
+.s6-card {
+  background: var(--paper-glass);
+  border: 1px solid var(--paper-glass-stroke);
+}
+.s6-card::before { display: none; }
+.s6-card-num {
+  color: var(--gold);
+  text-shadow: 0 0 22px var(--gold-glow);
+}
+.s6-card-unit { color: var(--ink-paper-soft); }
+.s6-card-label {
+  color: var(--ink-paper);
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.78rem;
+}
+.s6-card-foot {
+  color: var(--ink-paper-soft);
+  font-family: 'Spectral', Georgia, serif;
+}
+.s6-card-highlight {
+  background: linear-gradient(135deg, rgba(232, 184, 51, 0.10), rgba(78, 192, 232, 0.06));
+  border-color: rgba(232, 184, 51, 0.28);
+}
+.s6-card-highlight .s6-card-num { color: var(--crisis); text-shadow: 0 0 22px var(--crisis-glow); }
+.s6-objections-title {
+  color: var(--ink-paper);
+  text-shadow: none;
+}
+.s6-obj-q {
+  color: var(--gold);
+  text-shadow: none;
+  font-family: 'Cormorant Garamond', serif;
+}
+.s6-obj-a {
+  color: var(--ink-paper-soft);
+  font-family: 'Spectral', Georgia, serif;
+}
+.s6-conclusion { border-color: var(--rule-warm); }
+.s6-headline {
+  color: var(--gold);
+  text-shadow: 0 0 28px var(--gold-glow);
+}
+.s6-body {
+  color: var(--ink-paper);
+  opacity: 0.92;
+}
+.s6-build-card {
+  background: var(--paper-glass);
+  border: 1px solid var(--paper-glass-stroke);
+}
+.s6-build-row a { color: var(--cool); }
+
+/* ----- footer ----- */
+.site-footer {
+  border-top: 1px solid var(--rule-warm);
+  color: var(--ink-paper-mute);
+  font-family: 'Spectral', Georgia, serif;
+  font-style: italic;
+}
+.footer-sources {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.08em;
+}
+
+/* ----- intermission entrance animation ----- */
+.intermission { opacity: 0; transform: translateY(12px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.intermission.in-view { opacity: 1; transform: none; }

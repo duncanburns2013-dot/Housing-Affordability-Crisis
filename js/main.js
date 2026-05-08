@@ -31,6 +31,14 @@
   }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
   sections.forEach(s => sectionObserver.observe(s));
 
+  /* -------- intermission fade-in on scroll -------- */
+  const intermissionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('in-view');
+    });
+  }, { rootMargin: '-15% 0px -15% 0px', threshold: 0 });
+  document.querySelectorAll('.intermission').forEach(s => intermissionObserver.observe(s));
+
   /* -------- generic step reveal (scrollytelling) -------- */
   const stepObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
