@@ -2,7 +2,7 @@
 
 A data investigation arguing that Massachusetts faces an *affordability* crisis, not a *housing* crisis — and that government spending has shifted decisively toward subsidizing demand for existing units rather than building new ones, while the higher-earning residents bleed out to other states.
 
-**Live site:** _(deploy via GitHub Pages — Settings → Pages → Branch: `main` / root)_
+### **→ Live site: [duncanburns2013-dot.github.io/Housing-Affordability-Crisis](https://duncanburns2013-dot.github.io/Housing-Affordability-Crisis/)**
 
 ## Argument structure (six Socratic sections)
 
