@@ -28,7 +28,7 @@ A data investigation arguing that Massachusetts faces an *affordability* crisis,
 | Source | What it gives us | Section |
 |---|---|---|
 | Zillow Research (state CSVs) | ZHVI, for-sale inventory | 1, 2, 3 |
-| MLSPIN via Bridge Data Output | 61,058 closed sales last 12mo, town-level aggregates | 1, 1.5 |
+| MLSPIN | 61,058 closed sales last 12mo, town-level aggregates | 1, 1.5 |
 | MLSPIN 5-year sub-reports (PDF) | Backfill for 3 Berkshire towns missing from 12mo window | 1.5 |
 | MassDOT Boundaries/Towns ArcGIS | 351 municipal polygons + median household income | 1.5 |
 | FRED `MEHOINUS{MA,NH,US}A646N` | State-level median household income, annual | 2, 3 |
@@ -85,7 +85,7 @@ node pipelines/fetch_fred.js
 # drop into data/raw/irs_migration/, then:
 node pipelines/process_irs_migration.js
 
-# MLSPIN listings via Bridge (requires .env with BRIDGE_TOKEN)
+# MLSPIN listings (requires .env with API token)
 node pipelines/fetch_mlspin.js
 node pipelines/fetch_towns.js
 node pipelines/parse_mlspin_pdfs.js  # if new MLSPIN sub-report PDFs added

@@ -424,3 +424,91 @@ em.glow { text-shadow: 0 0 20px var(--gold-glow); }
 /* ----- intermission entrance animation ----- */
 .intermission { opacity: 0; transform: translateY(12px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .intermission.in-view { opacity: 1; transform: none; }
+
+/* ===========================================================
+   Hero photo background — Boston skyline at dusk
+   =========================================================== */
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  background-image:
+    /* darken overlay so typography stays readable */
+    linear-gradient(180deg, rgba(10, 18, 24, 0.58) 0%, rgba(10, 18, 24, 0.78) 60%, rgba(10, 18, 24, 0.95) 100%),
+    url('assets/hero-boston-skyline-web.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-attachment: fixed;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* on mobile, fixed-attachment scrolling is broken — fall back to scroll */
+@supports not (background-attachment: fixed) {
+  .hero-photo { background-attachment: scroll; }
+}
+@media (max-width: 900px) {
+  .hero-photo { background-attachment: scroll; }
+}
+
+/* ===========================================================
+   Intermission photo backdrops — full-bleed, parallax, darkened
+   =========================================================== */
+.intermission-photo {
+  position: relative;
+  max-width: none;          /* override the narrow intermission max-width */
+  margin: 0;
+  padding: 9rem 1.5rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+.intermission-photo > * {
+  position: relative;
+  z-index: 2;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intermission-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  filter: saturate(0.85);
+}
+.intermission-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(10, 18, 24, 0.86) 0%,
+    rgba(10, 18, 24, 0.72) 35%,
+    rgba(10, 18, 24, 0.72) 65%,
+    rgba(10, 18, 24, 0.92) 100%);
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .intermission-photo::before { background-attachment: scroll; }
+}
+
+/* photo assignments by data attribute */
+.intermission-photo[data-photo="springfield"]::before    { background-image: url('assets/springfield-web.jpg'); }
+.intermission-photo[data-photo="beacon-hill"]::before    { background-image: url('assets/beacon-hill-web.jpg'); }
+.intermission-photo[data-photo="covered-bridge-nh"]::before { background-image: url('assets/covered-bridge-nh-web.jpg'); }
+.intermission-photo[data-photo="ea-shelter"]::before     { background-image: url('assets/ea-shelter-web.jpg'); background-size: cover; }
+.intermission-photo[data-photo="uhaul"]::before          { background-image: url('assets/uhaul-web.jpg'); background-size: cover; }
+.intermission-photo[data-photo="state-house"]::before    { background-image: url('assets/state-house-web.jpg'); }
+
+/* the intermission rule lines look funny inside photo backgrounds; soften */
+.intermission-photo::before { transform: translateZ(0); }  /* render hint */
+.intermission-photo > .intermission-num { color: var(--gold); text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8); }
+.intermission-photo > .intermission-deck { color: var(--ink-paper); text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8); }
+.intermission-photo > .intermission-lead { color: var(--ink-paper-soft); text-shadow: 0 1px 14px rgba(0, 0, 0, 0.8); }
+/* hide the cream-colored top/bottom rule lines — too noisy on photos */
+.intermission-photo::before, .intermission-photo::after { border-top: none; border-bottom: none; }
+.intermission-photo > * + * { margin-top: 0.6rem; }
+/* override the ::before/::after rule decorations from base .intermission */
+.intermission-photo > .intermission-num::before,
+.intermission-photo > .intermission-num::after { display: none; }

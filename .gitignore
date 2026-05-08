@@ -29,3 +29,13 @@ data/raw/ma-towns-raw.geojson
 
 # Large CTHRU checkbook exports — processed JSON ships, raw CSVs don't
 data/raw/cthru_checkbook/checkbook_data_*.csv
+
+# Keep compressed -web.jpg in repo, originals stay local
+assets/*-utc.jpg
+assets/*-utc.jpeg
+assets/EA Shelter.PNG
+assets/Uhaul.jpg
+assets/boston-massachusetts-*.jpg
+assets/massachusetts-state-house-*.jpg
+assets/covered-bridge-*.jpg
+assets/springfield-massachusetts-*.jpg
