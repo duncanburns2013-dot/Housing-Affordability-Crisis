@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/sections.css" />
 <link rel="stylesheet" href="css/map.css" />
 <link rel="stylesheet" href="css/section4.css" />
+<link rel="stylesheet" href="css/section6.css" />
 </head>
 <body>
 
@@ -435,14 +436,76 @@
     <div class="section-num">05</div>
     <h2 class="section-question">What are residents <em>doing</em><br/>about it?</h2>
     <p class="section-lede">
-      The migration data tells you what people decided when they had the choice.
-      Both the count and the AGI moving with them.
+      Markets reveal preferences in two ways: at the closing table, and at the moving truck. We've already
+      looked at prices. Now look at <i>where the people are going</i>. The IRS knows: every household that
+      changes state files a return from a new address, and the agency publishes the year-over-year flows.
     </p>
   </header>
-  <div class="placeholder-card">
-    <div class="placeholder-title">IRS SOI Net Migration + AGI Outflow &mdash; coming next turn</div>
-    <p>Will plot: net domestic migration and AGI outflow from MA, by year, with destination breakdown
-      (NH, FL, ME leading). Data: IRS SOI county-to-county migration files.</p>
+
+  <div class="scrolly">
+    <div class="scrolly-graphic">
+      <div class="chart-frame">
+        <div class="chart-eyebrow">Massachusetts net domestic migration &amp; AGI outflow, tax years 2018&ndash;2023</div>
+        <div id="chart-s5-migration" class="chart"></div>
+        <div class="chart-source">
+          Source: <a href="https://www.irs.gov/statistics/soi-tax-stats-migration-data" target="_blank" rel="noopener">IRS Statistics of Income</a>
+          state-to-state migration data. Returns &asymp; households; exemptions &asymp; people; AGI in nominal $.
+          Domestic only (excludes foreign migration in/out).
+        </div>
+      </div>
+    </div>
+
+    <div class="scrolly-text">
+      <div class="step" data-step="1">
+        <p class="step-q">In 2018, Massachusetts already lost <em>27,000</em> people, net.</p>
+        <p>
+          Even before COVID, before the EA shelter surge, before any of it &mdash; Massachusetts was a net loser
+          to the rest of the country. Some <b class="hl">14,925 households</b> on net moved out, taking
+          <b class="hl">$1.5B</b> of adjusted gross income with them. The crisis didn't start in 2020. It got
+          worse in 2020.
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p class="step-q">By 2021&ndash;2022, the bleed nearly <em>doubled</em>.</p>
+        <p>
+          COVID gave people remote work and the will to use it. MA lost <b class="hl">44,000</b> people in 2021
+          and <b class="hl">45,000</b> in 2022. AGI outflow surged from $1.5B annually to <b class="hl">$4.3B</b> in 2021.
+          The state has not regained any of those years' losses.
+        </p>
+      </div>
+      <div class="step" data-step="3">
+        <p class="step-q">Even in the latest data, <em>$4 billion</em> of AGI walks out.</p>
+        <p>
+          Tax year 2023: net <b class="hl">28,367</b> people gone, net <b class="hl">$4.0B</b> of AGI gone.
+          The headcount drop has moderated from the COVID peak; the dollar drop has not. The people leaving
+          are <i>richer</i> than the average resident.
+        </p>
+      </div>
+      <div class="step" data-step="4">
+        <p class="step-q">The math: <em>$140,000 per leaver</em>.</p>
+        <p>
+          Divide $4.0B by 28,367 people: roughly <b class="hl">$140K AGI per person</b> moving out, well above
+          the <b class="hl">$114K</b> median MA household income. The outflow tilts toward higher earners.
+          That means fewer people <i>and</i> a poorer remaining tax base.
+        </p>
+      </div>
+      <div class="step" data-step="5">
+        <p class="step-q">Top destinations: Florida and New Hampshire.</p>
+        <p>
+          For tax year 2023, <b class="hl">Florida</b> took a net <b class="hl">7,879</b> Massachusetts residents
+          and <b class="hl">$1.9B</b> of their AGI. <b class="hl">New Hampshire</b> took another <b class="hl">7,000</b>
+          and <b class="hl">$871M</b>. North Carolina, South Carolina, and Maine round out the top destinations.
+          <i>Cheaper rent, lower taxes, similar climate. Three obvious push-and-pull factors.</i>
+        </p>
+      </div>
+      <div class="step" data-step="6">
+        <p class="step-q">Voting with their feet.</p>
+        <p>
+          Markets give two signals. Prices say one thing &mdash; the affordability gap. Migration says the same thing,
+          twice as loud. People who can leave do. People who can't, can't afford to live where they were born.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -452,14 +515,115 @@
     <div class="section-num">06</div>
     <h2 class="section-question">So what changes the trajectory?</h2>
     <p class="section-lede">
-      Six questions, one conclusion: subsidize supply or starve demand &mdash; pick one.
-      Doing neither, while doing both poorly, is the policy in force.
+      Five sections. One conclusion. Massachusetts has an <em>affordability</em> crisis, not a housing crisis,
+      and the policy in force is making it worse, not better. Below: the full evidence in numbers, plus the
+      counter-arguments and what the data says about each.
     </p>
   </header>
-  <div class="placeholder-card">
-    <div class="placeholder-title">Conclusion + town-level explorer &mdash; coming next turn</div>
-    <p>3D extruded MA municipalities map (ECharts-GL or Deck.gl), each town extruded by
-      price-to-income ratio. MLSPIN town listings layered on top.</p>
+
+  <div class="s6-tally-grid">
+    <div class="s6-card">
+      <div class="s6-card-num">22<span class="s6-card-unit"> days</span></div>
+      <div class="s6-card-label">Median time list&nbsp;&rarr;&nbsp;sale</div>
+      <div class="s6-card-foot">Section 1. Homes clear fast at these prices. Not a shortage signature.</div>
+    </div>
+    <div class="s6-card">
+      <div class="s6-card-num">5.53<span class="s6-card-unit">×</span></div>
+      <div class="s6-card-label">MA price-to-income ratio</div>
+      <div class="s6-card-foot">Section 2. Above the historical 2.6&ndash;3.0&times; norm for 25 straight years.</div>
+    </div>
+    <div class="s6-card">
+      <div class="s6-card-num">+$151K</div>
+      <div class="s6-card-label">MA home premium over NH</div>
+      <div class="s6-card-foot">Section 3. With median household incomes essentially tied at ~$113K.</div>
+    </div>
+    <div class="s6-card">
+      <div class="s6-card-num">46<span class="s6-card-unit">&times;</span></div>
+      <div class="s6-card-label">Demand-side spending growth, FY22&rarr;FY24</div>
+      <div class="s6-card-foot">Section 4. From $4M to $185M paid via CTHRU. Supply spending stayed flat.</div>
+    </div>
+    <div class="s6-card">
+      <div class="s6-card-num">$4B</div>
+      <div class="s6-card-label">Annual AGI walking out</div>
+      <div class="s6-card-foot">Section 5. 28K net residents, $140K avg AGI per leaver.</div>
+    </div>
+    <div class="s6-card s6-card-highlight">
+      <div class="s6-card-num">351</div>
+      <div class="s6-card-label">Towns. One state. One ratio.</div>
+      <div class="s6-card-foot">Section 1.5. Mainland avg ~7&times;. Cape pushes 30&times;. Map above.</div>
+    </div>
+  </div>
+
+  <div class="s6-objections">
+    <h3 class="s6-objections-title">Anticipated objections and the data against them</h3>
+
+    <div class="s6-obj">
+      <div class="s6-obj-q">"It's just supply &mdash; we need more housing."</div>
+      <div class="s6-obj-a">
+        Listings exist and clear in 22 days. Census counts ~2.9M housing units in MA, roughly flat with
+        population. The bottleneck is not units &mdash; the bottleneck is what existing owners are willing to list,
+        and at what price. <i>Build more</i> is true; <i>build more is sufficient</i> is not.
+      </div>
+    </div>
+    <div class="s6-obj">
+      <div class="s6-obj-q">"Massachusetts is just richer, of course housing costs more."</div>
+      <div class="s6-obj-a">
+        From 2000 to 2017 New Hampshire had <i>higher</i> median household income than Massachusetts. MA homes
+        cost 40&ndash;55% more the entire window. Income is not the gap.
+      </div>
+    </div>
+    <div class="s6-obj">
+      <div class="s6-obj-q">"Rates and COVID drove this everywhere."</div>
+      <div class="s6-obj-a">
+        Yes &mdash; Section 3's chart confirms all three states (MA, NH, US) move in the same shape during QE,
+        ZIRP, and the COVID era. National forces are real. They explain the <i>shape</i>. They do not explain
+        the persistent <b>~$150K MA premium</b> over identical-income New Hampshire.
+      </div>
+    </div>
+    <div class="s6-obj">
+      <div class="s6-obj-q">"Demand-side subsidies help renters, not landlords."</div>
+      <div class="s6-obj-a">
+        In a constrained market the marginal subsidy raises the clearing price. Rental vouchers pay the asking
+        rent, not the prior rent. EA hotel/motel contracts pay landlord-set rates. Every dollar of demand-side
+        subsidy enters the same auction every unsubsidized renter is bidding in.
+      </div>
+    </div>
+    <div class="s6-obj">
+      <div class="s6-obj-q">"People aren't really leaving."</div>
+      <div class="s6-obj-a">
+        IRS Statistics of Income tracks every household that files from a new state. MA has been a net loser of
+        domestic migrants every year since at least 2018. Net 28K residents and $4B AGI walked out in 2023
+        alone. The leavers are richer than the median. They are not coming back.
+      </div>
+    </div>
+  </div>
+
+  <div class="s6-conclusion">
+    <p class="s6-headline">Subsidize supply, or starve demand. Pick one.</p>
+    <p class="s6-body">
+      The policy in force does neither well and both poorly: a flat supply line at $730&ndash;$790M annually
+      while demand-side subsidies grew 46&times; in two years. The result is what we measured. Higher prices.
+      Faster turnover. Larger gap to neighbors. More residents leaving, with their AGI.
+    </p>
+    <p class="s6-body">
+      Every chart on this page is rebuildable from public data &mdash; Zillow, FRED, IRS, MassDOT, MLSPIN, CTHRU.
+      Every assumption is exposed. The slider is yours. The conclusion is whatever you can defend.
+    </p>
+  </div>
+
+  <div class="s6-build-card">
+    <div class="s6-build-row">
+      <span class="s6-build-label">Repository</span>
+      <a href="https://github.com/duncanburns2013-dot/Housing-Affordability-Crisis" target="_blank" rel="noopener">github.com/duncanburns2013-dot/Housing-Affordability-Crisis</a>
+    </div>
+    <div class="s6-build-row">
+      <span class="s6-build-label">Data sources</span>
+      <span>Zillow ZHVI &middot; FRED MEHOINUS{MA,NH,US}A646N &middot; IRS SOI &middot; MassGIS / MassDOT &middot; MLSPIN &middot; CTHRU checkbook</span>
+    </div>
+    <div class="s6-build-row">
+      <span class="s6-build-label">Stack</span>
+      <span>Static HTML / vanilla JS / ECharts / Deck.gl &middot; Node-only ETL &middot; deployed via GitHub Pages</span>
+    </div>
   </div>
 </section>
 
@@ -484,5 +648,6 @@
 <script src="js/sections/02-divergence.js"></script>
 <script src="js/sections/03-macro.js"></script>
 <script src="js/sections/04-spending.js"></script>
+<script src="js/sections/05-migration.js"></script>
 </body>
 </html>

@@ -1,0 +1,186 @@
+/* ===========================================================
+   Section 6 — Verdict / synthesis
+   Six big-number tally cards + objection volleys + conclusion + build card
+   =========================================================== */
+
+#s6 .section-header {
+  margin-bottom: 3rem;
+}
+
+/* ----- tally grid ----- */
+.s6-tally-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  max-width: var(--max-w-wide);
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.s6-card {
+  background: var(--panel);
+  border: 1px solid var(--panel-stroke);
+  border-radius: 14px;
+  padding: 1.7rem 1.6rem 1.4rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+.s6-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.04), transparent 50%);
+  pointer-events: none;
+}
+.s6-card-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  color: var(--crisis);
+  text-shadow: 0 0 22px var(--crisis-glow);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.7rem;
+}
+.s6-card-unit {
+  font-size: 0.5em;
+  color: var(--gold);
+  font-weight: 400;
+  margin-left: 0.1em;
+  text-shadow: 0 0 14px var(--gold-glow);
+}
+.s6-card-label {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.s6-card-foot {
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-family: var(--serif);
+  line-height: 1.4;
+}
+.s6-card-highlight {
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.10), rgba(0, 184, 255, 0.06));
+  border-color: rgba(255, 23, 68, 0.25);
+}
+.s6-card-highlight .s6-card-num { color: var(--gold); text-shadow: 0 0 22px var(--gold-glow); }
+
+/* ----- objections ----- */
+.s6-objections {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+.s6-objections-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: var(--gold);
+  margin: 0 0 2rem;
+  text-shadow: 0 0 16px var(--gold-glow);
+  text-align: center;
+}
+.s6-obj {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 2rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.s6-obj:last-child { border-bottom: none; }
+.s6-obj-q {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  color: var(--crisis-soft);
+  text-shadow: 0 0 12px rgba(255, 93, 125, 0.4);
+  line-height: 1.4;
+}
+.s6-obj-a {
+  font-size: clamp(1rem, 1.18vw, 1.12rem);
+  color: var(--ink);
+  opacity: 0.92;
+  line-height: 1.7;
+}
+
+/* ----- conclusion ----- */
+.s6-conclusion {
+  max-width: 920px;
+  margin: 0 auto 3.5rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.s6-headline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: var(--gold);
+  text-shadow: 0 0 28px var(--gold-glow);
+  margin: 0 0 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.s6-body {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+  color: var(--ink);
+  opacity: 0.88;
+  line-height: 1.65;
+  margin: 0 auto 1.2rem;
+  max-width: 60ch;
+}
+
+/* ----- build card ----- */
+.s6-build-card {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.4rem 1.8rem;
+  background: var(--panel);
+  border: 1px solid var(--panel-stroke);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.s6-build-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1.2rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  align-items: center;
+}
+.s6-build-row:last-child { border-bottom: none; }
+.s6-build-label {
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.s6-build-row a, .s6-build-row span:not(.s6-build-label) {
+  color: var(--ink);
+  word-break: break-word;
+}
+.s6-build-row a { color: var(--cool); }
+
+@media (max-width: 1100px) {
+  .s6-tally-grid { grid-template-columns: repeat(2, 1fr); }
+  .s6-obj { grid-template-columns: 1fr; gap: 0.6rem; }
+  .s6-build-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 0.6rem 0; }
+}
+@media (max-width: 700px) {
+  .s6-tally-grid { grid-template-columns: 1fr; }
+}
