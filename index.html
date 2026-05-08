@@ -339,41 +339,41 @@
     <div class="section-num">04</div>
     <h2 class="section-question">Is public spending <em>relieving</em><br/>the crisis &mdash; or inflating it?</h2>
     <p class="section-lede">
-      A subsidy paid <i>to</i> a renter or shelter operator becomes the same dollar landlords or hotels
-      can ask for. In a market where supply doesn't grow, every dollar of demand-side subsidy raises the
-      clearing price for everyone &mdash; subsidized and unsubsidized alike. We measure the spending here.
-      Then you derive the implied caseload, with assumptions you control.
+      Massachusetts spends roughly <b>$900 million per year</b> on housing and homelessness through the
+      Executive Office of Housing and Livable Communities. We split that into <b>demand-side</b> spending
+      &mdash; subsidies that flow to households or shelter operators and bid for the same housing pool everyone else does &mdash;
+      and <b>supply-side</b> spending that funds construction or maintenance of additional units. Then you control
+      the cost-per-beneficiary slider and watch the implied caseload move in real time.
     </p>
   </header>
 
   <div class="s4-grid">
     <div class="s4-chart-frame chart-frame">
-      <div class="chart-eyebrow">Massachusetts demand-side spending, FY14&ndash;FY25 (CTHRU paid amounts)</div>
+      <div class="chart-eyebrow">Massachusetts housing &amp; homelessness paid spending, FY20&ndash;FY26</div>
       <div id="chart-s4-spending" class="chart"></div>
       <div class="chart-source">
-        Source: <a href="https://cthru.data.socrata.com/" target="_blank" rel="noopener">CTHRU</a> Comptroller payments
-        dataset (pegc-naaa), summed across program-specific appropriation codes. Paid amounts &mdash; conservative floor.
-        Enacted-budget figures and federal pass-throughs are higher.
+        Source: <b>CTHRU checkbook export</b> (cthru.macomptroller.org), 52,881 transaction records aggregated by
+        appropriation. Paid amounts only &mdash; matches what the public CTHRU portal displays.
       </div>
     </div>
 
     <div class="s4-slider-frame chart-frame">
-      <div class="chart-eyebrow">If the average annual state cost per beneficiary is&hellip;</div>
+      <div class="chart-eyebrow">If average state cost per demand-side beneficiary is&hellip;</div>
       <div class="s4-slider-block">
         <div class="s4-cost-display">
           <span class="s4-prefix">$</span>
-          <span id="s4-cost-value">25,000</span>
+          <span id="s4-cost-value">15,000</span>
           <span class="s4-suffix">per beneficiary, per year</span>
         </div>
-        <input type="range" id="s4-cost-slider" min="5000" max="60000" step="500" value="25000" />
+        <input type="range" id="s4-cost-slider" min="2000" max="60000" step="500" value="15000" />
         <div class="s4-slider-marks">
-          <span>$5K</span><span>$15K</span><span>$25K</span><span>$40K</span><span>$60K</span>
+          <span>$2K</span><span>$10K</span><span>$25K</span><span>$40K</span><span>$60K</span>
         </div>
       </div>
 
       <div class="s4-derive-block">
         <div class="s4-derive-row">
-          <span class="s4-derive-label">FY25 total spending</span>
+          <span class="s4-derive-label">FY24 demand-side spending</span>
           <span class="s4-derive-val" id="s4-total-spend">&mdash;</span>
         </div>
         <div class="s4-derive-row s4-derive-result">
@@ -385,7 +385,7 @@
           <span class="s4-derive-val" id="s4-pct-pop">&mdash;</span>
         </div>
         <div class="s4-derive-row">
-          <span class="s4-derive-label">Equivalent to MA towns of size</span>
+          <span class="s4-derive-label">Equivalent to MA town of size</span>
           <span class="s4-derive-val" id="s4-town-equiv">&mdash;</span>
         </div>
       </div>
@@ -399,30 +399,31 @@
 
   <div class="s4-narrative">
     <div class="s4-narrative-col">
-      <p class="step-q">Why this measures what it measures.</p>
+      <p class="step-q">Demand-side grew <em>46&times;</em>.</p>
       <p>
-        The chart sums payments under program-specific appropriation codes:
-        EA family shelter and reserves (cranberry), state rental vouchers (gold), Health Safety Net for
-        uninsured care (vivid blue), and the Office of Refugees and Immigrants (vivid green). These are
-        <i>demand-side</i> programs &mdash; money that flows to households or to operators serving households,
-        and that competes for the same housing and rental pool unsubsidized residents do.
+        EA family shelter + state rental vouchers paid in <b class="hl">FY22: $4M</b> total. Same line items
+        in <b class="hl">FY24: $185M</b>. That's a <b class="hl">~46&times;</b> increase in two years, almost entirely
+        in the EA shelter line as the state stood up emergency housing for both arriving migrants and a swelling
+        pre-existing homeless caseload.
       </p>
-      <p class="footnote">
-        We do <i>not</i> include supply-side spending (public-housing construction, affordable-housing trust
-        fund) because that adds units rather than bidding up rents on existing units.
+      <p>
+        Supply-side spending (public housing operations, affordable-housing production) sits roughly flat at
+        <b class="hl">$729M&ndash;$789M</b> per year. The <i>composition</i> of MA housing spending has shifted decisively
+        toward subsidizing demand for existing units, not building new ones.
       </p>
     </div>
     <div class="s4-narrative-col">
-      <p class="step-q">A note on completeness.</p>
+      <p class="step-q">Why demand-side dollars inflate prices.</p>
       <p>
-        CTHRU shows <b>actually-paid amounts</b>. Enacted-budget figures and supplemental authorizations for
-        these programs run higher because federal pass-throughs (FEMA, ORR, Section 8), contracted-but-not-yet-paid
-        amounts, and operator subgrants flow through other accounting channels. The growth shape and program-mix
-        shift visible above are reliable; the absolute totals are conservative lower bounds.
+        Hotel/motel contracts to house EA families pay landlords whatever they ask. Rental vouchers pay the asking
+        rent on a unit, not the prior rent &mdash; landlords have no incentive to charge less than what subsidies
+        will cover. In a state with constrained supply, the marginal subsidized dollar enters the same auction
+        every unsubsidized renter is bidding in.
       </p>
-      <p>
-        That matters for honest accounting. If the slider implies <i>N</i> beneficiaries from
-        CTHRU-paid dollars, the true serviced population is plausibly larger.
+      <p class="footnote">
+        Note: this view is housing-department spending only. Other demand-side programs &mdash; Health Safety Net for
+        uninsured care, MassHealth Limited, in-state tuition for non-citizens &mdash; live in different secretariats and
+        add to the total demand pump but aren't shown here.
       </p>
     </div>
   </div>

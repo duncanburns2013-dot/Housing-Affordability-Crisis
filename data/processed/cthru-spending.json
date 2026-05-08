@@ -1,142 +1,107 @@
 {
   "meta": {
-    "generated": "2026-05-07T20:10:55.595Z",
-    "source": "CTHRU pegc-naaa (MA Comptroller direct payments)",
-    "note": "CTHRU shows actually-paid amounts. Enacted-budget figures for these programs are higher because they include federal pass-throughs, contracted-but-not-yet-paid amounts, and subgrants flowing through other codes. Growth shape and category mix are reliable; absolute totals are conservative lower bounds."
+    "generated": "2026-05-07T20:38:32.212Z",
+    "source": "CTHRU checkbook export (cthru.macomptroller.org), processed locally",
+    "note": "Aggregated from individual payment-level transactions exported from CTHRU. Matches what the public CTHRU portal displays for these appropriations. Excludes federal pass-throughs that route outside MMARS accounting.",
+    "files_processed": 13,
+    "rows_processed": 52881,
+    "demand_keys": [
+      "ea_shelter",
+      "rental_subsidy"
+    ],
+    "supply_keys": [
+      "public_housing_supply",
+      "housing_production"
+    ]
   },
   "years": [
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
     2020,
     2021,
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "categories": {
     "ea_shelter": {
       "label": "EA family shelter + emergency reserves",
       "color": "#ff1744",
-      "description": "Emergency Assistance family shelter, hotel/motel overflow, shelter workforce, plus 1599-prefix supplemental \"Family Shelter and Services Reserve\" accounts and immigrant/refugee housing reserves.",
-      "codes": [
-        "70040101",
-        "70040103",
-        "70040109",
-        "15990514",
-        "15991213",
-        "15992625",
-        "15990122",
-        "15990925"
-      ],
       "by_year": [
-        40114864,
-        3585867,
-        3821835,
-        3478716,
-        4148619,
-        3497822,
         3301923,
         2995831,
         3748326,
-        24236760,
-        95937461,
-        134732785
+        18469046,
+        117917082,
+        99010784,
+        23286088
       ]
     },
     "rental_subsidy": {
-      "label": "State rental vouchers (MRVP + program reserves)",
+      "label": "Rental vouchers, RAFT, tenancy supports",
       "color": "#ffd600",
-      "description": "Massachusetts Rental Voucher Program (MRVP), housing stabilization, transitional rental assistance.",
-      "codes": [
-        "70049024",
-        "70040062",
-        "70049030"
-      ],
       "by_year": [
         0,
         0,
         0,
-        0,
-        49657,
-        60118,
-        504722,
-        401825,
-        691860,
-        8871944,
-        58161561,
-        4225687
+        9946631,
+        66785526,
+        12748014,
+        2424035
       ]
     },
-    "health_safety_net": {
-      "label": "Health Safety Net (HSN)",
+    "public_housing_supply": {
+      "label": "Public housing operations + capital",
       "color": "#00b8ff",
-      "description": "HSN reimburses hospitals and community health centers for care provided to uninsured and underinsured residents — including non-citizens. Funded by hospital/insurer assessments and state appropriation.",
-      "codes": [
-        "40000091",
-        "40000090",
-        "40000092",
-        "40000093",
-        "40001333",
-        "41000091",
-        "41000090",
-        "41000092"
-      ],
       "by_year": [
-        133095356,
-        153041222,
-        123585206,
-        108506633,
-        102436673,
-        291215571,
-        301944999,
-        219210296,
-        303205137,
-        231051504,
-        366169118,
-        353006933
+        0,
+        0,
+        0,
+        48553675,
+        390050613,
+        391788904,
+        55893057
       ]
     },
-    "refugee_immigrant": {
-      "label": "Office of Refugees & Immigrants",
+    "housing_production": {
+      "label": "Affordable housing production",
       "color": "#00e676",
-      "description": "Office of Refugees and Immigrants administration and trust fund.",
-      "codes": [
-        "40030111",
-        "40030091"
-      ],
       "by_year": [
         0,
-        342427,
-        255586,
-        123968,
-        47910,
-        55776,
-        42027,
-        14901,
         0,
         0,
-        1198929,
-        1044439
+        13099766,
+        338670725,
+        396860196,
+        47597876
       ]
     }
   },
   "total_by_year": [
-    173210220,
-    156969516,
-    127662627,
-    112109317,
-    106682859,
-    294829287,
-    305793671,
-    222622853,
-    307645323,
-    264160208,
-    521467069,
-    493009844
+    3301923,
+    2995831,
+    3748326,
+    90069118,
+    913423946,
+    900407898,
+    129201056
+  ],
+  "demand_total_by_year": [
+    3301923,
+    2995831,
+    3748326,
+    28415677,
+    184702608,
+    111758798,
+    25710123
+  ],
+  "supply_total_by_year": [
+    0,
+    0,
+    0,
+    61653441,
+    728721338,
+    788649100,
+    103490933
   ]
 }

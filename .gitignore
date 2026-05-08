@@ -26,3 +26,6 @@ data/raw/.cache/
 data/raw/mlspin_*.json
 data/raw/bridge_*.json
 data/raw/ma-towns-raw.geojson
+
+# Large CTHRU checkbook exports — processed JSON ships, raw CSVs don't
+data/raw/cthru_checkbook/checkbook_data_*.csv

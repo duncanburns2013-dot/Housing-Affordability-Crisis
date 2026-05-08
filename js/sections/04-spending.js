@@ -74,27 +74,32 @@
   function buildChartOption() {
     const years = data.years.map(y => 'FY' + String(y).slice(2));
     const cats = data.categories;
-    const order = ['health_safety_net', 'ea_shelter', 'rental_subsidy', 'refugee_immigrant'];
+    // demand-side first (loud cranberry/gold), supply-side second (cool blue/green) — order matters in stack
+    const order = ['public_housing_supply', 'housing_production', 'rental_subsidy', 'ea_shelter'];
 
-    const series = order.map(key => ({
-      name: cats[key].label,
-      type: 'line',
-      stack: 'spend',
-      data: cats[key].by_year,
-      symbol: 'none',
-      smooth: 0.2,
-      lineStyle: { width: 2, color: cats[key].color, shadowBlur: 12, shadowColor: cats[key].color + '66' },
-      areaStyle: {
-        color: {
-          type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
-          colorStops: [
-            { offset: 0, color: cats[key].color + 'cc' },
-            { offset: 1, color: cats[key].color + '22' }
-          ]
-        }
-      },
-      emphasis: { focus: 'series' }
-    }));
+    const series = order.map(key => {
+      const cfg = cats[key];
+      if (!cfg) return null;
+      return {
+        name: cfg.label,
+        type: 'line',
+        stack: 'spend',
+        data: cfg.by_year,
+        symbol: 'none',
+        smooth: 0.2,
+        lineStyle: { width: 2, color: cfg.color, shadowBlur: 12, shadowColor: cfg.color + '66' },
+        areaStyle: {
+          color: {
+            type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+            colorStops: [
+              { offset: 0, color: cfg.color + 'cc' },
+              { offset: 1, color: cfg.color + '22' }
+            ]
+          }
+        },
+        emphasis: { focus: 'series' }
+      };
+    }).filter(Boolean);
 
     return {
       animation: true,
@@ -145,12 +150,15 @@
     const cost = Number(costSlider.value);
     costDisplay.textContent = cost.toLocaleString();
 
-    // FY25 total spending
-    const i = data.years.indexOf(2025);
-    const fy25 = i >= 0 ? data.total_by_year[i] : data.total_by_year[data.total_by_year.length - 1];
-    totalEl.textContent = '$' + (fy25 / 1e6).toFixed(0) + 'M';
+    // Use FY24 demand-side spending as the headline (full year, post-surge).
+    // FY25 partial in this dataset; we want the most recent full FY.
+    const demand = data.demand_total_by_year || data.total_by_year;
+    const fyTarget = data.years.indexOf(2024) >= 0 ? 2024 : data.years[data.years.length - 1];
+    const i = data.years.indexOf(fyTarget);
+    const totalDemand = i >= 0 ? demand[i] : demand[demand.length - 1];
+    totalEl.textContent = '$' + (totalDemand / 1e6).toFixed(0) + 'M';
 
-    const caseload = Math.round(fy25 / cost);
+    const caseload = Math.round(totalDemand / cost);
     caseloadEl.textContent = caseload.toLocaleString();
 
     const pct = (caseload / MA_POP * 100).toFixed(2) + '%';
