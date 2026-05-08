@@ -275,7 +275,7 @@
         opt.graphic = [{
           id: 's5-perleaver', type: 'text', left: 'center', top: '28%',
           style: {
-            text: '$140,000 per leaver',
+            text: '$142,000 per leaver',
             fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
             fontSize: 78, fill: '#f3eede',
             textShadowColor: 'rgba(0, 0, 0, 0.85)', textShadowBlur: 18

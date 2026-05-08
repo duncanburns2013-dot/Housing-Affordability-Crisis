@@ -220,7 +220,7 @@
       };
       opt.graphic = [
         { id: 'gap-num', type: 'text', left: 'center', top: '22%',
-          style: { text: '$130K', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
+          style: { text: '$127K', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
                    fontSize: 96, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
         { id: 'gap-sub', type: 'text', left: 'center', top: '42%',
           style: { text: 'the gap, per home', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
