@@ -117,7 +117,7 @@
   function applyStep(n) {
     if (!chart) return;
     const { peak, trough } = chart._callouts;
-    const opt = { series: [{}, {}], graphic: { elements: [] } };
+    const opt = { series: [{}, {}], graphic: [] };
 
     // Steps 1–4: build callouts on the chart.
     // Steps 5 & 6: clear callouts and let typography carry the moment.
@@ -174,19 +174,17 @@
       opt.series[0].lineStyle = { width: 2.4, color: 'rgba(255,23,68,0.45)' };
       opt.series[0].areaStyle = { color: 'rgba(255,23,68,0.08)' };
       opt.series[1].lineStyle = { width: 1.6, color: 'rgba(0,184,255,0.35)', type: 'dashed' };
-      opt.graphic = {
-        elements: [
-          { type: 'text', left: 'center', top: '32%',
-            style: { text: '22', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
-                     fontSize: 140, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
-          { type: 'text', left: 'center', top: '60%',
-            style: { text: 'days', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
-                     fontSize: 32, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 14 } },
-          { type: 'text', left: 'center', top: '74%',
-            style: { text: 'median time, list to sale — Massachusetts, last 12 months',
-                     fontFamily: 'Inter, sans-serif', fontSize: 13, fill: '#d6deef', opacity: 0.92 } }
-        ]
-      };
+      opt.graphic = [
+        { id: 's1-22',     type: 'text', left: 'center', top: '32%',
+          style: { text: '22', fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
+                   fontSize: 140, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 28 } },
+        { id: 's1-days',   type: 'text', left: 'center', top: '60%',
+          style: { text: 'days', fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
+                   fontSize: 32, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 14 } },
+        { id: 's1-cap',    type: 'text', left: 'center', top: '74%',
+          style: { text: 'median time, list to sale — Massachusetts, last 12 months',
+                   fontFamily: 'Inter, sans-serif', fontSize: 13, fill: '#d6deef', opacity: 0.92 } }
+      ];
     } else if (n >= 6) {
       // Step 6: data returns at full intensity; verdict displayed as glowing italic
       opt.series[0].lineStyle = { width: 3.2, color: '#ff1744', shadowBlur: 18, shadowColor: 'rgba(255,23,68,0.7)' };
@@ -195,16 +193,14 @@
           colorStops: [{ offset: 0, color: 'rgba(255,23,68,0.45)' }, { offset: 1, color: 'rgba(255,23,68,0)' }] }
       };
       opt.series[1].lineStyle = { width: 2, color: '#00b8ff', type: 'dashed', opacity: 0.95, shadowBlur: 10, shadowColor: 'rgba(0,184,255,0.5)' };
-      opt.graphic = {
-        elements: [{
-          type: 'text', left: 'center', bottom: 12,
-          style: {
-            text: 'Listings collapsed.   Units did not.   The bottleneck is price, not supply.',
-            fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 600,
-            fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 14
-          }
-        }]
-      };
+      opt.graphic = [{
+        id: 's1-verdict', type: 'text', left: 'center', bottom: 12,
+        style: {
+          text: 'Listings collapsed.   Units did not.   The bottleneck is price, not supply.',
+          fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 600,
+          fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.6)', textShadowBlur: 14
+        }
+      }];
     } else {
       // restore full-intensity styling for steps 1-4
       opt.series[0].lineStyle = { width: 3.2, color: '#ff1744', shadowBlur: 18, shadowColor: 'rgba(255,23,68,0.7)' };
@@ -213,9 +209,12 @@
           colorStops: [{ offset: 0, color: 'rgba(255,23,68,0.45)' }, { offset: 1, color: 'rgba(255,23,68,0)' }] }
       };
       opt.series[1].lineStyle = { width: 2, color: '#00b8ff', type: 'dashed', opacity: 0.95, shadowBlur: 10, shadowColor: 'rgba(0,184,255,0.5)' };
+      opt.graphic = [];
     }
 
-    chart.setOption(opt);
+    // replaceMerge forces ECharts to drop any prior step's graphic elements
+    // (otherwise leftover '22' / 'days' nodes bleed into other steps).
+    chart.setOption(opt, { replaceMerge: ['graphic'] });
   }
 
   // listen for step entries from main.js
