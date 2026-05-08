@@ -1,0 +1,74 @@
+# Weekly auto-refresh of every data source that has a public API or
+# stable URL pattern. Runs every Sunday at 06:00 UTC and on manual
+# trigger from the Actions tab. If anything actually changed, commits
+# the new processed JSON to main and Pages redeploys automatically.
+#
+# Set up the MLSPIN secret once at:
+#   github.com/duncanburns2013-dot/Housing-Affordability-Crisis/settings/secrets/actions
+# Add a repository secret named  BRIDGE_TOKEN  with your MLSPIN access
+# token. Without it the MLSPIN refresh step is skipped (everything
+# else still runs).
+#
+# What CANNOT be automated this way (must stay manual):
+#   - CTHRU spending (the public API is incomplete; we use checkbook
+#     CSV exports from cthru.macomptroller.org)
+#   - IRS SOI migration (annual XLSX/CSV release, ~2-year lag)
+
+name: Refresh data weekly
+
+on:
+  schedule:
+    # 06:00 UTC every Sunday
+    - cron: '0 6 * * 0'
+  workflow_dispatch:    # gives you a "Run workflow" button in the UI
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh Zillow (state-level home values + inventory)
+        run: |
+          bash pipelines/fetch_zillow.sh
+          node pipelines/process_zillow.js
+
+      - name: Refresh FRED (MA / NH / US median household income)
+        run: node pipelines/fetch_fred.js
+
+      - name: Refresh MLSPIN (active + last-12-mo closed)
+        if: ${{ env.BRIDGE_TOKEN != '' }}
+        env:
+          BRIDGE_TOKEN: ${{ secrets.BRIDGE_TOKEN }}
+        run: |
+          printf 'BRIDGE_TOKEN=%s\nBRIDGE_DATASET=mlspin\n' "$BRIDGE_TOKEN" > .env
+          node pipelines/fetch_mlspin.js
+          node pipelines/fetch_towns.js
+          rm .env
+
+      - name: Stage refreshed artifacts
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed/ data/raw/State_zhvi.csv data/raw/State_invt_fs.csv data/raw/fred_*.csv 2>/dev/null || true
+
+      - name: Commit + push if anything actually changed
+        run: |
+          if git diff --cached --quiet; then
+            echo "No data changes this run."
+          else
+            STAMP=$(date -u +'%Y-%m-%d')
+            git commit -m "chore(data): weekly refresh ${STAMP}"
+            git push
+            echo "Refreshed and pushed."
+          fi

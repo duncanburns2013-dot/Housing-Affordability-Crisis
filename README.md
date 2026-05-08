@@ -69,7 +69,28 @@ A data investigation arguing that Massachusetts faces an *affordability* crisis,
 └── README.md
 ```
 
-## Refreshing data
+## Auto-refresh (GitHub Actions)
+
+A scheduled workflow at [`.github/workflows/refresh-data.yml`](.github/workflows/refresh-data.yml) runs every Sunday at 06:00 UTC (and on manual trigger from the Actions tab) and refreshes the data sources that have a public API:
+
+| Source | Auto-refreshes? | Cadence |
+|---|---|---|
+| Zillow ZHVI + inventory | ✅ | Weekly |
+| FRED median household income (MA/NH/US) | ✅ | Weekly (data is annual; cheap to re-pull) |
+| MLSPIN listings + town aggregates | ✅ if `BRIDGE_TOKEN` secret is set | Weekly |
+| CTHRU spending | ❌ — public API incomplete | Manual export from cthru.macomptroller.org |
+| IRS SOI migration | ❌ — no API, annual XLSX | Manual download from irs.gov |
+
+### One-time setup for MLSPIN auto-refresh
+
+Go to [Settings → Secrets and variables → Actions](https://github.com/duncanburns2013-dot/Housing-Affordability-Crisis/settings/secrets/actions) and add a repository secret:
+
+- **Name:** `BRIDGE_TOKEN`
+- **Value:** your MLSPIN API access token
+
+The workflow will pick it up next run. Without the secret, MLSPIN is skipped and the other sources still refresh.
+
+## Manual refresh
 
 ```bash
 # Zillow (state ZHVI + inventory) — keep current
