@@ -255,21 +255,42 @@
       opt.series[0] = { markPoint: { symbol: 'circle', data: marks } };
 
       if (n === 4) {
+        // Dim the bars + AGI line so the typographic moment reads cleanly.
+        // Without this the cranberry "$140K" text rendered directly on top of
+        // the cranberry bars and was unreadable.
+        opt.series[0] = {
+          ...opt.series[0],
+          itemStyle: {
+            color: 'rgba(232, 66, 90, 0.20)',
+            shadowBlur: 0
+          }
+        };
+        opt.series[1] = {
+          ...opt.series[1],
+          lineStyle: { width: 1.4, color: 'rgba(232, 184, 51, 0.30)', shadowBlur: 0 },
+          itemStyle: { color: 'rgba(232, 184, 51, 0.40)', borderColor: 'rgba(243,238,222,0.4)', borderWidth: 1, shadowBlur: 0 }
+        };
+        // Big number now in cream-paper (white) for max contrast against any
+        // residual red. Subtitle in gold. Dark shadow halo for separation.
         opt.graphic = [{
-          id: 's5-perleaver', type: 'text', left: 'center', top: '22%',
+          id: 's5-perleaver', type: 'text', left: 'center', top: '28%',
           style: {
             text: '$140,000 per leaver',
             fontFamily: 'Cormorant Garamond, serif', fontWeight: 700, fontStyle: 'italic',
-            fontSize: 76, fill: '#ff1744', textShadowColor: 'rgba(255,23,68,0.85)', textShadowBlur: 26
+            fontSize: 78, fill: '#f3eede',
+            textShadowColor: 'rgba(0, 0, 0, 0.85)', textShadowBlur: 18
           }
         }, {
-          id: 's5-perleaver-sub', type: 'text', left: 'center', top: '40%',
+          id: 's5-perleaver-sub', type: 'text', left: 'center', top: '46%',
           style: {
-            text: 'avg AGI of net outflow — vs. $114K MA median household income',
+            text: 'average AGI of every net outmigrant — vs. $114K MA median household income',
             fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic',
-            fontSize: 18, fill: '#ffd600', textShadowColor: 'rgba(255,214,0,0.7)', textShadowBlur: 12
+            fontSize: 18, fill: '#e8b833',
+            textShadowColor: 'rgba(0, 0, 0, 0.85)', textShadowBlur: 14
           }
         }];
+        // Hide the markers on this step so they don't clutter the typography
+        opt.series[0].markPoint = { data: [] };
       }
 
       chart.setOption(opt, { replaceMerge: ['graphic'] });
