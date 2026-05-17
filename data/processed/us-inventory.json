@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated": "2026-05-10T08:06:02.294Z",
+    "generated": "2026-05-17T08:19:16.947Z",
     "source": "https://files.zillowstatic.com/research/public_csvs/invt_fs/State_invt_fs_uc_sfrcondo_sm_month.csv",
-    "points": 97,
+    "points": 98,
     "first": "2018-03-31",
-    "last": "2026-03-31",
+    "last": "2026-04-30",
     "region": "US (state avg)"
   },
   "series": [
@@ -390,11 +390,15 @@
     },
     {
       "date": "2026-02-28",
-      "value": 21875.098039215685
+      "value": 21875.196078431374
     },
     {
       "date": "2026-03-31",
-      "value": 22648.549019607843
+      "value": 22662.803921568626
+    },
+    {
+      "date": "2026-04-30",
+      "value": 23892.941176470587
     }
   ]
 }
