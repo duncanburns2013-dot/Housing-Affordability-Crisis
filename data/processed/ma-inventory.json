@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated": "2026-08-16T06:08:31.528Z",
+    "generated": "2026-08-23T06:09:19.421Z",
     "source": "https://files.zillowstatic.com/research/public_csvs/invt_fs/State_invt_fs_uc_sfrcondo_sm_month.csv",
-    "points": 100,
+    "points": 101,
     "first": "2018-03-31",
-    "last": "2026-06-30",
+    "last": "2026-07-31",
     "region": "Massachusetts"
   },
   "series": [
@@ -406,7 +406,11 @@
     },
     {
       "date": "2026-06-30",
-      "value": 18633
+      "value": 18636
+    },
+    {
+      "date": "2026-07-31",
+      "value": 19335
     }
   ]
 }
